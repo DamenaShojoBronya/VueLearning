@@ -200,7 +200,7 @@
 
 <script>
 export default {
-  name: 'ApplePage',
+  name: 'CutefishOS',
   data() {
     return {
 

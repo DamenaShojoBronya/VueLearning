@@ -1,15 +1,15 @@
 <template>
-  <ApplePage></ApplePage>
+  <CutefishOS></CutefishOS>
 
 </template>
 
 <script>
-import ApplePage from './components/ApplePage.vue'
+import CutefishOS from './components/CutefishOS.vue'
 
 export default {
   name: 'App',
   components: {
-    ApplePage
+    CutefishOS
   }
 }
 </script>

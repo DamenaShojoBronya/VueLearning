@@ -12,9 +12,9 @@ def rewrite_article():
     prompt = f"请将以下文章进行改写：\n\n{original_text}\n\n改写后的文章："
 
     response = openai.Completion.create(
-        engine="text-davinci-002",
+        engine="text-davinci-002",  # 根据需求选择引擎
         prompt=prompt,
-        max_tokens=1024
+        max_tokens=1024,
         n=1,
         stop=None,
         temperature=0.5,

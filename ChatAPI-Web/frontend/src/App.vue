@@ -1,14 +1,19 @@
 <template>
-  <rewrite-form />
+  <HeaderComponent />
+  <router-view />
+
+  <PageFooter />
 </template>
 
 <script>
-import RewriteForm from './components/RewriteForm.vue'
+import HeaderComponent from './components/HeaderComponent.vue';
+import PageFooter from './components/PageFooter.vue';
 
 export default {
   name: 'App',
   components: {
-    RewriteForm
+    HeaderComponent,
+		PageFooter
   }
 }
 </script>

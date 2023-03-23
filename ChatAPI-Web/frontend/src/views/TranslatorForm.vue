@@ -35,8 +35,8 @@ export default {
         return {
             sourceText: "",
             translatedText: "",
-            sourceLanguage: "",
-            targetLanguage: "",
+            sourceLanguage: "自动检测",
+            targetLanguage: "简体中文",
             languages: [
                 { label: "自动检测", value: "auto" },
                 { label: "英语", value: "en" },

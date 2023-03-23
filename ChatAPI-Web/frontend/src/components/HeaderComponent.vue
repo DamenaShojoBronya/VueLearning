@@ -12,19 +12,27 @@
             <router-link active-class="active" to="/achievements">成果展示</router-link>
 
             <el-dropdown class="header-menu-dropdown">
-                <router-link active-class="active" to="/home">产品</router-link>
+                
                 <span class="el-dropdown-link">
-                    <el-icon class="el-icon--right">
-                        <arrow-down />
-                    </el-icon>
+                    <router-link active-class="active" to="/home">
+                        产品
+                        <el-icon class="el-icon--right">
+                            <arrow-down />
+                        </el-icon>
+                    </router-link>
+
                 </span>
                 <template #dropdown>
                     <el-dropdown-menu>
-                        <el-dropdown-item>文风转化器</el-dropdown-item>
-                        <el-dropdown-item>Action 2</el-dropdown-item>
-                        <el-dropdown-item>Action 3</el-dropdown-item>
-                        <el-dropdown-item disabled>Action 4</el-dropdown-item>
-                        <el-dropdown-item divided>Action 5</el-dropdown-item>
+                        <el-dropdown-item>
+                            <router-link class="link" to="/translate">翻译</router-link>
+                        </el-dropdown-item>
+                        <el-dropdown-item>
+                            <router-link class="link" to="/rewrite">文风转化器</router-link>
+                        </el-dropdown-item>
+                        <el-dropdown-item>翻译</el-dropdown-item>
+                        <el-dropdown-item disabled>翻译</el-dropdown-item>
+                        <el-dropdown-item divided>翻译</el-dropdown-item>
                     </el-dropdown-menu>
                 </template>
             </el-dropdown>
@@ -52,14 +60,22 @@
                 </path>
             </svg>
             <img class="profile-img"
-                src="https://portrait.gitee.com/uploads/avatars/user/3271/9815958_a-jingchao_1656462089.png!avatar200#pskt#&imgName=9815958%20a%20jingchao%201656462089&imgLink=https%3A%2F%2Fgitee.com%2Fa-jingchao"
+                src="../assets/profile.png"
                 alt="">
         </div>
     </div>
 </template>
 
+
+
 <script>
+//引入icon
+import { ArrowDown } from '@element-plus/icons-vue'
 export default {
+    name: 'ElementplusIcon',
+    components: {
+        ArrowDown
+    },
     data() {
         return {
             isChangeSearch: false
@@ -75,6 +91,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.header-menu-dropdown .el-dropdown-link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.el-icon--right{
+    position: absolute;
+}
+.link{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    list-style: none;
+    padding: 5px 16px;
+    position: relative;
+    padding: 5px 0;
+    line-height: 20px;
+    min-width: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    font-size: var(--el-font-size-base);
+    color: var(--el-text-color-regular);
+    --el-scrollbar-opacity: 0.3;
+    --el-scrollbar-bg-color: var(--el-text-color-secondary);
+    --el-scrollbar-hover-opacity: 0.5;
+}
+.el-dropdown-menu__item:hover .link {
+  color: #409eff; /* 自定义的字体颜色 */
+}
+
 .header {
     // background-color: skyblue;
     background: -webkit-linear-gradient(left, rgb(145, 217, 246) 0%, #db6ff3 100%);
@@ -120,7 +167,8 @@ export default {
 
     /* .head-menu */
     &-menu,
-    .header-menu-dropdown {
+    .header-menu-dropdown,
+    .dropdown-item {
         display: flex;
         align-items: center;
 

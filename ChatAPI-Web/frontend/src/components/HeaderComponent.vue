@@ -25,12 +25,14 @@
                 <template #dropdown>
                     <el-dropdown-menu>
                         <el-dropdown-item>
-                            <router-link class="link" to="/translate">翻译</router-link>
+                            <router-link class="link" to="/translate">中文翻译</router-link>
                         </el-dropdown-item>
                         <el-dropdown-item>
-                            <router-link class="link" to="/rewrite">文风转化器</router-link>
+                            <router-link class="link" to="/rewrite">文风转换</router-link>
                         </el-dropdown-item>
-                        <el-dropdown-item>翻译</el-dropdown-item>
+                        <el-dropdown-item>
+                            <router-link class="link" to="/code2txt">代码翻译</router-link>
+                        </el-dropdown-item>
                         <el-dropdown-item disabled>翻译</el-dropdown-item>
                         <el-dropdown-item divided>翻译</el-dropdown-item>
                     </el-dropdown-menu>

@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import RewriteForm from '../views/RewriteForm.vue'
 import TranslatorForm from '../views/TranslatorForm.vue'
+import CodeInterpreter from '../views/CodeInterpreter.vue'
 
 const routes = [
   // 默认首页index重定向到跳转的首页home
@@ -26,6 +27,12 @@ const routes = [
     path: '/translate',
     name: 'translate',
     component: TranslatorForm
+  },
+  //代码解释
+  {
+    path: '/code2txt',
+    name: 'code2txt',
+    component: CodeInterpreter
   },
   {
     path: '/about',

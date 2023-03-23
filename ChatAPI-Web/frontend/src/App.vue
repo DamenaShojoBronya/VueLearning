@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <rewrite-form />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RewriteForm from './components/RewriteForm.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RewriteForm
   }
 }
 </script>

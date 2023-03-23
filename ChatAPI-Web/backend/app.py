@@ -1,27 +1,47 @@
-from flask import Flask
-app = Flask(__name__)
-
-from flask import request, jsonify
 import openai
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+from langdetect import detect
+import io
+import sys
 
-openai.api_key = "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"
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-@app.route('/rewrite', methods=['POST'])
-def rewrite_article():
-    original_text = request.form['text']
-    prompt = f"请将以下文章进行改写：\n\n{original_text}\n\n改写后的文章："
+app = Flask(__name__)
+CORS(app)  # 允许跨域请求
 
-    response = openai.Completion.create(
-        engine="text-davinci-002",  # 根据需求选择引擎
-        prompt=prompt,
-        max_tokens=1024,
-        n=1,
-        stop=None,
-        temperature=0.5,
+openai.api_key = "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"
+
+@app.route('/api/change_style', methods=['POST'])
+def change_style():
+    data = request.get_json()
+    original_text = data.get('original_text')
+    selected_style = data.get('style')
+
+    # 请求改写风格
+    completion = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "user", "content": f"请将以下文字改写成{selected_style}风格：'{original_text}'"},
+        ]
     )
 
-    rewritten_text = response.choices[0].text.strip()
-    return jsonify({"rewritten_text": rewritten_text})
+    rewritten_text = completion.choices[0].message.content.strip()
+
+    # 检查文本语言，如果是英文，则翻译成中文
+    if detect(rewritten_text) == 'en':
+        translation_completion = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "user", "content": f"Translate the following text into Chinese：'{rewritten_text}'"},
+            ]
+        )
+
+
+        translated_text = translation_completion.choices[0].message.content.strip()
+        return jsonify({'changed_text': translated_text})
+    else:
+        return jsonify({'changed_text': rewritten_text})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)

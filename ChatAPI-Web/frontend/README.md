@@ -1,24 +1,9 @@
-# frontend
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1.输入区域：提供一个文本输入框，让用户输入或粘贴原始文章内容。
+2.提交按钮：用户完成输入后，点击提交按钮将原始文章发送到后端，请求改写服务。
+3显示改写后的文章：在提交原始文章并从后端收到改写后的文章时，将其显示在一个只读文本框或其他合适的元素中。
+4.复制功能：为用户提供一个按钮或其他控件，方便地将改写后的文章复制到剪贴板。
+5.清除按钮：允许用户一键清除输入框和显示区域的内容，以便开始一个新的改写任务。
+6.文章风格选择：为用户提供一个下拉菜单，让他们可以选择不同的文章风格（例如正式、非正式、说教式、幽默等）。在向后端发送API请求时，将所选风格作为参数传递。
+7.加载提示：当请求正在处理时，为用户提供一个加载指示器（例如，旋转的圆圈或进度条），以提高用户体验。
+8.错误提示：如果在请求过程中发生错误，为用户提供易于理解的错误信息。
+9.响应式设计：确保前端页面在不同尺寸的屏幕和设备上均具有良好的显示效果和易用性。

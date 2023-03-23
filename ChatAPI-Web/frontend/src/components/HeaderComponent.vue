@@ -5,64 +5,93 @@
             <h2>科学创新协会</h2>
         </div>
         <!-- 主菜单 -->
-        <div class="header-menu" :class="{'header-menu-change-search':isChangeSearch}">
-            <router-link  active-class="active" to="/home">首页</router-link>
-            <router-link  active-class="active" to="/shortcut">关于我们</router-link>
-            <router-link  active-class="active" to="/activities">活动回顾</router-link>
-            <router-link  active-class="active" to="/achievements">成果展示</router-link>
+        <div class="header-menu" :class="{ 'header-menu-change-search': isChangeSearch }">
+            <router-link active-class="active" to="/home">首页</router-link>
+            <router-link active-class="active" to="/shortcut">关于我们</router-link>
+            <router-link active-class="active" to="/activities">活动回顾</router-link>
+            <router-link active-class="active" to="/achievements">成果展示</router-link>
+
+            <el-dropdown class="header-menu-dropdown">
+                <router-link active-class="active" to="/home">产品</router-link>
+                <span class="el-dropdown-link">
+                    <el-icon class="el-icon--right">
+                        <arrow-down />
+                    </el-icon>
+                </span>
+                <template #dropdown>
+                    <el-dropdown-menu>
+                        <el-dropdown-item>文风转化器</el-dropdown-item>
+                        <el-dropdown-item>Action 2</el-dropdown-item>
+                        <el-dropdown-item>Action 3</el-dropdown-item>
+                        <el-dropdown-item disabled>Action 4</el-dropdown-item>
+                        <el-dropdown-item divided>Action 5</el-dropdown-item>
+                    </el-dropdown-menu>
+                </template>
+            </el-dropdown>
+
+
         </div>
         <!-- 搜索框 -->
-		<div class="search-bar" :class="{'search-bar-change-search': isChangeSearch}">
-			<input type="text" @focusin="changeStyle" @focusout="changeStyle" placeholder="请输入关键字">
-			
-		</div>
+        <div class="search-bar" :class="{ 'search-bar-change-search': isChangeSearch }">
+            <input type="text" @focusin="changeStyle" @focusout="changeStyle" placeholder="请输入关键字">
+
+        </div>
         <!-- 头像区域 -->
         <div class="header-profile">
             <div class="notification">
                 <span class="notification-number">9</span>
-				<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-029747aa=""><path fill="currentColor" d="M384 960v-64h192.064v64H384zm448-544a350.656 350.656 0 0 1-128.32 271.424C665.344 719.04 640 763.776 640 813.504V832H320v-14.336c0-48-19.392-95.36-57.216-124.992a351.552 351.552 0 0 1-128.448-344.256c25.344-136.448 133.888-248.128 269.76-276.48A352.384 352.384 0 0 1 832 416zm-544 32c0-132.288 75.904-224 192-224v-64c-154.432 0-256 122.752-256 288h64z"></path></svg>
+                <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-029747aa="">
+                    <path fill="currentColor"
+                        d="M384 960v-64h192.064v64H384zm448-544a350.656 350.656 0 0 1-128.32 271.424C665.344 719.04 640 763.776 640 813.504V832H320v-14.336c0-48-19.392-95.36-57.216-124.992a351.552 351.552 0 0 1-128.448-344.256c25.344-136.448 133.888-248.128 269.76-276.48A352.384 352.384 0 0 1 832 416zm-544 32c0-132.288 75.904-224 192-224v-64c-154.432 0-256 122.752-256 288h64z">
+                    </path>
+                </svg>
             </div>
-			<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-029747aa=""><path fill="currentColor" d="M764.416 254.72a351.68 351.68 0 0 1 86.336 149.184H960v192.064H850.752a351.68 351.68 0 0 1-86.336 149.312l54.72 94.72-166.272 96-54.592-94.72a352.64 352.64 0 0 1-172.48 0L371.136 936l-166.272-96 54.72-94.72a351.68 351.68 0 0 1-86.336-149.312H64v-192h109.248a351.68 351.68 0 0 1 86.336-149.312L204.8 160l166.208-96h.192l54.656 94.592a352.64 352.64 0 0 1 172.48 0L652.8 64h.128L819.2 160l-54.72 94.72zM704 499.968a192 192 0 1 0-384 0 192 192 0 0 0 384 0z"></path></svg>
-            <img class="profile-img" src="https://portrait.gitee.com/uploads/avatars/user/3271/9815958_a-jingchao_1656462089.png!avatar200#pskt#&imgName=9815958%20a%20jingchao%201656462089&imgLink=https%3A%2F%2Fgitee.com%2Fa-jingchao" alt="">
+            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-029747aa="">
+                <path fill="currentColor"
+                    d="M764.416 254.72a351.68 351.68 0 0 1 86.336 149.184H960v192.064H850.752a351.68 351.68 0 0 1-86.336 149.312l54.72 94.72-166.272 96-54.592-94.72a352.64 352.64 0 0 1-172.48 0L371.136 936l-166.272-96 54.72-94.72a351.68 351.68 0 0 1-86.336-149.312H64v-192h109.248a351.68 351.68 0 0 1 86.336-149.312L204.8 160l166.208-96h.192l54.656 94.592a352.64 352.64 0 0 1 172.48 0L652.8 64h.128L819.2 160l-54.72 94.72zM704 499.968a192 192 0 1 0-384 0 192 192 0 0 0 384 0z">
+                </path>
+            </svg>
+            <img class="profile-img"
+                src="https://portrait.gitee.com/uploads/avatars/user/3271/9815958_a-jingchao_1656462089.png!avatar200#pskt#&imgName=9815958%20a%20jingchao%201656462089&imgLink=https%3A%2F%2Fgitee.com%2Fa-jingchao"
+                alt="">
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    data(){
-        return{
-			isChangeSearch:false
+    data() {
+        return {
+            isChangeSearch: false
         }
     },
-	methods:{
-		changeStyle(){
-			this.isChangeSearch = !this.isChangeSearch
-			console.log('聚焦')
-		}
-	}
+    methods: {
+        changeStyle() {
+            this.isChangeSearch = !this.isChangeSearch
+            console.log('聚焦')
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-
-
 .header {
-	// background-color: skyblue;
-    background: -webkit-linear-gradient(left,  rgb(145, 217, 246) 0%,#db6ff3 100%);
-	display: flex;
-	align-items: center;
-	flex-shrink: 0;
-	height: 58px;
-	width: 100%;
-	border-bottom: 1px solid RGBA(113 119 144 / 25%);
-	padding: 0 30px;
-	white-space: nowrap;
-	@media screen and (max-width: 480px) {
-		padding: 0 16px;
-	}
+    // background-color: skyblue;
+    background: -webkit-linear-gradient(left, rgb(145, 217, 246) 0%, #db6ff3 100%);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 58px;
+    width: 100%;
+    border-bottom: 1px solid RGBA(113 119 144 / 25%);
+    padding: 0 30px;
+    white-space: nowrap;
 
-    .logo{
+    @media screen and (max-width: 480px) {
+        padding: 0 16px;
+    }
+
+    .logo {
         width: 96px;
         height: 30px;
         margin-right: 110px;
@@ -75,46 +104,52 @@ export default {
             display: none;
         }
 
-        h2{
+        h2 {
             background-image: linear-gradient(#dc81f1, #db6ff3);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
         }
-        svg{                  
+
+        svg {
             //fill:currentColor;
             fill: #db6ff3;
         }
-        
+
     }
 
     /* .head-menu */
-    &-menu {
+    &-menu,
+    .header-menu-dropdown {
         display: flex;
         align-items: center;
+
         a {
             padding: 20px 30px;
             text-decoration: none;
-			color: rgb(60, 62, 70);
+            color: rgb(60, 62, 70);
             border-bottom: 2px solid transparent;
             transition: 0.3s;
+
             @media screen and (max-width: 610px) {
                 &:not(.main-header-link) {
                     display: none;
                 }
             }
 
-        }  
+        }
+
         a:hover,
-        a.active{
+        a.active {
             color: #ffffff;
             border-bottom: 2px solid #ffffff;
         }
-        
+
     }
 
     .notify {
         position: relative;
+
         &:before {
             content: "";
             position: absolute;
@@ -125,11 +160,12 @@ export default {
             right: 20px;
             top: 16px;
         }
+
         @media screen and (max-width: 1055px) {
             display: none;
         }
     }
- 
+
     .search-bar {
         height: 40px;
         display: flex;
@@ -138,6 +174,7 @@ export default {
         padding-left: 16px;
         border-radius: 4px;
         border: none;
+
         input {
             width: 100%;
             height: 100%;
@@ -155,6 +192,7 @@ export default {
             background-size: 14px;
             background-repeat: no-repeat;
             background-position: 16px 48%;
+
             //color: #212324;
             &::placeholder {
                 font-family: "Poppins", sans-serif;
@@ -163,20 +201,21 @@ export default {
                 font-weight: 500;
             }
         }
-        input:focus{
+
+        input:focus {
             border: 2px solid rgb(192, 134, 192);
         }
-        
+
     }
 
     .header-profile {
         display: flex;
         align-items: center;
-		//text-align: center;
+        //text-align: center;
         padding: 0 16px 0 40px;
         margin-left: auto;
         flex-shrink: 0;
-		
+
         svg {
             width: 22px;
             color: #f9fafb;
@@ -185,7 +224,8 @@ export default {
 
         .notification {
             position: relative;
-			top: 2px;
+            top: 2px;
+
             &-number {
                 position: absolute;
                 background-color: #3a6df0;
@@ -200,8 +240,10 @@ export default {
                 right: -6px;
                 top: -6px;
             }
-            & + svg {
+
+            &+svg {
                 margin-left: 22px;
+
                 @media screen and (max-width: 945px) {
                     display: none;
                 }
@@ -219,25 +261,27 @@ export default {
     }
 
     /*输入框聚焦后，样式改变 */
-	
-	.header-menu-change-search{
-		display: none;
-	}
-	
-	.search-bar-change-search{
-		max-width: 600px;
-		margin: auto;
-		transition: 0.4s;
-		box-shadow: 0 0 0 1px RGBA(113 119 144 / 25%);
-		padding-left: 0;
-	}
-	
-	
+
+    .header-menu-change-search {
+        display: none;
+    }
+
+    .search-bar-change-search {
+        max-width: 600px;
+        margin: auto;
+        transition: 0.4s;
+        box-shadow: 0 0 0 1px RGBA(113 119 144 / 25%);
+        padding-left: 0;
+    }
+
+
     .change-search {
+
         .header-menu,
         .header-profile {
             display: none;
         }
+
         .search-bar {
             max-width: 600px;
             margin: auto;
@@ -245,10 +289,9 @@ export default {
             box-shadow: 0 0 0 1px RGBA(113 119 144 / 25%);
             padding-left: 0;
         }
+
         .logo {
             margin-right: 0;
         }
     }
-}
-
-</style>
+}</style>

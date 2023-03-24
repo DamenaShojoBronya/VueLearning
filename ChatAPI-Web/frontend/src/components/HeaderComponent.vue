@@ -33,7 +33,9 @@
                         <el-dropdown-item>
                             <router-link class="link" to="/code2txt">代码翻译</router-link>
                         </el-dropdown-item>
-                        <el-dropdown-item disabled>翻译</el-dropdown-item>
+                        <el-dropdown-item>
+                            <router-link class="link" to="/xiaohongshuGenerator">小红书生成器</router-link>
+                        </el-dropdown-item>
                         <el-dropdown-item divided>翻译</el-dropdown-item>
                     </el-dropdown-menu>
                 </template>

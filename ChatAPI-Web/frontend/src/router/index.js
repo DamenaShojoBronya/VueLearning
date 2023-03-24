@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import RewriteForm from '../views/RewriteForm.vue'
 import TranslatorForm from '../views/TranslatorForm.vue'
 import CodeInterpreter from '../views/CodeInterpreter.vue'
+import XiaohongshuGenerator from '../views/XiaohongshuGenerator.vue' 
 
 const routes = [
   // 默认首页index重定向到跳转的首页home
@@ -34,6 +35,12 @@ const routes = [
     name: 'code2txt',
     component: CodeInterpreter
   },
+    //代码解释
+    {
+      path: '/xiaohongshuGenerator',
+      name: 'code2txt',
+      component: XiaohongshuGenerator
+    },
   {
     path: '/about',
     name: 'about',

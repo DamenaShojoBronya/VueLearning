@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer :class="{ 'blur-background': blur }">
     <p>© 2023 科学创新协会. 版权所有。</p>
     <p>联系我们：contact@sciinnov.org</p>
   </footer>
@@ -7,13 +7,24 @@
 
 <script>
 import { defineComponent } from 'vue';
-
+import { mapState } from 'vuex';
+// export default defineComponent({
+//   name: 'PageFooter'
+// });
 export default defineComponent({
-  name: 'PageFooter'
+  name: 'PageFooter',
+  computed: {
+    ...mapState(['blur']),
+  },
 });
+
+
 </script>
 
 <style>
+.blur-background {
+  filter: blur(4px);
+}
 footer {
   margin-top: 50px;
   padding: 20px;
@@ -25,4 +36,5 @@ footer {
 footer p {
   margin: 5px;
 }
+
 </style>

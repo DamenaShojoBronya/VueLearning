@@ -1,73 +1,73 @@
 <template>
-    <div class="header">
-        <!-- 左侧logo -->
-        <div class="logo">
-            <h2>科学创新协会</h2>
-        </div>
-        <!-- 主菜单 -->
-        <div class="header-menu" :class="{ 'header-menu-change-search': isChangeSearch }">
-            <router-link active-class="active" to="/home">首页</router-link>
-            <router-link active-class="active" to="/shortcut">关于我们</router-link>
-            <router-link active-class="active" to="/activities">活动回顾</router-link>
-            <router-link active-class="active" to="/achievements">成果展示</router-link>
+    <header :class="{ 'blur-background': blur }">
+        <div class="header">
+            <!-- 左侧logo -->
+            <div class="logo">
+                <h2>科学创新协会</h2>
+            </div>
+            <!-- 主菜单 -->
+            <div class="header-menu" :class="{ 'header-menu-change-search': isChangeSearch }">
+                <router-link active-class="active" to="/home">首页</router-link>
+                <router-link active-class="active" to="/shortcut">关于我们</router-link>
+                <router-link active-class="active" to="/activities">活动回顾</router-link>
+                <router-link active-class="active" to="/achievements">成果展示</router-link>
 
-            <el-dropdown class="header-menu-dropdown">
-                
-                <span class="el-dropdown-link">
-                    <router-link active-class="active" to="/home">
-                        产品
-                        <el-icon class="el-icon--right">
-                            <arrow-down />
-                        </el-icon>
-                    </router-link>
+                <el-dropdown class="header-menu-dropdown">
 
-                </span>
-                <template #dropdown>
-                    <el-dropdown-menu>
-                        <el-dropdown-item>
-                            <router-link class="link" to="/translate">中文翻译</router-link>
-                        </el-dropdown-item>
-                        <el-dropdown-item>
-                            <router-link class="link" to="/rewrite">文风转换</router-link>
-                        </el-dropdown-item>
-                        <el-dropdown-item>
-                            <router-link class="link" to="/code2txt">代码翻译</router-link>
-                        </el-dropdown-item>
-                        <el-dropdown-item>
-                            <router-link class="link" to="/xiaohongshuGenerator">小红书生成器</router-link>
-                        </el-dropdown-item>
-                        <el-dropdown-item divided>翻译</el-dropdown-item>
-                    </el-dropdown-menu>
-                </template>
-            </el-dropdown>
+                    <span class="el-dropdown-link">
+                        <router-link active-class="active" to="/home">
+                            产品
+                            <el-icon class="el-icon--right">
+                                <arrow-down />
+                            </el-icon>
+                        </router-link>
+
+                    </span>
+                    <template #dropdown>
+                        <el-dropdown-menu>
+                            <el-dropdown-item>
+                                <router-link class="link" to="/translate">中文翻译</router-link>
+                            </el-dropdown-item>
+                            <el-dropdown-item>
+                                <router-link class="link" to="/rewrite">文风转换</router-link>
+                            </el-dropdown-item>
+                            <el-dropdown-item>
+                                <router-link class="link" to="/code2txt">代码翻译</router-link>
+                            </el-dropdown-item>
+                            <el-dropdown-item>
+                                <router-link class="link" to="/xiaohongshuGenerator">小红书生成器</router-link>
+                            </el-dropdown-item>
+                            <el-dropdown-item divided>翻译</el-dropdown-item>
+                        </el-dropdown-menu>
+                    </template>
+                </el-dropdown>
 
 
-        </div>
-        <!-- 搜索框 -->
-        <div class="search-bar" :class="{ 'search-bar-change-search': isChangeSearch }">
-            <input type="text" @focusin="changeStyle" @focusout="changeStyle" placeholder="请输入关键字">
+            </div>
+            <!-- 搜索框 -->
+            <div class="search-bar" :class="{ 'search-bar-change-search': isChangeSearch }">
+                <input type="text" @focusin="changeStyle" @focusout="changeStyle" placeholder="请输入关键字">
 
-        </div>
-        <!-- 头像区域 -->
-        <div class="header-profile">
-            <div class="notification">
-                <span class="notification-number">9</span>
+            </div>
+            <!-- 头像区域 -->
+            <div class="header-profile">
+                <div class="notification">
+                    <span class="notification-number">9</span>
+                    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-029747aa="">
+                        <path fill="currentColor"
+                            d="M384 960v-64h192.064v64H384zm448-544a350.656 350.656 0 0 1-128.32 271.424C665.344 719.04 640 763.776 640 813.504V832H320v-14.336c0-48-19.392-95.36-57.216-124.992a351.552 351.552 0 0 1-128.448-344.256c25.344-136.448 133.888-248.128 269.76-276.48A352.384 352.384 0 0 1 832 416zm-544 32c0-132.288 75.904-224 192-224v-64c-154.432 0-256 122.752-256 288h64z">
+                        </path>
+                    </svg>
+                </div>
                 <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-029747aa="">
                     <path fill="currentColor"
-                        d="M384 960v-64h192.064v64H384zm448-544a350.656 350.656 0 0 1-128.32 271.424C665.344 719.04 640 763.776 640 813.504V832H320v-14.336c0-48-19.392-95.36-57.216-124.992a351.552 351.552 0 0 1-128.448-344.256c25.344-136.448 133.888-248.128 269.76-276.48A352.384 352.384 0 0 1 832 416zm-544 32c0-132.288 75.904-224 192-224v-64c-154.432 0-256 122.752-256 288h64z">
+                        d="M764.416 254.72a351.68 351.68 0 0 1 86.336 149.184H960v192.064H850.752a351.68 351.68 0 0 1-86.336 149.312l54.72 94.72-166.272 96-54.592-94.72a352.64 352.64 0 0 1-172.48 0L371.136 936l-166.272-96 54.72-94.72a351.68 351.68 0 0 1-86.336-149.312H64v-192h109.248a351.68 351.68 0 0 1 86.336-149.312L204.8 160l166.208-96h.192l54.656 94.592a352.64 352.64 0 0 1 172.48 0L652.8 64h.128L819.2 160l-54.72 94.72zM704 499.968a192 192 0 1 0-384 0 192 192 0 0 0 384 0z">
                     </path>
                 </svg>
+                <img class="profile-img" src="../assets/profile.png" alt="">
             </div>
-            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-029747aa="">
-                <path fill="currentColor"
-                    d="M764.416 254.72a351.68 351.68 0 0 1 86.336 149.184H960v192.064H850.752a351.68 351.68 0 0 1-86.336 149.312l54.72 94.72-166.272 96-54.592-94.72a352.64 352.64 0 0 1-172.48 0L371.136 936l-166.272-96 54.72-94.72a351.68 351.68 0 0 1-86.336-149.312H64v-192h109.248a351.68 351.68 0 0 1 86.336-149.312L204.8 160l166.208-96h.192l54.656 94.592a352.64 352.64 0 0 1 172.48 0L652.8 64h.128L819.2 160l-54.72 94.72zM704 499.968a192 192 0 1 0-384 0 192 192 0 0 0 384 0z">
-                </path>
-            </svg>
-            <img class="profile-img"
-                src="../assets/profile.png"
-                alt="">
         </div>
-    </div>
+    </header>
 </template>
 
 
@@ -75,35 +75,42 @@
 <script>
 //引入icon
 import { ArrowDown } from '@element-plus/icons-vue'
+import { mapGetters } from 'vuex';
 export default {
     name: 'ElementplusIcon',
     components: {
         ArrowDown
     },
+
     data() {
         return {
             isChangeSearch: false
         }
     },
     methods: {
-        changeStyle() {
-            this.isChangeSearch = !this.isChangeSearch
-            console.log('聚焦')
+        toggleBlur() {
+            this.$store.commit('SET_BLUR', true);
         }
+    },
+    computed: {
+    ...mapGetters(['blur'])
     }
 }
 </script>
 
 <style lang="scss" scoped>
+
 .header-menu-dropdown .el-dropdown-link {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
-.el-icon--right{
+
+.el-icon--right {
     position: absolute;
 }
-.link{
+
+.link {
     display: flex;
     align-items: center;
     white-space: nowrap;
@@ -122,8 +129,10 @@ export default {
     --el-scrollbar-bg-color: var(--el-text-color-secondary);
     --el-scrollbar-hover-opacity: 0.5;
 }
+
 .el-dropdown-menu__item:hover .link {
-  color: #409eff; /* 自定义的字体颜色 */
+    color: #409eff;
+    /* 自定义的字体颜色 */
 }
 
 .header {
@@ -346,4 +355,8 @@ export default {
             margin-right: 0;
         }
     }
-}</style>
+}
+.blur-background {
+  filter: blur(4px);
+}
+</style>

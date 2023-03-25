@@ -40,37 +40,41 @@
         <img v-if="imageSrc" :src="imageSrc" alt="Uploaded Image" />
       </div>
     </div>
+    <!-- <div v-if="showImageDialog" class="image-zoom" @click="showImageDialog = false">
+      <div @click="toggleImageDialog" v-if="imageSrc" class="image-card">
+        <img :src="imageSrc" alt="Uploaded Image" />
+      </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-// const apiClient = axios.create({
-//   baseURL: 'http://localhost:5000/',
-// });
 export default {
-  data() {
-    return {
-
-    }
-  },
-  methods: {
-    //与后端通讯
-    // async sendRequest(data) {
-    //   const response = await
-    //     apiClient.post('/api/rewrite', data);
-    //   return response.data;
-    // },
-  },
+    data() {
+        return {
+            
+        }
+    },
+    methods: {
+        toggleBlur() {
+            this.$store.commit('setBlur', true);
+        }
+    },
 }
 </script>
 
 <script setup>
 import { ref } from "vue";
 import { ElMessage } from "element-plus";
-import apiClient from "../apiClient";
+
 import { useStore } from 'vuex';
 // 获取 Vuex store 实例
 const store = useStore();
+// 添加一个新方法 toggleImageDialog，用于切换图片对话框和更新模糊状态
+// const toggleImageDialog = () => {
+  // console.log("showImageDialog.value:",showImageDialog.value);
+  // store.commit('setBlur', showImageDialog.value);
+// };
 
 const inputText = ref("");
 const generatedText = ref("");
@@ -94,6 +98,7 @@ function handleImageCardClick() {
   console.log("showImageDialog.value2:", showImageDialog.value);
 }
 
+
 async function generateText() {
   if (!inputText.value.trim()) {
     ElMessage.error("请输入要夸奖的食物或产品名称");
@@ -101,14 +106,20 @@ async function generateText() {
   }
 
   try {
-    const response = await apiClient.post("/api/xiaohongshu", {
-      input: inputText.value,
-      // ...其他所需参数
-
+    const response = await fetch("YOUR_API_ENDPOINT", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        input: inputText.value,
+        // ...其他所需参数
+      }),
     });
 
-    if (response.status === 200) {
-      generatedText.value = response.data.generated_text; // 根据实际API响应调整
+    if (response.ok) {
+      const data = await response.json();
+      generatedText.value = data.generated_text; // 根据实际API响应调整
     } else {
       ElMessage.error("生成文案失败，请稍后重试");
     }
@@ -205,7 +216,6 @@ function handleImageChange(event) {
   align-items: center;
   overflow: hidden;
 }
-
 .image-zoom-card img {
   max-width: 100%;
   max-height: 100%;

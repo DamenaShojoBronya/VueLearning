@@ -1,0 +1,4 @@
+revChatGPT
+flask
+gunicorn
+gevent

@@ -23,11 +23,8 @@
 </template>
 
 <script>
-import axios from "axios";
+import apiClient from "./apiClient";
 
-const apiClient = axios.create({
-  baseURL: 'http://localhost:5000/',
-});
 
 export default {
   data() {

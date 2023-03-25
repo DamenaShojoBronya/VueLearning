@@ -2,10 +2,10 @@ from flask import Blueprint, request, jsonify
 from langdetect import detect
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 # 创建一个 Blueprint 对象，用于定义路由
-bp = Blueprint('RewriteForm', __name__)
+bp = Blueprint('rewrite', __name__)
 
 # 定义路由函数
 @bp.route('/api/change_style', methods=['POST'])

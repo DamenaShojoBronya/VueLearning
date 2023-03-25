@@ -12,9 +12,6 @@ export default createStore({
     setBlur(state, blur) {
       state.blur = blur;
     },
-    SET_BLUR(state, value) {
-      state.blur = value;
-  },
   },
   getters: {
     blur: (state) => state.blur

@@ -26,7 +26,7 @@
           <el-col>
             <input type="file" ref="imageInput" @change="handleImageChange" accept="image/*" style="display: none" />
             <el-button type="primary" @click="uploadImage">上传图片</el-button>
-            <div @click="showImageDialog = true" v-if="imageSrc" class="image-card">
+            <div @click="handleImageCardClick" v-if="imageSrc" class="image-card">
               <img :src="imageSrc" alt="Uploaded Image" />
             </div>
           </el-col>
@@ -35,19 +35,34 @@
 
     </el-container>
 
-    <!-- <div v-if="showImageDialog" class="image-zoom" @click="showImageDialog = false">
-      <div class="image-zoom-card">
+    <div v-if="showImageDialog" class="image-zoom">
+      <div class="image-zoom-card" @click="handleImageCardClick">
         <img v-if="imageSrc" :src="imageSrc" alt="Uploaded Image" />
       </div>
-    </div> -->
-    <div v-if="showImageDialog" class="image-zoom" @click="showImageDialog = false">
+    </div>
+    <!-- <div v-if="showImageDialog" class="image-zoom" @click="showImageDialog = false">
       <div @click="toggleImageDialog" v-if="imageSrc" class="image-card">
         <img :src="imageSrc" alt="Uploaded Image" />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
-  
+
+<script>
+export default {
+    data() {
+        return {
+            
+        }
+    },
+    methods: {
+        toggleBlur() {
+            this.$store.commit('setBlur', true);
+        }
+    },
+}
+</script>
+
 <script setup>
 import { ref } from "vue";
 import { ElMessage } from "element-plus";
@@ -56,16 +71,33 @@ import { useStore } from 'vuex';
 // 获取 Vuex store 实例
 const store = useStore();
 // 添加一个新方法 toggleImageDialog，用于切换图片对话框和更新模糊状态
-const toggleImageDialog = () => {
-  showImageDialog.value = !showImageDialog.value;
-  store.commit('setBlur', showImageDialog.value);
-};
+// const toggleImageDialog = () => {
+  // console.log("showImageDialog.value:",showImageDialog.value);
+  // store.commit('setBlur', showImageDialog.value);
+// };
 
 const inputText = ref("");
 const generatedText = ref("");
 const imageSrc = ref("");
 const imageInput = ref();
+
+// 将 showImageDialog 的值从 Vuex store 初始化
 const showImageDialog = ref(false);
+
+function handleImageCardClick() {
+  // 切换 showImageDialog 的值
+  const newShowImageDialogValue = !showImageDialog.value;
+
+  console.log("showImageDialog.value1:", showImageDialog.value);
+  // 提交新值到 Vuex store
+  store.commit('setBlur', newShowImageDialogValue);
+
+  // 更新本地的 showImageDialog 变量
+  showImageDialog.value = newShowImageDialogValue;
+
+  console.log("showImageDialog.value2:", showImageDialog.value);
+}
+
 
 async function generateText() {
   if (!inputText.value.trim()) {
@@ -177,8 +209,8 @@ function handleImageChange(event) {
 .image-zoom-card {
   background-color: white;
   border-radius: 8px;
-  width: min(50vw, 50vh);
-  height: min(50vw, 50vh);
+  width: min(80vw, 80vh);
+  height: min(80vw, 80vh);
   display: flex;
   justify-content: center;
   align-items: center;

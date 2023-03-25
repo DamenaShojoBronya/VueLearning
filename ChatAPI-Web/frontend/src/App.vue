@@ -1,9 +1,7 @@
 <template>
-  <div :class="{ 'blur-background': blur }">
-    <HeaderComponent />
-    <router-view />
-    <PageFooter />
-  </div>
+  <HeaderComponent :class="{ 'blur-background': blur }" />
+  <router-view />
+  <PageFooter :class="{ 'blur-background': blur }" />
 </template>
 
 <script>
@@ -33,6 +31,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 .blur-background {
   filter: blur(4px);
 }

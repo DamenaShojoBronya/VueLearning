@@ -1,0 +1,4 @@
+Flask==2.1.0
+Flask-Cors==3.0.10
+langdetect==1.0.9
+openai==0.10.2

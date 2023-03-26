@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify
 import openai
 import json
 
-openai.api_key = "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"
+openai.api_key = "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"
 # 创建一个蓝图对象
 xiaohongshu_bp = Blueprint('xiaohongshu', __name__)
 

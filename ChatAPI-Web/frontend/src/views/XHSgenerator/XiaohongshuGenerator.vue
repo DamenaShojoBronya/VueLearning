@@ -2,35 +2,37 @@
   <div>
     <el-container :class="{ 'blur-background': showImageDialog }">
       <el-main>
+
         <el-row>
           <el-col>
-            <el-input v-model="inputText" placeholder="输入要夸奖的食物或产品名称"></el-input>
+            <el-input type="textarea" :rows="15" v-model="generatedText" placeholder="生成的文案将显示在这里" readonly></el-input>
           </el-col>
         </el-row>
         <el-row>
-          <el-col>
-            <el-button type="primary" @click="generateText">生成文案</el-button>
-          </el-col>
-        </el-row>
-        <el-row>
-          <el-col>
-            <el-input type="textarea" :rows="5" v-model="generatedText" placeholder="生成的文案将显示在这里" readonly></el-input>
-          </el-col>
-        </el-row>
-        <el-row>
-          <el-col>
+          <div class="generate-buttons">
             <el-button type="primary" @click="copyText">复制文案</el-button>
-          </el-col>
-        </el-row>
-        <el-row>
-          <el-col>
+            <el-button type="primary" @click="generateText">生成文案</el-button>
             <input type="file" ref="imageInput" @change="handleImageChange" accept="image/*" style="display: none" />
             <el-button type="primary" @click="uploadImage">上传图片</el-button>
-            <div @click="handleImageCardClick" v-if="imageSrc" class="image-card">
+          </div>
+        </el-row>
+        <el-row>
+          <div @click="handleImageCardClick" v-if="imageSrc" class="image-card">
               <img :src="imageSrc" alt="Uploaded Image" />
             </div>
+        </el-row>
+
+        <el-row>
+          <el-col>
+            <el-input class="inputText" v-model="inputText" placeholder="输入要夸奖的食物或产品名称"></el-input>
           </el-col>
         </el-row>
+
+        <el-row />
+
+        <div>
+        </div>
+
       </el-main>
 
     </el-container>
@@ -148,6 +150,23 @@ function handleImageChange(event) {
 </script>
 
 <style scoped>
+.el-container,
+.el-row{
+  justify-content: center;
+}
+.el-main {
+  display: flex;
+  /* background-color: bisque; */
+  border-radius: 8px;
+  max-width: 70vw;
+  min-height: 70vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
 .image-card {
   width: 200px;
   height: 200px;
@@ -210,6 +229,18 @@ function handleImageChange(event) {
   max-width: 100%;
   max-height: 100%;
   object-fit: scale-down;
+}
+
+.generate-buttons {
+  display: flex;
+  min-width: 30vw;
+}
+.inputText{
+  max-width: 60vw;
+}
+.el-button{
+  margin-left:2vw;
+  margin-right:2vw;
 }
 </style>
   

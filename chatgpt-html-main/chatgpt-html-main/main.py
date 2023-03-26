@@ -1,5 +1,5 @@
 import json
-from revChatGPT.V1 import Chatbot
+from revChatGPT import Chatbot
 from flask import Flask, request, render_template, redirect
 
 server = Flask(__name__)

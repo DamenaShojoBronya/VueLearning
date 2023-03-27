@@ -8,7 +8,7 @@
             <!-- 主菜单 -->
             <div class="header-menu" :class="{ 'header-menu-change-search': isChangeSearch }">
                 <router-link active-class="active" to="/home">首页</router-link>
-                <router-link active-class="active" to="/shortcut">关于我们</router-link>
+                <router-link active-class="active" to="/about">关于我们</router-link>
                 <router-link active-class="active" to="/activities">活动回顾</router-link>
                 <router-link active-class="active" to="/achievements">成果展示</router-link>
 

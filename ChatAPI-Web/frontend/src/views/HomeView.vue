@@ -65,237 +65,46 @@
         </div>
         <div class="menu">
           <div class="icon-wrap">
-            <img src="assets/介绍-图标-决策智能化.png">
+            <img src="./assets/介绍-图标-决策智能化.png">
             <p>决策智能化</p>
           </div>
           <div class="icon-wrap">
-            <img src="assets/介绍-图标-运营数据化.png">
+            <img src="./assets/介绍-图标-运营数据化.png">
             <p>运营数据化</p>
           </div>
           <div class="icon-wrap">
-            <img src="assets/介绍-图标-业务在线化.png">
+            <img src="./assets/介绍-图标-业务在线化.png">
             <p>业务在线化</p>
           </div>
           <div class="icon-wrap">
-            <img src="assets/介绍-图标-数据资产化.png">
+            <img src="./assets/介绍-图标-数据资产化.png">
             <p>数据资产化</p>
           </div>
           <div class="icon-wrap">
-            <img src="assets/介绍-图标-触点数据化.png">
+            <img src="./assets/介绍-图标-触点数据化.png">
             <p>触点数据化</p>
           </div>
           <div class="icon-wrap">
-            <img src="assets/介绍-图标-基础设施云化.png">
+            <img src="./assets/介绍-图标-基础设施云化.png">
             <p>基础设施云化</p>
           </div>
         </div>
       </div>
     </div>
-    <ul class="content-2-home">
-      <li class="tabactive">
-        <img src="assets/数字化转型最佳选择-农务.png">
-      </li>
-      <li>
-        <img src="assets/数字化转型最佳选择-物流.png">
-      </li>
-      <li>
-        <img src="assets/数字化转型最佳选择-营销.png">
-      </li>
-      <li>
-        <img src="assets/数字化转型最佳选择-制造.png">
-      </li>
-      <li>
-        <img src="assets/数字化转型最佳选择-采购.png">
-      </li>
-      <li>
-        <img src="assets/数字化转型最佳选择-金融.png">
-      </li>
-      <li>
-        <img src="assets/数字化转型最佳选择-咨询.png">
-      </li>
-      <li>
-        <img src="assets/数字化转型最佳选择-协同.png">
-      </li>
-      <li>
-        <img src="assets/数字化转型最佳选择-劳务.png">
-      </li>
-      <li>
-        <img src="assets/数字化转型最佳选择-智管.png">
-      </li>
-      <li>
-        <img src="assets/数字化转型最佳选择-项管.png">
-      </li>
-    </ul>
+
     <div class="content-2">
-      <div class="content-2-tittle">数字化转型最佳选择</div>
-      <div class="ul-wrap">
-        <ul class="content-2-list">
-          <li>
-            云羲农务
-            <div class="underline"></div>
-          </li>
-          <li>
-            云羲物流
-            <div class="underline"></div>
-          </li>
-          <li>
-            云羲营销
-            <div class="underline"></div>
-          </li>
-          <li>
-            云羲制造
-            <div class="underline"></div>
-          </li>
-          <li>
-            云羲采购
-            <div class="underline"></div>
-          </li>
-          <li>
-            云羲金融
-            <div class="underline"></div>
-          </li>
-          <li>
-            云羲咨询
-            <div class="underline"></div>
-          </li>
-          <li>
-            云羲协同
-            <div class="underline"></div>
-          </li>
-          <li>
-            云羲劳务
-            <div class="underline"></div>
-          </li>
-          <li>
-            云羲智管
-            <div class="underline"></div>
-          </li>
-          <li>
-            云羲项管
-            <div class="underline"></div>
-          </li>
-        </ul>
-        <div class="line3"></div>
-      </div>
-      <ul class="content">
-        <li class="ContActive">
-          <div class="content-2-bottom" id="ContActive-bottom">
-            <h3>云羲劳务</h3>
-            <p>通过劳务大数据的积累与分析，实现劳务市场供需智能匹配，帮助企业解决用工需求、节省招用工管理成本。同时通过SaaS化的劳务管理平台，帮助企业提升劳务管理水平，实现降本增效的目的。
-            </p>
-            <div class="button">
-              <p>了解更多</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="content-2-bottom">
-            <h3>云羲物流</h3>
-            <p>通过物流大数据的积累与分析，实现物流市场供需智能匹配，帮助企业解决用工需求、节省招用工管理成本。同时通过SaaS化的劳务管理平台，帮助企业提升劳务管理水平，实现降本增效的目的。
-            </p>
-            <div class="button">
-              <p>了解更多</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="content-2-bottom">
-            <h3>云羲营销</h3>
-            <p>通过营销大数据的积累与分析，实现营销市场供需智能匹配，帮助企业解决用工需求、节省招用工管理成本。同时通过SaaS化的劳务管理平台，帮助企业提升劳务管理水平，实现降本增效的目的。
-            </p>
-            <div class="button">
-              <p>了解更多</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="content-2-bottom">
-            <h3>云羲制造</h3>
-            <p>通过制造大数据的积累与分析，实现制造市场供需智能匹配，帮助企业解决用工需求、节省招用工管理成本。同时通过SaaS化的劳务管理平台，帮助企业提升劳务管理水平，实现降本增效的目的。
-            </p>
-            <div class="button">
-              <p>了解更多</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="content-2-bottom">
-            <h3>云羲采购</h3>
-            <p>通过采购大数据的积累与分析，实现采购市场供需智能匹配，帮助企业解决用工需求、节省招用工管理成本。同时通过SaaS化的劳务管理平台，帮助企业提升劳务管理水平，实现降本增效的目的。
-            </p>
-            <div class="button">
-              <p>了解更多</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="content-2-bottom">
-            <h3>云羲金融</h3>
-            <p>通过金融大数据的积累与分析，实现金融市场供需智能匹配，帮助企业解决用工需求、节省招用工管理成本。同时通过SaaS化的劳务管理平台，帮助企业提升劳务管理水平，实现降本增效的目的。
-            </p>
-            <div class="button">
-              <p>了解更多</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="content-2-bottom">
-            <h3>云羲咨询</h3>
-            <p>通过咨询大数据的积累与分析，实现咨询市场供需智能匹配，帮助企业解决用工需求、节省招用工管理成本。同时通过SaaS化的劳务管理平台，帮助企业提升劳务管理水平，实现降本增效的目的。
-            </p>
-            <div class="button">
-              <p>了解更多</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="content-2-bottom">
-            <h3>云羲协同</h3>
-            <p>通过协同大数据的积累与分析，实现协同市场供需智能匹配，帮助企业解决用工需求、节省招用工管理成本。同时通过SaaS化的劳务管理平台，帮助企业提升劳务管理水平，实现降本增效的目的。
-            </p>
-            <div class="button">
-              <p>了解更多</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="content-2-bottom">
-            <h3>云羲劳务</h3>
-            <p>通过劳务大数据的积累与分析，实现劳务市场供需智能匹配，帮助企业解决用工需求、节省招用工管理成本。同时通过SaaS化的劳务管理平台，帮助企业提升劳务管理水平，实现降本增效的目的。
-            </p>
-            <div class="button">
-              <p>了解更多</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="content-2-bottom">
-            <h3>云羲智管</h3>
-            <p>通过智管大数据的积累与分析，实现智管市场供需智能匹配，帮助企业解决用工需求、节省招用工管理成本。同时通过SaaS化的劳务管理平台，帮助企业提升劳务管理水平，实现降本增效的目的。
-            </p>
-            <div class="button">
-              <p>了解更多</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="content-2-bottom">
-            <h3>云羲项管</h3>
-            <p>通过项管大数据的积累与分析，实现项管市场供需智能匹配，帮助企业解决用工需求、节省招用工管理成本。同时通过SaaS化的劳务管理平台，帮助企业提升劳务管理水平，实现降本增效的目的。
-            </p>
-            <div class="button">
-              <p>了解更多</p>
-            </div>
-          </div>
-        </li>
-      </ul>
+      <el-carousel class="content-2-carousel" :interval="4000" type="card" height="300px">
+        <el-carousel-item v-for="item in 6" :key="item">
+          <!-- {{ item }} -->
+        </el-carousel-item>
+      </el-carousel>
     </div>
     <div class="content-3">
       <div class="content-3-tittle">
         <span>
-          <img src="assets/zx_title_blue_r.png">
+          <img src="./assets/zx_title_blue_r.png">
           案例介绍
-          <img src="assets/zx_title_blue_l.png">
+          <img src="./assets/zx_title_blue_l.png">
         </span>
         <p>CASE INTRODUCED</p>
       </div>
@@ -317,82 +126,82 @@
     <div class="content-4">
       <div class="content-3-tittle">
         <span>
-          <img src="assets/zx_title_blue_r.png">
+          <img src="./assets/zx_title_blue_r.png">
           应用服务
-          <img src="assets/zx_title_blue_l.png">
+          <img src="./assets/zx_title_blue_l.png">
         </span>
         <p>APPLICATION SERVICE</p>
       </div>
       <ul class="pic-ls">
         <li class="pic-ls1">
-          <img class="pic-ls-bg" src="assets/泛糖-440x342.png">
-          <img src="assets/应用服务-图标-泛糖.png">
+          <img class="pic-ls-bg" src="./assets/泛糖-440x342.png">
+          <img src="./assets/应用服务-图标-泛糖.png">
           <p>泛糖</p>
           <div class="line4"></div>
           <div class="pic1-slogan">新型基础设施赋能涉农企业生产经营管理</div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="assets/电子口岸-200x342.png">
-          <img src="assets/应用服务-图标-电子口岸.png">
+          <img class="pic-ls-bg" src="./assets/电子口岸-200x342.png">
+          <img src="./assets/应用服务-图标-电子口岸.png">
           <p>电子口岸</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="assets/装配式建筑-200x342.png">
-          <img src="assets/应用服务-图标-装配式建筑.png">
+          <img class="pic-ls-bg" src="./assets/装配式建筑-200x342.png">
+          <img src="./assets/应用服务-图标-装配式建筑.png">
           <p>装配式建筑</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="assets/建材采购-200x342.png">
-          <img src="assets/应用服务-图标-建材采购.png">
+          <img class="pic-ls-bg" src="./assets/建材采购-200x342.png">
+          <img src="./assets/应用服务-图标-建材采购.png">
           <p>建材采购</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="assets/金融服务-200x342.png">
-          <img src="assets/应用服务-图标-金融服务.png">
+          <img class="pic-ls-bg" src="./assets/金融服务-200x342.png">
+          <img src="./assets/应用服务-图标-金融服务.png">
           <p>金融服务</p>
           <div class="invisible-bottom"></div>
         </li>
       </ul>
       <ul class="pic-ls" id="pic2-ls">
         <li>
-          <img class="pic-ls-bg" src="assets/行业咨询-248x342.png">
-          <img src="assets/应用服务-图标-行业咨询.png">
+          <img class="pic-ls-bg" src="./assets/行业咨询-248x342.png">
+          <img src="./assets/应用服务-图标-行业咨询.png">
           <p>行业咨询</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="assets/智联云-248x342.png">
-          <img src="assets/应用服务-图标-智联云.png">
+          <img class="pic-ls-bg" src="./assets/智联云-248x342.png">
+          <img src="./assets/应用服务-图标-智联云.png">
           <p>智联云</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="assets/路信云-248x342.png">
-          <img src="assets/应用服务-图标-路信云.png">
+          <img class="pic-ls-bg" src="./assets/路信云-248x342.png">
+          <img src="./assets/应用服务-图标-路信云.png">
           <p>路信云</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="assets/桂建云-248x342.png">
-          <img src="assets/应用服务-图标-桂建云.png">
+          <img class="pic-ls-bg" src="./assets/桂建云-248x342.png">
+          <img src="./assets/应用服务-图标-桂建云.png">
           <p>桂建云</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="assets/明建云-248x342.png">
-          <img src="assets/应用服务-图标-明建云.png">
+          <img class="pic-ls-bg" src="./assets/明建云-248x342.png">
+          <img src="./assets/应用服务-图标-明建云.png">
           <p>明建云</p>
           <div class="invisible-bottom"></div>
         </li>
       </ul>
       <div class="content-3-tittle">
         <span>
-          <img src="assets/zx_title_blue_r.png">
+          <img src="./assets/zx_title_blue_r.png">
           产业动态
-          <img src="assets/zx_title_blue_l.png">
+          <img src="./assets/zx_title_blue_l.png">
         </span>
         <p>INDUSTRY DYNAMICS</p>
       </div>
@@ -405,14 +214,14 @@
       </div>
       <div class="industry-dynamics-wrap">
         <div class="industry-dynamics-2">
-          <img src="assets/产业动态-图2.png">
+          <img src="./assets/产业动态-图2.png">
           <div class="industry-dynamics-text">
             <h3>装配式一体化解决方案</h3>
             <p>以软硬件结合、提供装配式建筑材料的质量溯源、协同、其他产业链资源等服务，助力建筑业转型升级 </p>
           </div>
         </div>
         <div class="industry-dynamics-3">
-          <img src="assets/产业动态-图3.png">
+          <img src="./assets/产业动态-图3.png">
           <div class="industry-dynamics-text">
             <h3>营销一体化解决方案</h3>
             <p>仓储物流服务集成平台，接入厂仓、第三方仓储物流公司系统，实现企业、贸易商与物流公司和仓库之间的在线撮合与交易，提供便捷、高效的仓储物流服务。</p>
@@ -687,191 +496,36 @@ export default {
   line-height: 18px;
 }
 
-.content-2-home {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-
-}
-
-.content-2-home li {
-  width: 100%;
-  height: 420px;
-  margin: 0 auto;
-  background-size: cover;
-  /* display:none; */
-  transition: all 3s;
-  opacity: 0;
-  /* visibility: hidden; */
-  z-index: -10;
-  position: absolute;
-
-}
-
-.content-2-home li img {
-  width: 100%;
-  height: 420px;
-}
-
-li.tabactive {
-  width: 100%;
-  height: 420px;
-  opacity: 1;
-  /* visibility: visible; */
-  z-index: -1;
-  /* display:block; */
-  position: absolute;
-}
-
-.tabactive>img {
-  width: 100%;
-  height: 420px;
-  background-size: cover;
-  display: block;
-  margin: auto;
-}
 
 .content-2 {
+  display: flex;
   width: 1440px;
   height: 420px;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.content-2-tittle {
-  margin: 0 auto;
-  font-family: 'SourceHanSansCN-Bold';
-  font-weight: bold;
-  font-size: 34px;
-  color: #FFFFFF;
-  text-align: center;
-  line-height: 34px;
-}
-
-.ul-wrap {
-  width: 1440px;
-  height: 35.5px;
-  display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
+  background: #d3dce6;
 }
 
-.content-2-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
+.content-2-carousel{
+  background: #475669;
+  min-width: 90%;
+  min-height:80%;
+
+}
+.el-carousel__item:nth-child(3n) {
+  background-color: #d3dce6;
+  background: url('../assets/首页banner2.png');
+}
+.el-carousel__item:nth-child(3n+1) {
+  background-color: #99a9bf;
+  background: url('../assets/profile.png');
 }
 
-.content-2-list>li {
-  font-size: 18px;
-  line-height: 18px;
-  margin-left: 20.5px;
-  margin-right: 20.5px;
-  height: 34.5px;
-  display: inline;
-  font-family: 'SourceHanSansCN-Regular';
-  color: #FFFFFF;
-  text-align: justify;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+.el-carousel__item:nth-child(3n+2) {
+  background: url('../assets/首页banner.png');
 }
 
-.underline {
-  width: 69px;
-  height: 4px;
-  background: #D7000F;
-  visibility: hidden;
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -ms-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 1s;
-  visibility: 0;
-  opacity: 0;
-  width: 0;
-  overflow: hidden;
-}
-
-.content-2-list>li:hover .underline {
-  visibility: visible;
-  opacity: 1;
-  visibility: 1;
-  width: 72px;
-}
-
-.content {
-  width: 10000px;
-  height: 162px;
-  display: flex;
-  flex-direction: row;
-  scroll-behavior: smooth;
-  overflow: hidden;
-}
-
-.content li {
-  list-style: none;
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -ms-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 1s;
-  visibility: 0;
-  opacity: 0;
-  width: 0;
-  overflow: hidden;
-  /* 由于是滑入，因此需要这个div的宽度从0慢慢变大，变到300px，效果就是从侧边滑进来了。 */
-}
-
-.content li.ContActive {
-  display: block;
-  opacity: 1;
-  visibility: 1;
-  width: 1000px;
-}
-
-.line3 {
-  width: 1321px;
-  border: 1px solid #FFFFFF;
-}
-
-.content-2-bottom {
-  position: relative;
-  width: auto;
-  height: 162px;
-  margin-left: 75px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.content-2-bottom>h3 {
-  font-family: 'SourceHanSansCN-Bold';
-  font-weight: bold;
-  font-size: 28px;
-  color: #FFFFFF;
-  line-height: 28px;
-  width: 120px;
-  overflow: hidden;
-}
-
-.content-2-bottom>p {
-  width: 900px;
-  font-family: 'SourceHanSansCN-Regular';
-  font-size: 18px;
-  color: #FFFFFF;
-  line-height: 26px;
-  width: 900px;
-  overflow: hidden;
-}
 
 .button {
   width: 124px;
@@ -953,7 +607,7 @@ li.tabactive {
 .content-3-left {
   width: 634px;
   height: 419px;
-  background: url('assets/占位图.png');
+  background: url('./assets/占位图.png');
 }
 
 .content-3-middle {
@@ -1103,7 +757,7 @@ li.pic-ls1 {
   margin: 0 auto;
   width: 1320px;
   height: 453px;
-  background: url('assets/产业动态-图1.png');
+  background: url('./assets/产业动态-图1.png');
 }
 
 .industry-dynamics-1>h3 {
@@ -1189,4 +843,5 @@ li.pic-ls1 {
   margin-left: 42px;
   margin-top: 17px;
   margin-right: 36px;
-}</style>
+}
+</style>

@@ -1,0 +1,521 @@
+*{
+	margin:0px;
+	padding: 0px;
+    /* margin:auto; */
+}
+@font-face{
+    font-family: 'AlibabaSans-BoldItalic';
+    src : url('fonts/AlibabaSans-BoldItalic.otf');
+}
+@font-face{
+    font-family: 'DINAlternate-bold';
+    src : url('fonts/DINAlternate-bold.ttf');
+}
+@font-face{
+    font-family: 'MicrosoftYaHeiUI-Bold';
+    src : url('fonts/MicrosoftYaHeiUI-Bold.otf');
+}
+.main-view{
+    width:100%;
+    height:770px;
+    margin:auto;
+}
+.content-home{
+    width:1200px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.header{
+    width:100%;
+    height:770px;
+    background: url('assets/首页-banner背景.png') no-repeat center center;
+    background-size: cover;
+}
+.tittle-wrap{
+    width:1200px;
+    height:112px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:auto;
+}
+.icon-wrap{
+    width:762px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.icon-wrap>img{
+    margin-right:13px;
+}
+.icon-wrap>h3{
+    font-family: 'MicrosoftYaHeiUI-Bold';
+    font-size: 22px;
+    color: white;
+    letter-spacing: 0;
+    line-height: 22px;
+    display:inline-block;
+}
+.p-wrap{
+    width:393px;
+    display: flex; 
+    justify-content:center; 
+    align-items: center; 
+    margin-right:92px;
+}
+.p-wrap>p{
+    font-family: 'MicrosoftYaHeiUI-Bold';
+    font-weight:bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 14px;
+    display:inline-block;
+    margin:auto;
+}
+.header-main{
+    width:1200px;
+    height:658px;
+    display: flex; 
+    justify-content:space-between; 
+    align-items: center; 
+    overflow: hidden;
+    margin:auto;
+}
+.header-main-left,.header-main-right{
+    height:658px;
+    width:568px;
+    display:inline-block;
+    display: flex; 
+    justify-content:space-around; 
+    align-items: left; 
+    flex-direction:column;/* 用于设置盒子中子元素的排列方向 */
+}
+.header-main-left{
+    margin-left:8.3%;
+}
+.header-main-right{
+    background:url(assets/首页banner右图.png);
+    background-size: cover;
+    margin-right:9.4%;
+    margin-top:85px;
+    overflow: hidden;
+}
+.slogan-wrap{
+    height:148px;
+    width:471px;
+    font-family: 'MicrosoftYaHeiUI-Bold';
+    font-size: 52px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 76px;
+}
+.header-main-left>p{
+    height:139px;
+    width:540px;
+    font-family: 'MicrosoftYaHei';
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: justify;
+    line-height: 41px;
+}
+.buttom{
+    height:56px;
+    width:160px;
+    background-image: linear-gradient(267deg, #009CEC 0%, #00B7D4 100%);
+    box-shadow: 0 3px 9px 0 rgba(0,99,212,0.31);
+    border-radius: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content:center; 
+    align-items:center; 
+}
+.buttom>p{
+    font-family: 'MicrosoftYaHeiUI-Bold';
+    font-weight:bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 18px;
+}
+.content-data{
+    background:url('assets/数据条.png') no-repeat center;
+    background-size: cover;
+    height:200px;
+    display: flex; 
+    justify-content:center; 
+    align-items: center; 
+}
+.data-wrap{
+    width:285px;
+    height:160px;
+    display: flex; 
+    justify-content:space-around; 
+    align-items: center; 
+    flex-direction:column;
+}
+.data-wrap>h3{
+    font-family: 'DINAlternate-Bold';
+    font-size: 36px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 22px;
+}
+.data-wrap>p{
+    font-family: 'MicrosoftYaHeiUI';
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 22px;
+}
+.content-1{
+    width:100%;
+    height:564px;
+    background: #eef2f7;
+}
+.content-1-home{
+    width:1400px;
+    margin:auto;
+}
+.content-1-tittle-wrap{
+    height:126px;
+    display: flex; 
+    justify-content:center; 
+    align-items: center; 
+}
+.background{
+    width:100%;
+    height:inherit;
+    opacity: 0.38;
+    font-family: 'AlibabaSans-BoldItalic';
+    font-size: 100px;
+    color:transparent;
+    letter-spacing: -4px;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(to bottom, #1d71ed, white);
+    -webkit-background-clip: text;
+}
+.content-1-tittle{
+    width:auto;
+    height:34px;
+    position: absolute;
+}
+.content-1-tittle>p{
+    font-family: 'MicrosoftYaHeiUI-Bold';
+    font-size: 34px;
+    font-weight:bold;
+    color: black;
+    text-align: center;
+    line-height: 34px;
+}
+.content-1-mainbox{
+    height:398px;
+    display: flex; 
+    justify-content:center; 
+    align-items: center; 
+    flex-wrap:wrap;
+    overflow: hidden;
+}
+.banner{
+    width:386px;
+    height:128px;
+    margin:21px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    display: flex; 
+    justify-content:center; 
+    align-items: center; 
+}
+.banner:hover{
+    box-shadow: 0 6px 22px 0 rgba(0,0,0,0.18);
+    border:0px;
+}
+.banner-icon-wrap{
+    width:104px;
+    height:128px;
+    display: flex; 
+    justify-content:center; 
+    align-items: center; 
+}
+.banner-text-wrap{
+    width:256px;
+    height:128px;
+    display: flex; 
+    justify-content:center; 
+    flex-direction:column;
+}
+.banner-text-wrap>h3{
+    font-family: 'MicrosoftYaHeiUI-Bold';
+    font-size: 16px;
+    color: black;
+    line-height: 18px;   
+}
+.banner-text-wrap>p{
+    margin-top:4px;
+    font-family: 'MicrosoftYaHeiUI';
+    font-size: 14px;
+    color: black;
+    line-height: 22px;
+}
+.content-2{
+    width: 100%;
+    height:591px;
+    background: url('assets/背景-平台优势.png') no-repeat center;
+    background-size: cover;
+}
+#content-2-bg{
+    background-image: linear-gradient(to bottom, white, transparent);
+}
+#content-2-tittle>p{
+    color:white;
+}
+.content-2-mainbox{
+    height:465px;
+    display: flex; 
+    justify-content:center; 
+    align-items: center; 
+    flex-wrap:wrap;
+    overflow: hidden;
+}
+.banner2{
+    width:224px;
+    height:342px;
+    margin:10px;
+    display:flex; 
+    justify-content:flex-start; 
+    align-items: flex-start; 
+    flex-direction:column;
+}
+#banner2-1{
+    background: url('assets/图-平台优势1-1.png');
+}
+#banner2-1:hover{
+    background: url('assets/图-平台优势2-1.png');
+    align-items: center; 
+}
+#banner2-2{
+    background: url('assets/图-平台优势1-2.png');
+}
+#banner2-2:hover{
+    background: url('assets/图-平台优势2-2.png');
+    align-items: center;
+}
+#banner2-3{
+    background: url('assets/图-平台优势1-3.png');
+}
+#banner2-3:hover{
+    background: url('assets/图-平台优势2-3.png');
+    align-items: center;
+}
+#banner2-4{
+    background: url('assets/图-平台优势1-4.png');
+}
+#banner2-4:hover{
+    background: url('assets/图-平台优势2-4.png');
+    align-items: center;
+}
+#banner2-5{
+    background: url('assets/图-平台优势1-5.png');
+}
+#banner2-5:hover{
+    background: url('assets/图-平台优势2-5.png');
+    align-items: center;
+}
+.banner2>img{
+    margin-left:20px;
+    margin-top:132px;
+}
+.banner2:hover>img{
+    margin-left:0px;
+    margin-top:72px;
+}
+.banner2>p{
+    margin-left:20px;
+    margin-right:22px;
+    margin-top:25px;
+    font-family: 'MicrosoftYaHeiUI';
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: justify;
+    line-height: 22px;
+}
+.content-3{
+    height:433px;
+    background: #FFFFFF;
+}
+#content-3-mainbox{
+    height:307px;
+    overflow: hidden;
+}
+.banner3{
+    width:126px;
+    height:207px;
+    margin:21px;
+    display: flex; 
+    justify-content:space-around; 
+    align-items: center; 
+    flex-direction: column;
+}
+.banner3>img{
+    width:73px;
+    height:73px;
+}
+.banner3>h3{
+    font-family: MicrosoftYaHeiUI-Bold;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    line-height: 18px;
+    /* margin-bottom: 11px; */
+}
+.banner3>p{
+    font-family: MicrosoftYaHeiUI;
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    line-height: 22px;
+}
+.content-4{
+    height:670px;
+    background: url('assets/首页-banner背景.png') no-repeat center;
+    background-size: cover;
+}
+.content-4-mainbox{
+    height:544px;
+    overflow: hidden;
+}
+.banner4{
+    width:300px;
+    height:111.2px;
+    display: flex;
+    justify-content:space-around; 
+    align-items:flex-start; 
+    flex-direction: column;
+}
+.banner4>p{
+    font-family: MicrosoftYaHeiUI-Bold;
+    font-size: 22.4px;
+    color: #FFFFFF;
+    line-height: 36.4px;
+}
+#banner4-1{
+    margin-left:530px;
+    margin-top:-2px;
+}
+#banner4-2{
+    margin-left:982px;
+    margin-top:8.8px;
+}
+#banner4-3{
+    margin-top:-60.2px;
+    margin-left:121px;
+    align-items:flex-end;
+}
+#banner4-4{
+    margin-top:75.8px;
+    margin-left:121px;
+    align-items:flex-end;
+}
+#banner4-5{
+    margin-top:-85.2px;
+    margin-left:982px;
+}
+.content-5{
+    height:515px;
+}
+#content-5-tittle-wrap{
+    margin-top:12px;
+}
+#content-5-tittle-bg{
+    opacity: 0.18;
+    font-family: AlibabaSans-BoldItalic;
+    font-size: 90px;
+    letter-spacing: -3.6px;
+    text-align: center;
+}
+.content-5-mainbox{
+    height:377px;
+    display: flex;
+    justify-content:center; 
+    align-items:flex-start; 
+    flex-direction:row;
+    overflow: hidden;
+}
+.icon-wrap5{
+    width:192px;
+    height:183px;
+    display: flex;
+    justify-content:space-between; 
+    align-items:center;
+    flex-direction: column; 
+    margin:28.5px;
+}
+.icon-wrap5>p{
+    font-family: 'MicrosoftYaHeiUI-Bold';
+    font-weight:bold;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    line-height: 18px;
+}
+#buttom2{
+    position: absolute;
+    margin-top:296px;
+}
+.footer{
+    height:306px;
+    background: #38405C;
+}
+.footer-left,.footer-right{
+    display:block;
+    width:50%;
+    height:306px;
+    float:left;
+}
+.footer-right{
+    float:right;
+}
+.footer-left>p,.footer-right>p{
+    font-family: 'MicrosoftYaHeiUI';
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    line-height: 22px;
+    display: inline-block;
+    margin-top:12px;
+    margin-left:120px;
+}
+.footer-right>p{
+    margin-left:0px;
+}
+.footer-left-logo{
+    height:48px;
+    width:145px;
+    background: url('assets/东信logo-反白.png');
+    margin-top:48px;
+    margin-bottom:16px;
+    margin-left:120px;
+}
+#logo-hidden{
+    visibility:hidden;
+    margin-left:0px;
+}
+.ico-ga{
+    height:20px;
+    width:20px;
+    display:inline-block;
+}
+.p-icon-wrap{
+    display: flex;
+    align-items:end;
+}
+.p-icon-wrap>p{
+    font-family: 'MicrosoftYaHeiUI';
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    line-height: 22px;
+    display: inline-block;
+    margin-top:12px;
+}

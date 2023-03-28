@@ -499,6 +499,7 @@ export default {
 
 .content-2 {
   display: flex;
+  margin: 0 auto;
   width: 1440px;
   height: 420px;
   align-items: center;
@@ -509,9 +510,7 @@ export default {
 
 .content-2-carousel{
   background: #475669;
-  min-width: 90%;
-  min-height:80%;
-
+  min-width: 100%;
 }
 .el-carousel__item:nth-child(3n) {
   background-color: #d3dce6;

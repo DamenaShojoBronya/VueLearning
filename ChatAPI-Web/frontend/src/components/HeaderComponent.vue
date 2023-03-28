@@ -10,19 +10,17 @@
                 <router-link active-class="active" to="/home">首页</router-link>
                 <router-link active-class="active" to="/about">关于我们</router-link>
                 <router-link active-class="active" to="/activities">活动回顾</router-link>
-                <router-link active-class="active" to="/achievements">成果展示</router-link>
 
+                <router-link active-class="active" to="/achievements">成果展示</router-link>
                 <el-dropdown class="header-menu-dropdown">
 
-                    <span class="el-dropdown-link">
-                        <router-link active-class="active" to="/products">
-                            产品
-                            <el-icon class="el-icon--right">
-                                <arrow-down />
-                            </el-icon>
-                        </router-link>
+                    <router-link active-class="active" to="/products">
+                        <p>产品</p>
+                        <el-icon>
+                            <arrow-down />
+                        </el-icon>
+                    </router-link>
 
-                    </span>
                     <template #dropdown>
                         <el-dropdown-menu>
                             <el-dropdown-item>
@@ -71,7 +69,6 @@
 </template>
 
 
-
 <script>
 //引入icon
 import { ArrowDown } from '@element-plus/icons-vue'
@@ -96,6 +93,7 @@ export default {
         ...mapGetters(['blur'])
     }
 }
+
 </script>
 
 <style lang="scss" scoped>
@@ -119,17 +117,30 @@ export default {
     z-index: -1;
 }
 
-.header-menu-dropdown .el-dropdown-link {
+.header-menu-dropdown {
     cursor: pointer;
     display: flex;
     align-items: center;
 }
-.el-dropdown-link a{
-    font-size:16px;
+
+.header-menu-dropdown a {
+    font-size: 16px;
+    text-decoration: none;
+    height:20px;
+    align-content: baseline;
+    align-items: baseline;
+    justify-content: baseline;
+    justify-items: baseline;
+    text-align: bottom;
+}
+.header-menu-dropdown a>p{
+    display: inline-block;
+    margin-top:3px;
 }
 
-.el-icon--right {
+.header-menu-dropdown a>.el-icon {
     position: absolute;
+    margin-top:3px;
 }
 
 .link {
@@ -220,7 +231,7 @@ export default {
             color: rgb(255, 255, 255);
             border-bottom: 2px solid transparent;
             transition: 0.3s;
-
+            height:23px;
             @media screen and (max-width: 610px) {
                 &:not(.main-header-link) {
                     display: none;
@@ -286,7 +297,7 @@ export default {
             //color: #212324;
             &::placeholder {
                 font-family: "Poppins", sans-serif;
-                color: rgb(131, 131, 237);
+                color: rgb(99, 99, 99);
                 font-size: 15px;
                 font-weight: 500;
             }
@@ -388,4 +399,5 @@ export default {
 
 .blur-background {
     filter: blur(4px);
-}</style>
+}
+</style>

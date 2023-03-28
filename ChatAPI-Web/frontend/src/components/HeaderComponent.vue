@@ -3,7 +3,7 @@
         <div class="header">
             <!-- 左侧logo -->
             <div class="logo">
-                <h2>科学创新协会</h2>
+                <a href="index.htm" title="桂电logo"> <img src="../assets/GUETlogo.png" alt=""></a>
             </div>
             <!-- 主菜单 -->
             <div class="header-menu" :class="{ 'header-menu-change-search': isChangeSearch }">
@@ -15,7 +15,7 @@
                 <el-dropdown class="header-menu-dropdown">
 
                     <span class="el-dropdown-link">
-                        <router-link active-class="active" to="/home">
+                        <router-link active-class="active" to="/products">
                             产品
                             <el-icon class="el-icon--right">
                                 <arrow-down />
@@ -93,17 +93,39 @@ export default {
         }
     },
     computed: {
-    ...mapGetters(['blur'])
+        ...mapGetters(['blur'])
     }
 }
 </script>
 
 <style lang="scss" scoped>
+.header {
+    position: fixed;
+    left: 0;
+    top: 5px;
+    z-index: 50;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.header:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    height: 138px;
+    background: url(../assets/bgq1.png) repeat-x;
+    z-index: -1;
+}
 
 .header-menu-dropdown .el-dropdown-link {
     cursor: pointer;
     display: flex;
     align-items: center;
+}
+.el-dropdown-link a{
+    font-size:16px;
 }
 
 .el-icon--right {
@@ -137,22 +159,22 @@ export default {
 
 .header {
     // background-color: skyblue;
-    background: -webkit-linear-gradient(left, rgb(145, 217, 246) 0%, #db6ff3 100%);
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    height: 58px;
-    width: 100%;
+    height: 67px;
+    width: 98%;
     border-bottom: 1px solid RGBA(113 119 144 / 25%);
     padding: 0 30px;
     white-space: nowrap;
+    margin-top: 0px;
 
     @media screen and (max-width: 480px) {
         padding: 0 16px;
     }
 
     .logo {
-        width: 96px;
+        width: auto;
         height: 30px;
         margin-right: 110px;
         flex-shrink: 0;
@@ -178,6 +200,13 @@ export default {
 
     }
 
+    .logo img {
+        max-width: 70%;
+        /* 根据需要调整百分比 */
+        height: auto;
+        /* 保持高度自动，以保持纵横比 */
+    }
+
     /* .head-menu */
     &-menu,
     .header-menu-dropdown,
@@ -188,7 +217,7 @@ export default {
         a {
             padding: 20px 30px;
             text-decoration: none;
-            color: rgb(60, 62, 70);
+            color: rgb(255, 255, 255);
             border-bottom: 2px solid transparent;
             transition: 0.3s;
 
@@ -356,7 +385,7 @@ export default {
         }
     }
 }
+
 .blur-background {
-  filter: blur(4px);
-}
-</style>
+    filter: blur(4px);
+}</style>

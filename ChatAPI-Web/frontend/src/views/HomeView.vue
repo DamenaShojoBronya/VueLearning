@@ -1,5 +1,6 @@
 <template>
   <div class="view-box">
+    
     <div class="header">
       <div class="header-mid">
         <h3>桂电北海网络中心</h3>
@@ -245,21 +246,17 @@ export default {
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0px;
-  /* margin:auto; */
-}
 
 .view-box {
   width: 100%;
   height: auto;
+  margin-top:-60px;
 }
 
 .header {
-  margin: auto;
+  margin: 0 auto;
   width: 100%;
-  height: 625px;
+  height: 36.45833vw;
   background: url('../assets/首页banner2.png') no-repeat center;
   background-size: cover;
   display: flex;
@@ -270,7 +267,7 @@ export default {
 
 .header-mid {
   position: absolute;
-  top: 30%;
+  top: 18%;
   color: white;
   overflow: hidden;
 }

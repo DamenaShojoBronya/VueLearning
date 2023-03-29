@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import RewriteForm from '../views/RewriteForm.vue'
 import TranslatorForm from '../views/TranslatorForm.vue'
 import CodeInterpreter from '../views/CodeInterpreter.vue'
-import XiaohongshuGenerator from '../views/XHSgenerator/XiaohongshuGenerator.vue' 
+import XiaohongshuGenerator from '../views/XHSgenerator/XiaohongshuGenerator.vue'
 
 const routes = [
   // 默认首页index重定向到跳转的首页home
@@ -35,20 +35,26 @@ const routes = [
     name: 'code2txt',
     component: CodeInterpreter
   },
-    //代码解释
-    {
-      path: '/xiaohongshuGenerator',
-      name: 'code2txt',
-      component: XiaohongshuGenerator
-    },
+  //小红书生成器
+  {
+    path: '/xiaohongshuGenerator',
+    name: 'code2txt',
+    component: XiaohongshuGenerator
+  },
+  {
+    path: '/timeline',
+    name: 'timeline',
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "timeline" */ '../views/TimelineView.vue')
+  },
+  //关于我们
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+  },
+
 ]
 
 const router = createRouter({

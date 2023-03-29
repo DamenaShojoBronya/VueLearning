@@ -1,4 +1,0 @@
-revChatGPT
-flask
-gunicorn
-gevent

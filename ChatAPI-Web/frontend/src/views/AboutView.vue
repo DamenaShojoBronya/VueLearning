@@ -108,8 +108,9 @@
 
 <style scoped>
 view-box {
+  width:100%;
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .banner {
@@ -141,6 +142,7 @@ view-box {
   width: 100%;
   height: 564px;
   background: #eef2f7;
+  min-width: 1400px;
 }
 
 .content-1-home {

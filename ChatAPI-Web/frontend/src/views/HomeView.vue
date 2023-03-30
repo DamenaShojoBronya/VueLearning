@@ -244,11 +244,12 @@ export default {
 
 
 </script>
-
+<!-- 分辨率缩放bug -->
 <style scoped>
 
 .view-box {
   width: 100%;
+  min-width: 1440px;
   height: auto;
   margin-top:-60px;
 }
@@ -301,6 +302,7 @@ export default {
   z-index: 20;
   height: 192px;
   width: 100%;
+  min-width: 1440px;
   opacity: 0.39;
   background-image: linear-gradient(180deg, #000000 0%, #000000 100%);
 }

@@ -2,13 +2,13 @@
   <div>
     <el-container :class="{ 'blur-background': showImageDialog }">
       <el-main>
-
         <el-row>
           <el-col>
             <el-input type="textarea" :rows="15" v-model="generatedText" placeholder="生成的文案将显示在这里" readonly></el-input>
           </el-col>
         </el-row>
         <el-row>
+          
           <div class="generate-buttons">
             <el-button type="primary" @click="copyText">复制文案</el-button>
             <el-button type="primary" @click="generateText">生成文案</el-button>

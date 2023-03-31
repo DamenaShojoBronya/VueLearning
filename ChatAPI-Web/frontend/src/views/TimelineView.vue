@@ -1,16 +1,16 @@
 <template>
     <view-box>
         <el-timeline>
-            <el-timeline-item center timestamp="2018/4/12" placement="top">
+            <el-timeline-item center timestamp="2023/4/12" placement="top">
                 <el-card>
                     <h4>Update Github template</h4>
                     <p>Tom committed 2018/4/12 20:46</p>
                 </el-card>
             </el-timeline-item>
-            <el-timeline-item timestamp="2018/4/3" placement="top">
+            <el-timeline-item timestamp="2023/3/20" placement="top">
                 <el-card>
-                    <h4>Update Github template</h4>
-                    <p>Tom committed 2018/4/3 20:46</p>
+                    <h4>创建项目并上传代码仓库</h4>
+                    <p>Create project&Update Github Firsly</p>
                 </el-card>
             </el-timeline-item>
             <el-timeline-item center timestamp="2018/4/2" placement="top">

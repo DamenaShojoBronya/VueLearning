@@ -19,6 +19,7 @@
             <div class="banner-text-wrap">
               <h3>桂电北海计算机学院</h3>
               <p>学习优秀，本领过硬。下辖专业：大数据管理与应用、网络工程</p>
+              <a href="https://www.guet.edu.cn/gdbh/" class="clickable-link"></a>
             </div>
           </div>
           <div class="banner">

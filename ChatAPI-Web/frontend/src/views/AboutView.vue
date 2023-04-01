@@ -28,6 +28,7 @@
             <div class="banner-text-wrap">
               <h3>桂电北海网络中心</h3>
               <p>牛人的聚集地，为全校师生提供优质网络技术服务</p>
+              <a href="https://www.baidu.com" class="clickable-link"></a>
             </div>
           </div>
           <div class="banner">
@@ -37,6 +38,7 @@
             <div class="banner-text-wrap">
               <h3>科协优阅网</h3>
               <p>计算机学院科协官网，学院竞赛信息一网打尽</p>
+              <a href="https://www.youyue.info" class="clickable-link"></a>
             </div>
           </div>
           <div class="banner">
@@ -46,6 +48,7 @@
             <div class="banner-text-wrap">
               <h3>Gmail</h3>
               <p>我们的邮箱</p>
+              <a href="https://www.junhaohuang.haoshao@gmail.com" class="clickable-link"></a>
             </div>
           </div>
           <div class="banner">
@@ -55,6 +58,7 @@
             <div class="banner-text-wrap">
               <h3>Github</h3>
               <p>我们的代码仓库</p>
+              <a href="https://github.com/DamenaShojoBronya" class="clickable-link"></a>
             </div>
           </div>
           <div class="banner">
@@ -64,6 +68,7 @@
             <div class="banner-text-wrap">
               <h3>Wechat</h3>
               <p>我们的公众号</p>
+              <a href="https://www.baidu.com" class="clickable-link"></a>
             </div>
           </div>
         </div>
@@ -118,7 +123,7 @@ view-box {
   border-radius: 25px 25px;
 }
 
-.banner-text-wrap>p:after {
+.banner-text-wrap>a:after {
   width: 20px;
   height: 20px;
   content: "";

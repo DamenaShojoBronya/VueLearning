@@ -14,7 +14,7 @@
         <div class="content-1-mainbox">
           <div class="banner">
             <div class="banner-icon-wrap">
-              <img src="../assets/图标-风控能力-文本鉴黄.png">
+              <img src="../assets/icon-computer.png">
             </div>
             <div class="banner-text-wrap">
               <h3>桂电北海计算机学院</h3>
@@ -24,7 +24,7 @@
           </div>
           <div class="banner">
             <div class="banner-icon-wrap">
-              <img src="../assets/图标-风控能力-涉政暴恐.png">
+              <img src="../assets/icon-server.png">
             </div>
             <div class="banner-text-wrap">
               <h3>桂电北海网络中心</h3>
@@ -34,7 +34,7 @@
           </div>
           <div class="banner">
             <div class="banner-icon-wrap">
-              <img src="../assets/图标-风控能力-违禁检测.png">
+              <img src="../assets/icon-book_black.png">
             </div>
             <div class="banner-text-wrap">
               <h3>科协优阅网</h3>
@@ -44,7 +44,7 @@
           </div>
           <div class="banner">
             <div class="banner-icon-wrap">
-              <img src="../assets/图标-风控能力-篡改检测.png">
+              <img src="../assets/icon-gmail_black.png">
             </div>
             <div class="banner-text-wrap">
               <h3>Gmail</h3>
@@ -54,7 +54,7 @@
           </div>
           <div class="banner">
             <div class="banner-icon-wrap">
-              <img src="../assets/图标-风控能力-挂马识别.png">
+              <img src="../assets/icon-github.png">
             </div>
             <div class="banner-text-wrap">
               <h3>Github</h3>
@@ -64,7 +64,7 @@
           </div>
           <div class="banner">
             <div class="banner-icon-wrap">
-              <img src="../assets/图标-风控能力-暗链识别.png">
+              <img src="../assets/icon-wechat_black.png">
             </div>
             <div class="banner-text-wrap">
               <h3>Wechat</h3>
@@ -113,17 +113,33 @@
 </template>
 
 <style scoped>
+
 view-box {
+  margin:0 auto;
   width:100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center
 }
 
 .banner {
   position: relative;
   border-radius: 25px 25px;
 }
-
+.banner-icon-wrap:after {
+  content: "";
+  position: absolute;
+  background: #f2f3f7;
+  border-radius: 12px;
+  width:74px;
+  height:74px;
+  z-index:1;
+}
+.banner-icon-wrap img{
+  width:64px;
+  height:64px;
+  z-index:2;
+}
 .banner-text-wrap>a:after {
   width: 20px;
   height: 20px;
@@ -137,11 +153,14 @@ view-box {
   border-radius: 25px 0;
   cursor: pointer;
   transition: inherit;
-  background-color: #1d71ed;
+  background-color: #69809a;
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjZmZmZmZmIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtbmFtZT0iTGF5ZXIgMSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHg9IjBweCIgeT0iMHB4Ij48dGl0bGU+NTI8L3RpdGxlPjxwYXRoIGQ9Ik04MS4zMDMyOSwzOC41MjkzOUExNC4wMTgsMTQuMDE4LDAsMSwwLDYxLjQ3NywxOC43MDY3MUw0Ny4wMDMxNSwzMy4xNzkxNGExNC4wMzAzNywxNC4wMzAzNywwLDAsMCwwLDE5LjgyMTcxLDQuODAxMTMsNC44MDExMywwLDAsMS02Ljc4OTc5LDYuNzg5ODcsMjMuNjQzMjcsMjMuNjQzMjcsMCwwLDEsMC0zMy40MDE0NUw1NC42ODcyMSwxMS45MTY4NEEyMy42MjAzLDIzLjYyMDMsMCwwLDEsODguMDkzMDgsNDUuMzE5MjdMODAuOTIzOCw1Mi40ODcxMWE0LjgwMTE0LDQuODAxMTQsMCwwLDEtNi43ODk4LTYuNzg5ODdaTTExLjkwNzQxLDg4LjA5MzlhMjMuNjUwNTMsMjMuNjUwNTMsMCwwLDAsMzMuNDA1ODYtLjAwMUw1OS43ODY2NCw3My42MjE0N2EyMy42MTU4MywyMy42MTU4MywwLDAsMCwwLTMzLjQwMTQ1LDQuODAxMTQsNC44MDExNCwwLDAsMC02Ljc4OTc5LDYuNzg5ODgsMTQuMDE1MzEsMTQuMDE1MzEsMCwwLDEsMCwxOS44MjI2OEwzOC41MjM0OCw4MS4zMDRBMTQuMDE4LDE0LjAxOCwwLDEsMSwxOC42OTcyLDYxLjQ4MTM1TDI1Ljg2Niw1NC4zMTM1YTQuODAxMTQsNC44MDExNCwwLDAsMC02Ljc4OTgtNi43ODk4N2wtNy4xNjg3OSw3LjE2Nzg1QTIzLjY0NDg5LDIzLjY0NDg5LDAsMCwwLDExLjkwNzQxLDg4LjA5MzlaIj48L3BhdGg+PC9zdmc+);
+}
+.banner-text-wrap>a:hover::after {
+  background-color: #1d71ed;
 }
 
 .content-1 {

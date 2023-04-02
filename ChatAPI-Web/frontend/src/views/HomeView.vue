@@ -9,23 +9,24 @@
       <div class="header-bottom">
         <div class="header-bottom-bg"></div>
         <div class="header-bottom-content">
-          <h3>跟进</h3><br>
-          <p>组织学生学习有关计算机知识，交流国内外计算机应用，充分利用了课余时间，不断提升学生的理论和技术水平</p>
+          <h3>全链</h3>
+          <p>基于企业商业数字化价值目标，提供涵盖供应-生产-采购-渠道-交易-用户等各端数字化产品和方案体系</p>
         </div>
         <div class="divider"></div>
         <div class="header-bottom-content">
-          <h3>培训</h3><br>
-          <p>不限于计算机软硬件基础知识、电脑维修、台式机搭建、PS、 Java、 MySQL、 Python、 C、深度学习等</p>
+          <h3>敏捷</h3>
+          <p>PaaS能力多样丰富，企业可快速，敏捷组建产品的能力，实现组织角色间高效交付
+          </p>
         </div>
         <div class="divider"></div>
         <div class="header-bottom-content">
-          <h3>环境</h3><br>
-          <p>值班区域空调冬暖夏凉，环境优雅，相对安静，有一个很好的办公氛围和团队活力，是工作学习的好地方。</p>
+          <h3>开放</h3>
+          <p>建立行业上下游，端到端的服务能力生态和开放门户平台和OpenAPI体系，提供商业数字化价值变现的解决方案</p>
         </div>
         <div class="divider"></div>
         <div class="header-bottom-content">
-          <h3>指导</h3><br>
-          <p>有专业指导老师和学长们指导参加校外各类科技比赛以及日常的学习指导交流，开展相关赛事活动。</p>
+          <h3>可靠</h3>
+          <p>自主研发的云羲数字操作系统（技术中台+数据中台+AI中台）可覆盖企业IT运营管理的全生命周期，安全可靠</p>
         </div>
       </div>
     </div>
@@ -33,29 +34,29 @@
       <div class="content-1">
         <div class="content-1-left">
           <div class="line2"></div>
-          <p>专注打造服务师生的教学工作环境</p>
+          <p>专注打造产业互联网操作系统</p>
         </div>
         <div class="content-1-right">
           <p class="content-1-right-top">
-            网络中心是以培养学生科技素养为重心，提升科技竞赛能力为核心，提高专业学习兴趣为目标，有利于学院“以赛促学”风气的形成，鼓励引导大学生参加计算机科技竞赛，激发学习兴趣，学习更专业的技能，服务师生，造福社会，为学院的教学改革、课程体系构建、人才培养方案的完善等起到辅助和促进作用，但它同时作为一个交流的平台，也将专业性和学习性兼容起来。
+            以客户为中心，通过市场需求驱动，助力产业链快速反应，布局云端信息化，打造产业操作系统。基于生态全链路对各个环节进行价值重构，将商流（客户、终端、制造、渠道、营销、采购、服务）、物流、资金链（金融）、组织协同（组织）和信息流（技术）进行有机融合，达成全生态要素的价值共振，为企业数字化转型助力，实现增量式创新发展。
           </p>
           <div class="content-1-right-bottom">
             <div class="item-wrap">
-              <p>办公环境</p>
+              <p>产业链平台</p>
               <div class="text-wrap">
-                <p1>5</p1>
+                <p1>10</p1>
                 <p>个</p>
               </div>
             </div>
             <div class="item-wrap">
-              <p>覆盖专业</p>
+              <p>覆盖行业设备</p>
               <div class="text-wrap">
-                <p1>11</p1>
+                <p1>36</p1>
                 <p>个</p>
               </div>
             </div>
             <div class="item-wrap">
-              <p>服务师生范围</p>
+              <p>服务全国地区</p>
               <div class="text-wrap">
                 <p1>42</p1>
                 <p>+</p>
@@ -103,7 +104,7 @@
       <div class="content-3-tittle">
         <span>
           <img src="./assets/zx_title_blue_r.png">
-          成果介绍
+          案例介绍
           <img src="./assets/zx_title_blue_l.png">
         </span>
         <p>CASE INTRODUCED</p>
@@ -112,9 +113,7 @@
         <div class="content-3-left"> </div>
         <div class="content-3-middle">
           <p>
-            "桂北汇APP"是由桂林电子科技大学北海校区(网络信息中心)进行开发的一款校内综合服务应用。
-<br>
-教务系统管理平台充分利用互联网络B/S管理系统模式，以网络为平台，为各个学校教务系统的管理提供一个平台，帮助学校管理教务系统，用一个帐号解决学校教务教学管理，并且学校可以自由选择学校需要的教务管理系统，灵活地定制符合学校自己实际情况的教务系统。
+            基于工业机理+AI+机器视觉，通过3D高速相机对目标扁铜线进行实时测量，采集3D图像数据+视觉AI算法计算出目标抖动偏移量，实现通过3D实测+抖动偏移=修正结果(超高精度)，对扁铜线进行目标鉴别(OK/NG)。获取到检测结果后，通过反馈控制产线，优化生产、提高良率。通过IOT获取生产设备相关工业机理因子数据，结合工艺优化AI算法，给出优化建议，达到对精达产线的工艺优化。
           </p>
           <div class="button-wrap">
             <div class="button2">
@@ -639,7 +638,7 @@ export default {
 .button2 {
   width: 124px;
   height: 42px;
-  background: rgba(21, 113, 224, 0);
+  background: rgba(216, 216, 216, 0.00);
   border: 1px solid #333333;
   display: flex;
   align-items: center;

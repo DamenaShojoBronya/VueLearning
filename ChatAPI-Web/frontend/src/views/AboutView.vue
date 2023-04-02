@@ -18,8 +18,9 @@
             </div>
             <div class="banner-text-wrap">
               <h3>桂电北海计算机学院</h3>
-              <p>学习优秀，本领过硬。下辖专业：大数据管理与应用、网络工程</p>
-              <a href="https://www.guet.edu.cn/gdbh/" class="clickable-link"></a>
+              <p>学习优秀，本领过硬。下辖专业：大数据管理与应用、网络工程、NIIT、软件工程</p>
+              <a href="https://www.guet.edu.cn/gdbh/" target="blank"  class="clickable-link" ></a>
+
             </div>
           </div>
           <div class="banner">
@@ -29,7 +30,7 @@
             <div class="banner-text-wrap">
               <h3>桂电北海网络中心</h3>
               <p>牛人的聚集地，为全校师生提供优质网络技术服务</p>
-              <a href="https://www.baidu.com" class="clickable-link"></a>
+              <a href="https://www.baidu.com" target="blank"  class="clickable-link"></a>
             </div>
           </div>
           <div class="banner">
@@ -39,7 +40,7 @@
             <div class="banner-text-wrap">
               <h3>科协优阅网</h3>
               <p>计算机学院科协官网，学院竞赛信息一网打尽</p>
-              <a href="https://www.youyue.info" class="clickable-link"></a>
+              <a href="https://www.youyue.info" target="blank" class="clickable-link"></a>
             </div>
           </div>
           <div class="banner">
@@ -49,7 +50,7 @@
             <div class="banner-text-wrap">
               <h3>Gmail</h3>
               <p>我们的邮箱</p>
-              <a href="https://www.junhaohuang.haoshao@gmail.com" class="clickable-link"></a>
+              <a href="https://www.junhaohuang.haoshao@gmail.com"  target="blank" class="clickable-link"></a>
             </div>
           </div>
           <div class="banner">
@@ -59,7 +60,7 @@
             <div class="banner-text-wrap">
               <h3>Github</h3>
               <p>我们的代码仓库</p>
-              <a href="https://github.com/DamenaShojoBronya" class="clickable-link"></a>
+              <a href="https://github.com/DamenaShojoBronya" target="blank"  class="clickable-link"></a>
             </div>
           </div>
           <div class="banner">
@@ -69,7 +70,7 @@
             <div class="banner-text-wrap">
               <h3>Wechat</h3>
               <p>我们的公众号</p>
-              <a href="https://www.baidu.com" class="clickable-link"></a>
+              <a href="https://www.baidu.com" target="blank"  class="clickable-link"></a>
             </div>
           </div>
         </div>
@@ -193,7 +194,7 @@ view-box {
   text-align: center;
   position: relative;
   background-image: linear-gradient(to bottom, #1d71ed, white);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
 }
 
 .content-1-tittle {

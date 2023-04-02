@@ -4,7 +4,7 @@
     <div class="content-1">
       <div class="content-1-home">
         <div class="content-1-tittle-wrap">
-          <h3 class="background">FIND US</h3>
+          <h3>FIND US</h3>
           <div class="content-1-tittle">
             <p>找到我们</p>
             <img src="../assets/标题装饰-1.png">
@@ -80,7 +80,7 @@
     <div class="content-3">
       <div class="content-1-home">
         <div class="content-1-tittle-wrap">
-          <h3 class="background">SERVICE PROVISIONING</h3>
+          <h3>SERVICE PROVISIONING</h3>
           <div class="content-1-tittle">
             <p>使用流程</p>
             <img src="../assets/标题装饰-1.png">
@@ -181,26 +181,48 @@ view-box {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* opacity: 0.38; */
+  /* background-image:linear-gradient(to bottom,#1d71ed, white); */
 }
-
-.background {
+.content-1-tittle-wrap:after{
+  content:"";
   width: 100%;
   height: inherit;
   opacity: 0.38;
+  position: relative;
+  z-index: 2;
+
+  background-image: radial-gradient(circle farthest-side,#1d71ed, #eef2f7);
+}
+.content-3 > .content-1-home > .content-1-tittle-wrap:after{
+  content:"";
+  width: 100%;
+  height: inherit;
+  opacity: 0.38;
+  position: relative;
+  z-index: 2;
+
+  background-image: radial-gradient(circle farthest-side,#1d71ed, #FFFFFF);
+}
+.content-1-tittle-wrap h3 {
+  position: absolute;
+  z-index: 3;
+  opacity: 0.38;
   font-family: 'AlibabaSans-BoldItalic';
+  /* 字体倾斜，你考虑一下 */
+  font-style:italic;
   font-size: 100px;
-  color: transparent;
+  height: inherit;
   letter-spacing: -4px;
   text-align: center;
-  position: relative;
-  background-image: linear-gradient(to bottom, #1d71ed, white);
-  /* -webkit-background-clip: text; */
+  color:white;
 }
 
 .content-1-tittle {
+  position: absolute;
+  z-index: 4;
   width: auto;
   height: 34px;
-  position: absolute;
 }
 
 .content-1-tittle>p {

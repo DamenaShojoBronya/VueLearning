@@ -39,14 +39,20 @@
                         </el-dropdown-menu>
                     </template>
                 </el-dropdown>
-
-
             </div>
+
             <!-- 搜索框 -->
             <div class="search-bar" :class="{ 'search-bar-change-search': isChangeSearch }">
-                <input type="text" @focusin="changeStyle" @focusout="changeStyle" placeholder="请输入关键字">
-
+                <label class="input-container">
+                    <input type="text" @focusin="changeStyle" @focusout="changeStyle" placeholder="请输入关键字">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966" fill="white" class="input-icon">
+                        <path
+                            d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+                    </svg>
+                </label>
             </div>
+
+
             <!-- 头像区域 -->
             <div class="header-profile">
                 <div class="notification">
@@ -126,21 +132,22 @@ export default {
 .header-menu-dropdown a {
     font-size: 16px;
     text-decoration: none;
-    height:20px;
+    height: 20px;
     align-content: baseline;
     align-items: baseline;
     justify-content: baseline;
     justify-items: baseline;
     text-align: bottom;
 }
-.header-menu-dropdown a>p{
+
+.header-menu-dropdown a>p {
     display: inline-block;
-    margin-top:3px;
+    margin-top: 3px;
 }
 
 .header-menu-dropdown a>.el-icon {
     position: absolute;
-    margin-top:3px;
+    margin-top: 3px;
 }
 
 .link {
@@ -231,7 +238,8 @@ export default {
             color: rgb(255, 255, 255);
             border-bottom: 2px solid transparent;
             transition: 0.3s;
-            height:23px;
+            height: 23px;
+
             @media screen and (max-width: 610px) {
                 &:not(.main-header-link) {
                     display: none;
@@ -268,6 +276,7 @@ export default {
     }
 
     .search-bar {
+        // opacity: 0.4;
         height: 40px;
         display: flex;
         width: 100%;
@@ -276,35 +285,44 @@ export default {
         border-radius: 4px;
         border: none;
 
+        .input-container {
+            position: relative;
+        }
+
         input {
             width: 100%;
             height: 100%;
             border: none;
             outline: none;
-            background-color: #b7bbea;
-            background-color: white;
-            border-radius: 4px;
+            border: 1px solid rgb(207, 207, 207);
+            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 20px;
             font-family: "Poppins", sans-serif;
             font-size: 15px;
             font-weight: 500;
             padding: 0 20px 0 40px;
-            //box-shadow: 0 0 0 2px rgb(134 140 160 / 0%);
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56.966 56.966' fill='%23717790c7'%3e%3cpath d='M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z'/%3e%3c/svg%3e");
-            background-size: 14px;
-            background-repeat: no-repeat;
-            background-position: 16px 48%;
 
-            //color: #212324;
             &::placeholder {
                 font-family: "Poppins", sans-serif;
-                color: rgb(99, 99, 99);
+                color: rgb(156, 156, 156);
                 font-size: 15px;
                 font-weight: 500;
             }
         }
 
+        .input-icon {
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        // 点击输入后边框改变颜色or只是变粗
         input:focus {
-            border: 2px solid rgb(192, 134, 192);
+            border: 2px solid rgba(255, 255, 255, 0.675);
+            // border: 2px solid rgb(98, 163, 203);
         }
 
     }

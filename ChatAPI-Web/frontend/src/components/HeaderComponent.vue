@@ -393,26 +393,6 @@ export default {
         padding-left: 0;
     }
 
-
-    .change-search {
-
-        .header-menu,
-        .header-profile {
-            display: none;
-        }
-
-        .search-bar {
-            max-width: 600px;
-            margin: auto;
-            transition: 0.4s;
-            box-shadow: 0 0 0 1px RGBA(113 119 144 / 25%);
-            padding-left: 0;
-        }
-
-        .logo {
-            margin-right: 0;
-        }
-    }
 }
 
 .blur-background {

@@ -1,95 +1,119 @@
 <template>
     <view-box>
+        <div class="main-box">
+            <div class="common-layout">
+                <el-container>
 
-        <div class="common-layout">
-            <el-container>
+                    <el-aside width="200px">
+                        <el-radio-group v-model="isCollapse" style="margin-bottom: 20px">
+                            <el-radio-button :label="false">expand</el-radio-button>
+                            <el-radio-button :label="true">collapse</el-radio-button>
+                        </el-radio-group>
+                        <el-menu default-active="1" class="el-menu-vertical-demo" :collapse="isCollapse" @open="handleOpen"
+                            @close="handleClose" @select="handleSelect">
+                            <!-- 首页 -->
+                            <el-menu-item index="1">
+                                <el-icon>
+                                    <Location />
+                                </el-icon>
+                                <template #title>首页</template>
+                            </el-menu-item>
+                            <!-- 设备报修 -->
+                            <el-menu-item index="2">
+                                <el-icon><Icon-menu /></el-icon>
+                                <template #title>设备报修</template>
+                            </el-menu-item>
+                            <!-- 维修指派 -->
+                            <el-menu-item index="3">
+                                <el-icon>
+                                    <Document />
+                                </el-icon>
+                                <template #title>维修指派</template>
+                            </el-menu-item>
+                            <!-- 报告厅申请 -->
+                            <el-menu-item index="4">
+                                <el-icon>
+                                    <Setting />
+                                </el-icon>
+                                <template #title>报告厅申请</template>
+                            </el-menu-item>
+                        </el-menu>
+                    </el-aside>
 
-                <el-aside width="200px">
-                    <el-radio-group v-model="isCollapse" style="margin-bottom: 20px">
-                        <el-radio-button :label="false">expand</el-radio-button>
-                        <el-radio-button :label="true">collapse</el-radio-button>
-                    </el-radio-group>
-                    <el-menu default-active="1" class="el-menu-vertical-demo" :collapse="isCollapse" @open="handleOpen"
-                        @close="handleClose" @select="handleSelect">
-                        <!-- 首页 -->
-                        <el-menu-item index="1">
-                            <el-icon>
-                                <Location />
-                            </el-icon>
-                            <template #title>首页</template>
-                        </el-menu-item>
-                        <!-- 设备报修 -->
-                        <el-menu-item index="2">
-                            <el-icon><Icon-menu /></el-icon>
-                            <template #title>设备报修</template>
-                        </el-menu-item>
-                        <!-- 维修指派 -->
-                        <el-menu-item index="3">
-                            <el-icon>
-                                <Document />
-                            </el-icon>
-                            <template #title>维修指派</template>
-                        </el-menu-item>
-                        <!-- 报告厅申请 -->
-                        <el-menu-item index="4">
-                            <el-icon>
-                                <Setting />
-                            </el-icon>
-                            <template #title>报告厅申请</template>
-                        </el-menu-item>
-                    </el-menu>
-                </el-aside>
+                    <el-main>
+                        <!-- 首页内容 -->
+                        <el-card class="box-card" v-if="activeIndex === '1'">
+                            <template #header>
+                                <div class="card-header">
+                                    <span>Card name</span>
+                                </div>
+                            </template>
 
-                <el-main>
-                    <!-- 首页内容 -->
-                    <el-card class="box-card" v-if="activeIndex === '1'">
-                        <template #header>
-                            <div class="card-header">
-                                <span>Card name</span>
-                            </div>
-                        </template>
+                            <el-table :data="tableData" style="width: 100%" max-height="450">
+                                <el-table-column fixed prop="报修编号" label="Num" width="100" />
+                                <el-table-column prop="报修时间" label="Date" width="120" />
+                                <el-table-column prop="报修地点" label="Address" width="120" />
+                                <el-table-column prop="问题描述" label="Bug" width="120" />
+                                <el-table-column prop="报修人员" label="contac" width="120" />
+                                <el-table-column prop="联系方式" label="Phonenum" width="120" />
+                                <el-table-column prop="处理方法" label="Approach" width="120" />
+                                <el-table-column prop="出勤人员" label="stuff" width="120" />
+                                <el-table-column prop="维修耗材" label="Consumables" width="120" />
+                                <el-table-column fixed="right" label="Operations" width="120">
+                                    <template #default>
+                                        <el-button link type="primary" size="small" @click="handleClick">Detail</el-button>
+                                        <el-button link type="primary" size="small">Edit</el-button>
+                                    </template>
+                                </el-table-column>
+                            </el-table>
 
-                        <el-table :data="tableData" style="width: 100%" max-height="450">
-                            <el-table-column fixed prop="报修编号" label="Num" width="100" />
-                            <el-table-column prop="报修时间" label="Date" width="120" />
-                            <el-table-column prop="报修地点" label="Address" width="120" />
-                            <el-table-column prop="问题描述" label="Bug" width="120" />
-                            <el-table-column prop="报修人员" label="contac" width="120" />
-                            <el-table-column prop="联系方式" label="Phonenum" width="120" />
-                            <el-table-column prop="处理方法" label="Approach" width="120" />
-                            <el-table-column prop="出勤人员" label="stuff" width="120" />
-                            <el-table-column prop="维修耗材" label="Consumables" width="120" />
-                            <el-table-column fixed="right" label="Operations" width="120">
-                                <template #default>
-                                    <el-button link type="primary" size="small" @click="handleClick">Detail</el-button>
-                                    <el-button link type="primary" size="small">Edit</el-button>
-                                </template>
-                            </el-table-column>
-                        </el-table>
-
-                    </el-card>
-                    <el-card class="box-card" v-if="activeIndex === '2'">
+                        </el-card>
                         <!-- 设备报修内容 -->
-                    </el-card>
+                        <el-card class="box-card" v-if="activeIndex === '2'">
 
-                    <el-card class="box-card" v-if="activeIndex === '3'">
-                        <!-- 维修指派内容 -->
-                    </el-card>
+                        </el-card>
 
-                    <el-card class="box-card" v-if="activeIndex === '4'">
-                        <!-- 报告厅申请内容 -->
-                    </el-card>
-                </el-main>
+                        <el-card class="box-card" v-if="activeIndex === '3'">
+                            <!-- 维修指派内容 -->
+                        </el-card>
 
-            </el-container>
+                        <el-card class="box-card" v-if="activeIndex === '4'">
+                            <!-- 报告厅申请内容 -->
+                        </el-card>
+                    </el-main>
+
+                </el-container>
+            </div>
         </div>
 
     </view-box>
 </template>
 
 <style scoped>
+.main-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-box:before{
+    position:absolute;
+    z-index:-1;
+    content:"";
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    background: #eef2f7;
+}
+
 aside.el-aside {
-    background: aliceblue;
+    background: white;
+    border-radius: 12px 0px 0px 12px;
+}
+
+main.el-main {
+    background: rgb(255, 255, 255);
+    border-radius: 0px 12px 12px 0px;
 }
 
 view-box {

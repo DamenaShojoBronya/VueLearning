@@ -45,16 +45,16 @@
                         <el-card class="box-card" v-if="activeIndex === '1'">
                             <template #header>
                                 <div class="card-header">
-                                    <span>Card name</span>
+                                    <span>设备报修列表</span>
                                 </div>
                             </template>
 
-                            <el-table :data="tableData" style="width: 100%" max-height="450">
-                                <el-table-column fixed prop="报修编号" label="Num" width="100" />
+                            <el-table :data="tableData" style="width: 100%" class="table-with-fixed-height">
+                                <el-table-column fixed prop="报修编号" label="Num" width="120" />
                                 <el-table-column prop="报修时间" label="Date" width="120" />
-                                <el-table-column prop="报修地点" label="Address" width="120" />
+                                <el-table-column prop="报修地点" label="Address" width="100" />
                                 <el-table-column prop="问题描述" label="Bug" width="120" />
-                                <el-table-column prop="报修人员" label="contac" width="120" />
+                                <el-table-column prop="报修人员" label="contac" width="100" />
                                 <el-table-column prop="联系方式" label="Phonenum" width="120" />
                                 <el-table-column prop="处理方法" label="Approach" width="120" />
                                 <el-table-column prop="出勤人员" label="stuff" width="120" />
@@ -70,7 +70,7 @@
                         </el-card>
                         <!-- 设备报修内容 -->
                         <el-card class="box-card" v-if="activeIndex === '2'">
-
+                            <SubmitForm></SubmitForm>
                         </el-card>
 
                         <el-card class="box-card" v-if="activeIndex === '3'">
@@ -90,32 +90,6 @@
 </template>
 
 <style scoped>
-.main-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.main-box:before{
-    position:absolute;
-    z-index:-1;
-    content:"";
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: space-around;
-    background: #eef2f7;
-}
-
-aside.el-aside {
-    background: white;
-    border-radius: 12px 0px 0px 12px;
-}
-
-main.el-main {
-    background: rgb(255, 255, 255);
-    border-radius: 0px 12px 12px 0px;
-}
-
 view-box {
     margin: 0 auto;
     width: 100%;
@@ -123,6 +97,52 @@ view-box {
     margin-top: 150px;
     display: flex;
     justify-content: space-around
+}
+
+/* 主盒子布局 */
+.main-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    background: #eef2f7;
+}
+
+/* 内容区域 */
+aside.el-aside {
+    width: 200px;
+    height: 530px;
+    background: white;
+    border-radius: 12px 0px 0px 12px;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.18);
+    z-index: 1;
+}
+
+main.el-main {
+    width: 1262px;
+    height: 530px;
+    background: rgb(255, 255, 255);
+    border-radius: 0px 12px 12px 0px;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+/* el-card布局 */
+.box-card {
+    height: 450px;
+}
+
+.table-with-fixed-height {
+    height: 450px;
+    overflow-y: auto;
 }
 
 .card-header {
@@ -157,52 +177,21 @@ const handleClick = () => {
     console.log('click')
 }
 
-const tableData = [
-    {
-        报修编号: 'SBBX-asgdas78faif',
-        报修时间: '2023-2-19',
-        报修地点: '综合楼300',
-        问题描述: '办公室需要布网，电脑需要重装系统',
-        报修人员: '刘老师',
-        联系方式: '18123123125',
-        处理方法: '更换网线、系统重装',
-        出勤人员: '大黄，张sir',
-        维修耗材: '一箱网线',
-    },
-    {
-        报修编号: 'SBBX-asgdas78faif',
-        报修时间: '2023-2-19',
-        报修地点: '综合楼300',
-        问题描述: '办公室需要布网，电脑需要重装系统',
-        报修人员: '刘老师',
-        联系方式: '18123123125',
-        处理方法: '更换网线、系统重装',
-        出勤人员: '大黄，张sir',
-        维修耗材: '一箱网线',
-    },
-    {
-        报修编号: 'SBBX-asgdas78faif',
-        报修时间: '2023-2-19',
-        报修地点: '综合楼300',
-        问题描述: '办公室需要布网，电脑需要重装系统',
-        报修人员: '刘老师',
-        联系方式: '18123123125',
-        处理方法: '更换网线、系统重装',
-        出勤人员: '大黄，张sir',
-        维修耗材: '一箱网线',
-    },
-    {
-        报修编号: 'SBBX-asgdas78faif',
-        报修时间: '2023-2-19',
-        报修地点: '综合楼300',
-        问题描述: '办公室需要布网，电脑需要重装系统',
-        报修人员: '刘老师',
-        联系方式: '18123123125',
-        处理方法: '更换网线、系统重装',
-        出勤人员: '大黄，张sir',
-        维修耗材: '一箱网线',
-    },
-]
+// const tableData = [
+//     { },
+// ]
+const tableData = Array.from({ length: 7 }, () => ({
+    报修编号: 'SBBX-asgdas78faif',
+    报修时间: '2023-2-19',
+    报修地点: '综合楼300',
+    问题描述: '办公室需要布网，电脑需要重装系统',
+    报修人员: '刘老师',
+    联系方式: '18123123125',
+    处理方法: '更换网线、系统重装',
+    出勤人员: '大黄，张sir',
+    维修耗材: '一箱网线',
+}));
+
 const activeIndex = ref('1') // 添加 activeIndex 变量，默认设置为 '1'
 const handleSelect = (index: string) => {  // 添加 handleSelect 方法
     activeIndex.value = index
@@ -210,8 +199,12 @@ const handleSelect = (index: string) => {  // 添加 handleSelect 方法
 </script>
 
 <script lang="ts">
+import SubmitForm from './SubmitForm.vue';
 export default {
     name: 'DeviceAndAttendance',
+    components: {
+        SubmitForm,
+    },
     data() {
         return {
         };

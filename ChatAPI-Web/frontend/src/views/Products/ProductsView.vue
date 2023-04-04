@@ -43,42 +43,18 @@
                     <el-main>
                         <!-- 首页内容 -->
                         <el-card class="box-card" v-if="activeIndex === '1'">
-                            <template #header>
-                                <div class="card-header">
-                                    <span>设备报修列表</span>
-                                </div>
-                            </template>
-
-                            <el-table :data="tableData" style="width: 100%" class="table-with-fixed-height">
-                                <el-table-column fixed prop="报修编号" label="Num" width="120" />
-                                <el-table-column prop="报修时间" label="Date" width="120" />
-                                <el-table-column prop="报修地点" label="Address" width="100" />
-                                <el-table-column prop="问题描述" label="Bug" width="120" />
-                                <el-table-column prop="报修人员" label="contac" width="100" />
-                                <el-table-column prop="联系方式" label="Phonenum" width="120" />
-                                <el-table-column prop="处理方法" label="Approach" width="120" />
-                                <el-table-column prop="出勤人员" label="stuff" width="120" />
-                                <el-table-column prop="维修耗材" label="Consumables" width="120" />
-                                <el-table-column fixed="right" label="Operations" width="120">
-                                    <template #default>
-                                        <el-button link type="primary" size="small" @click="handleClick">Detail</el-button>
-                                        <el-button link type="primary" size="small">Edit</el-button>
-                                    </template>
-                                </el-table-column>
-                            </el-table>
-
+                            <Repair-table></Repair-table>
                         </el-card>
                         <!-- 设备报修内容 -->
                         <el-card class="box-card" v-if="activeIndex === '2'">
                             <SubmitForm></SubmitForm>
                         </el-card>
-
+                        <!-- 维修指派内容 -->
                         <el-card class="box-card" v-if="activeIndex === '3'">
-                            <!-- 维修指派内容 -->
                         </el-card>
-
+                        <!-- 报告厅申请内容 -->
                         <el-card class="box-card" v-if="activeIndex === '4'">
-                            <!-- 报告厅申请内容 -->
+                            <LecturehallApply></LecturehallApply>
                         </el-card>
                     </el-main>
 
@@ -173,24 +149,12 @@ const handleOpen = (key: string, keyPath: string[]) => {
 const handleClose = (key: string, keyPath: string[]) => {
     console.log(key, keyPath)
 }
-const handleClick = () => {
-    console.log('click')
-}
+
 
 // const tableData = [
 //     { },
 // ]
-const tableData = Array.from({ length: 7 }, () => ({
-    报修编号: 'SBBX-asgdas78faif',
-    报修时间: '2023-2-19',
-    报修地点: '综合楼300',
-    问题描述: '办公室需要布网，电脑需要重装系统',
-    报修人员: '刘老师',
-    联系方式: '18123123125',
-    处理方法: '更换网线、系统重装',
-    出勤人员: '大黄，张sir',
-    维修耗材: '一箱网线',
-}));
+
 
 const activeIndex = ref('1') // 添加 activeIndex 变量，默认设置为 '1'
 const handleSelect = (index: string) => {  // 添加 handleSelect 方法
@@ -200,10 +164,14 @@ const handleSelect = (index: string) => {  // 添加 handleSelect 方法
 
 <script lang="ts">
 import SubmitForm from './SubmitForm.vue';
+import RepairTable from './RepairTable.vue';
+import LecturehallApply from './LecturehallApply.vue';
 export default {
     name: 'DeviceAndAttendance',
     components: {
         SubmitForm,
+        RepairTable,
+        LecturehallApply
     },
     data() {
         return {

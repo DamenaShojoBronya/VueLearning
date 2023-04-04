@@ -43,15 +43,20 @@
                     <el-main>
                         <!-- 首页内容 -->
                         <el-card class="box-card" v-if="activeIndex === '1'">
-                            <Repair-table></Repair-table>
+                            <!-- 事件触发时更新 RepairTable -->
+                            <Repair-table :tableData="tableData"></Repair-table>
                         </el-card>
+
                         <!-- 设备报修内容 -->
                         <el-card class="box-card" v-if="activeIndex === '2'">
-                            <SubmitForm></SubmitForm>
+                            <!-- 监听 SubmitForm 组件的自定义事件 -->
+                            <SubmitForm @form-submitted="fetchRepairsData"></SubmitForm>
                         </el-card>
+
                         <!-- 维修指派内容 -->
                         <el-card class="box-card" v-if="activeIndex === '3'">
                         </el-card>
+
                         <!-- 报告厅申请内容 -->
                         <el-card class="box-card" v-if="activeIndex === '4'">
                             <LecturehallApply></LecturehallApply>
@@ -134,13 +139,25 @@ main.el-main {
 </style>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import {
     Document,
     Menu as IconMenu,
     Location,
     Setting,
 } from '@element-plus/icons-vue'
+import apiClient from "../apiClient";
+const tableData = ref([]); // 添加 tableData 变量
+const fetchRepairsData = async () => {
+    try {
+        const response = await apiClient.get('/api/repairs');
+        tableData.value = response.data;
+    } catch (error) {
+        console.error('Error fetching repairs data:', error);
+    }
+};
+onMounted(fetchRepairsData);
+
 // elementplus组件
 const isCollapse = ref(true)
 const handleOpen = (key: string, keyPath: string[]) => {
@@ -160,6 +177,7 @@ const activeIndex = ref('1') // 添加 activeIndex 变量，默认设置为 '1'
 const handleSelect = (index: string) => {  // 添加 handleSelect 方法
     activeIndex.value = index
 }
+
 </script>
 
 <script lang="ts">
@@ -172,13 +190,6 @@ export default {
         SubmitForm,
         RepairTable,
         LecturehallApply
-    },
-    data() {
-        return {
-        };
-    },
-    methods: {
-
     },
 };
 </script>

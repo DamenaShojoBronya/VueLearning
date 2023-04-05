@@ -27,6 +27,7 @@ def submit_repair():
     repair_data.setdefault('Solution', '正在出勤')
     repair_data.setdefault('Stuff', '正在出勤')
     repair_data.setdefault('Consumables', '暂无')
+    repair_data.setdefault('State', '审批中')
 
     # 验证提交的数据是否包含所需字段
     required_fields = ['Num', 'Date', 'Location', 'Description', 'Reporter', 'Phonenum']

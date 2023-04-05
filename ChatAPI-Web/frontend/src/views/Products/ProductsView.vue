@@ -23,19 +23,19 @@
                                 <el-icon><Icon-menu /></el-icon>
                                 <template #title>设备报修</template>
                             </el-menu-item>
-                            <!-- 维修指派 -->
-                            <el-menu-item index="3">
-                                <el-icon>
-                                    <Document />
-                                </el-icon>
-                                <template #title>维修指派</template>
-                            </el-menu-item>
                             <!-- 报告厅申请 -->
-                            <el-menu-item index="4">
+                            <el-menu-item index="3">
                                 <el-icon>
                                     <Setting />
                                 </el-icon>
                                 <template #title>报告厅申请</template>
+                            </el-menu-item>
+                            <!-- 流程审批 -->
+                            <el-menu-item index="4">
+                                <el-icon>
+                                    <Document />
+                                </el-icon>
+                                <template #title>流程审批</template>
                             </el-menu-item>
                         </el-menu>
                     </el-aside>
@@ -53,13 +53,14 @@
                             <SubmitForm @form-submitted="fetchRepairsData"></SubmitForm>
                         </el-card>
 
-                        <!-- 维修指派内容 -->
+                        <!-- 报告厅申请内容 -->
                         <el-card class="box-card" v-if="activeIndex === '3'">
+                            <LecturehallApply></LecturehallApply>
                         </el-card>
 
-                        <!-- 报告厅申请内容 -->
+                        <!-- 流程审批内容 -->
                         <el-card class="box-card" v-if="activeIndex === '4'">
-                            <LecturehallApply></LecturehallApply>
+                            <ProcessApproval :tableData="tableData"></ProcessApproval>
                         </el-card>
                     </el-main>
 
@@ -184,6 +185,8 @@ const handleSelect = (index: string) => {  // 添加 handleSelect 方法
 import SubmitForm from './SubmitForm.vue';
 import RepairTable from './RepairTable.vue';
 import LecturehallApply from './LecturehallApply.vue';
+import ProcessApproval from './ProcessApproval.vue';
+
 export default {
     name: 'DeviceAndAttendance',
     components: {

@@ -59,9 +59,9 @@
                         </el-card>
 
                         <!-- 流程审批内容 -->
-                        <el-card class="box-card" v-if="activeIndex === '4'">
+                        <div class="box-card" v-if="activeIndex === '4'">
                             <ProcessApproval :tableData="tableData"></ProcessApproval>
-                        </el-card>
+                        </div>
                     </el-main>
 
                 </el-container>

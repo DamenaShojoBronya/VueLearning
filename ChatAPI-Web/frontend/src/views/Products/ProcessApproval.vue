@@ -21,26 +21,25 @@
                 </div>
 
                 <!-- <el-steps :active="activeStep" :space="200" simple finish-status="success"> -->
-                <el-steps :active="1" finish-status="success" simple>
-                    <el-step title="提交"></el-step>
-                    <el-step title="审批中"></el-step>
+                <el-steps :active="getCurrentStep(item.State)" finish-status="success" simple>
+                    <el-step title="审批中" :status="item.State === '审批中'"></el-step>
+                    <el-step title="进行中" :status="item.State === '进行中'"></el-step>
                     <el-step title="已审批"></el-step>
                 </el-steps>
             </div>
-            
-                <el-descriptions v-if="detailsVisible[index]" title="设备报修详情" direction="horizontal" :column="1" :size="size"
-                    >
-                    <el-descriptions-item label="报修编号">{{ item.Num }}</el-descriptions-item>
-                    <el-descriptions-item label="报修时间">{{ item.Date }}</el-descriptions-item>
-                    <el-descriptions-item label="报修地点">{{ item.Location }}</el-descriptions-item>
-                    <el-descriptions-item label="问题描述">{{ item.Description }}</el-descriptions-item>
-                    <el-descriptions-item label="报修人员">{{ item.Reporter }}</el-descriptions-item>
-                    <el-descriptions-item label="联系方式">{{ item.Phonenum }}</el-descriptions-item>
-                    <el-descriptions-item label="处理方法">{{ item.Solution }}</el-descriptions-item>
-                    <el-descriptions-item label="出勤人员">{{ item.Stuff }}</el-descriptions-item>
-                    <el-descriptions-item label="维修耗材">{{ item.Consumables }}</el-descriptions-item>
-                </el-descriptions>
-            
+
+            <el-descriptions v-if="detailsVisible[index]" title="设备报修详情" direction="horizontal" :column="2">
+                <el-descriptions-item label="报修编号">{{ item.Num }}</el-descriptions-item>
+                <el-descriptions-item label="报修时间">{{ item.Date }}</el-descriptions-item>
+                <el-descriptions-item label="报修地点">{{ item.Location }}</el-descriptions-item>
+                <el-descriptions-item label="问题描述">{{ item.Description }}</el-descriptions-item>
+                <el-descriptions-item label="报修人员">{{ item.Reporter }}</el-descriptions-item>
+                <el-descriptions-item label="联系方式">{{ item.Phonenum }}</el-descriptions-item>
+                <el-descriptions-item label="处理方法">{{ item.Solution }}</el-descriptions-item>
+                <el-descriptions-item label="出勤人员">{{ item.Stuff }}</el-descriptions-item>
+                <el-descriptions-item label="维修耗材">{{ item.Consumables }}</el-descriptions-item>
+            </el-descriptions>
+
 
         </div>
 
@@ -68,6 +67,21 @@ export default {
     name: "ProcessApproval",
     components: {},
     setup() {
+        const getCurrentStep = (state: string): number => {
+            switch (state) {
+                case '审批中':
+                    return 1;
+                case '进行中':
+                    return 2;
+                case '未通过':
+                    return 3; // 你可以选择一个不同的步骤数来表示拒绝状态
+                case '已完成':
+                    return 4; // 你可以选择一个不同的步骤数来表示拒绝状态
+                default:
+                    return 0;
+            }
+        };
+
         const detailsVisible = reactive<Record<number, boolean>>({});
 
         const handleClick = () => {
@@ -99,14 +113,25 @@ export default {
 
         const approve = async (item: Repair) => {
             try {
+                console.log("Approving repair:", item.Num);
                 // API call to approve the repair
-                await apiClient.put(`/api/repairs/${item.Num}/approve`);
+                await apiClient.put(`/api/repairs/${item.Num}/approve`, { state: "进行中" });
                 // Update the state of the repair
-                item.State = "已审批";
+                item.State = "进行中";
+                for (let i = 0; i < tableData.value.length; i++) {
+                    if (tableData.value[i].Num === item.Num) {
+                        tableData.value[i].State = "进行中";
+                        break;
+                    }
+                }
+                console.log("Repair approved:", item.Num);
             } catch (error) {
                 console.error("Failed to approve repair:", error);
             }
         };
+
+
+
 
         const reject = async (item: Repair) => {
             try {
@@ -120,8 +145,10 @@ export default {
         };
 
 
+
         // ...
         return {
+            getCurrentStep,
             handleClick,
             tableData,
             toggleDetail,
@@ -141,6 +168,7 @@ export default {
 }
 
 .progress-card {
+    margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
     border-radius: 10px;
@@ -200,15 +228,20 @@ export default {
     border: 1px white;
 }
 
-.el-descriptions{
+.el-descriptions {
     margin-left: 20px;
     margin-bottom: 40px;
     /* border-radius: 10px; */
     width: 1150px;
     /* border: solid 1px #e7e5e5; */
     box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.10);
-    padding:10px 40px 40px 40px;
+    padding: 20px 50px 20px 50px;
     /* background-color: rgb(246, 246, 246); */
+
 }
+
+/* .custom-label-color {
+  --el-text-color-primary: gray;
+} */
 </style>
   

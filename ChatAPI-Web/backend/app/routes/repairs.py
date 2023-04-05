@@ -11,12 +11,22 @@ repairs_data = []
 def get_repairs():
     return jsonify(repairs_data)
 
+@repairs_bp.route('/api/repairs/<string:num>/approve', methods=['PUT'])
+def approve_repair(num):
+    for repair in repairs_data:
+        if repair['Num'] == num:
+            repair['State'] = request.json['state']
+            return jsonify(repair)
+    return jsonify({'error': 'Repair not found'}), 404
+
 # 提交报修表单
 from datetime import datetime
 from uuid import uuid4
 @repairs_bp.route('/api/repairs', methods=['POST'])
 def submit_repair():
     repair_data = request.json
+    # 在控制台输出收到的字段
+    print("Received repair_data1:", repair_data)
 
     # 自动获取当前时间
     repair_data['Date'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -34,6 +44,10 @@ def submit_repair():
     if not all(field in repair_data for field in required_fields):
         return jsonify({'error': 'Missing required field(s)'}), 400
     
+    # 在控制台输出的字段
+    print("Received repair_data2:", repair_data)
     # 返回修改的数据
     repairs_data.append(repair_data)
     return jsonify(repair_data), 201
+
+ 

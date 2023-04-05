@@ -160,7 +160,7 @@ const fetchRepairsData = async () => {
 onMounted(fetchRepairsData);
 
 // elementplus组件
-const isCollapse = ref(true)
+const isCollapse = ref(false)
 const handleOpen = (key: string, keyPath: string[]) => {
     console.log(key, keyPath)
 }

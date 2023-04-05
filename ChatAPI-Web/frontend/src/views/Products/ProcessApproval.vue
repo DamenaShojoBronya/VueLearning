@@ -3,11 +3,17 @@
 
         <div v-for="(item, index) in tableData" :key="index">
             <el-card class="progress-card">
-                <el-card shadow="never">
-                    <el-button @click="approve(item)">批准</el-button>
-                    <el-button @click="reject(item)">拒绝</el-button>
-                    <el-button @click="toggleDetail(index)">详情</el-button>
-                </el-card>
+                <div class="card-top" shadow="never">
+                    <span>
+                        <img src="../../assets/man.png" />
+                        <p>设备报修工作流</p>
+                    </span>
+                    <span>
+                        <el-button @click="approve(item)">批准</el-button>
+                        <el-button @click="reject(item)">拒绝</el-button>
+                        <el-button @click="toggleDetail(index)">详情</el-button>
+                    </span>
+                </div>
 
                 <!-- <el-steps :active="activeStep" :space="200" simple finish-status="success"> -->
                 <el-steps :active="1" finish-status="success" simple>
@@ -132,6 +138,25 @@ export default {
     margin-left: 20px;
     border-radius: 25px;
     width: 1150px;
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        /* height:150px; */
+}
+.card-top span{
+    display:flex;
+    align-items: center
+}
+.card-top span p{
+    display: inline-block;
+}
+
+.card-top img {
+    display: inline-block;
+    width: 40px;
 }
 
 .progress-card:hover {

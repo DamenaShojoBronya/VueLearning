@@ -39,9 +39,15 @@
                 <el-descriptions-item label="问题描述">{{ item.Description }}</el-descriptions-item>
                 <el-descriptions-item label="报修人员">{{ item.Reporter }}</el-descriptions-item>
                 <el-descriptions-item label="联系方式">{{ item.Phonenum }}</el-descriptions-item>
-                <el-descriptions-item label="处理方法">{{ item.Solution }}</el-descriptions-item>
-                <el-descriptions-item label="出勤人员">{{ item.Stuff }}</el-descriptions-item>
-                <el-descriptions-item label="维修耗材">{{ item.Consumables }}</el-descriptions-item>
+                <el-descriptions-item label="处理方法">
+                    <span @click="() => editItem(item, 'Solution', '处理方法')">{{ item.Solution }}</span>
+                </el-descriptions-item>
+                <el-descriptions-item label="出勤人员">
+                    <span @click="() => editItem(item, 'Stuff', '出勤人员')">{{ item.Stuff }}</span>
+                </el-descriptions-item>
+                <el-descriptions-item label="维修耗材">
+                    <span @click="() => editItem(item, 'Consumables', '维修耗材')">{{ item.Consumables }}</span>
+                </el-descriptions-item>
             </el-descriptions>
 
 
@@ -53,6 +59,7 @@
 <script lang="ts">
 import { ref, onMounted, reactive } from "vue";
 import apiClient from "../apiClient";
+import { ElMessage, ElMessageBox } from 'element-plus';
 
 interface Repair {
     Num?: string;
@@ -154,6 +161,37 @@ export default {
             }
         };
 
+        // 出勤人员登记，用El消息盒子，点击弹出
+        const editItem = (item: Repair, field: keyof Repair, label: string) => {
+            ElMessageBox.prompt(`请输入${label}`, `${label}`, {
+                confirmButtonText: "确定",
+                cancelButtonText: "取消",
+            })
+                .then(async ({ value }) => {
+                    item[field] = value;
+
+                    // 提交数据到后端
+                    try {
+                        await apiClient.put(`/api/repairs/${item.Num}/update`, { [field]: value });
+                        ElMessage({
+                            type: "success",
+                            message: `修改成功: ${label}`,
+                        });
+                    } catch (error) {
+                        console.error(`Failed to update ${label}:`, error);
+                        ElMessage({
+                            type: "error",
+                            message: `修改失败: ${label}`,
+                        });
+                    }
+                })
+                .catch(() => {
+                    ElMessage({
+                        type: "info",
+                        message: "修改取消",
+                    });
+                });
+        };
 
 
         // ...
@@ -165,6 +203,7 @@ export default {
             detailsVisible,
             approve,
             reject,
+            editItem,
         };
     },
 

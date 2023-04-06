@@ -37,6 +37,12 @@
                                 </el-icon>
                                 <template #title>流程审批</template>
                             </el-menu-item>
+                            <el-menu-item index="5">
+                                <el-icon>
+                                    <Document />
+                                </el-icon>
+                                <template #title>出勤登记</template>
+                            </el-menu-item>
                         </el-menu>
                     </el-aside>
 
@@ -61,6 +67,11 @@
                         <!-- 流程审批内容 -->
                         <div class="box-card" v-if="activeIndex === '4'">
                             <ProcessApproval :tableData="tableData"></ProcessApproval>
+                        </div>
+
+                        <!-- 出勤登记内容 -->
+                        <div class="box-card" v-if="activeIndex === '5'">
+                            <StuffForm :tableData="tableData"></StuffForm>
                         </div>
                     </el-main>
 
@@ -104,7 +115,7 @@ view-box {
 aside.el-aside {
     width: 200px;
     height: 650px;
-    padding-top:20px;
+    padding-top: 20px;
     background: white;
     border-radius: 12px 0px 0px 12px;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.18);
@@ -188,13 +199,16 @@ import SubmitForm from './SubmitForm.vue';
 import RepairTable from './RepairTable.vue';
 import LecturehallApply from './LecturehallApply.vue';
 import ProcessApproval from './ProcessApproval.vue';
+import StuffForm from './StuffForm.vue';
 
 export default {
     name: 'DeviceAndAttendance',
     components: {
         SubmitForm,
         RepairTable,
-        LecturehallApply
+        LecturehallApply,
+        ProcessApproval,
+        StuffForm
     },
 };
 </script>

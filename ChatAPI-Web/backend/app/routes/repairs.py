@@ -11,7 +11,7 @@ repairs_data = []
 def get_repairs():
     return jsonify(repairs_data)
 
-# 改变流程状态
+# 改变流程的状态State，分别绑定两个按钮 后续再优化
 @repairs_bp.route('/api/repairs/<string:num>/approve', methods=['PUT'])
 def approve_repair(num):
     for repair in repairs_data:
@@ -27,6 +27,22 @@ def reject_repair(num):
             repair['State'] = request.json['state']
             return jsonify(repair)
     return jsonify({'error': 'Reject Repair not found'}), 404
+
+# 更新维修条目信息
+@repairs_bp.route('/api/repairs/<string:num>/update', methods=['PUT'])
+def update_repair(num):
+    # 查找对应的维修条目
+    repair = next((r for r in repairs_data if r['Num'] == num), None)
+    if repair is None:
+        return jsonify({'error': 'Repair not found'}), 404
+
+    # 更新维修条目的相关字段
+    update_fields = ['Solution', 'Stuff', 'Consumables']
+    for field in update_fields:
+        if field in request.json:
+            repair[field] = request.json[field]
+
+    return jsonify(repair)
 
 
 # 提交报修表单

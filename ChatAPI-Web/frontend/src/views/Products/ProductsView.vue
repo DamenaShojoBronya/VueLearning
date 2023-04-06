@@ -86,6 +86,7 @@ view-box {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 70vh;
 }
 
 .main-box:before {
@@ -93,7 +94,7 @@ view-box {
     z-index: -1;
     content: "";
     width: 100%;
-    height: 60%;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     background: #eef2f7;
@@ -102,7 +103,8 @@ view-box {
 /* 内容区域 */
 aside.el-aside {
     width: 200px;
-    height: 530px;
+    height: 650px;
+    padding-top:20px;
     background: white;
     border-radius: 12px 0px 0px 12px;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.18);
@@ -110,8 +112,8 @@ aside.el-aside {
 }
 
 main.el-main {
-    width: 1262px;
-    height: 530px;
+    width: 1462px;
+    height: 650px;
     background: rgb(255, 255, 255);
     border-radius: 0px 12px 12px 0px;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.18);
@@ -119,7 +121,7 @@ main.el-main {
 
 /* el-card布局 */
 .box-card {
-    height: 450px;
+    height: 600px;
 }
 
 .table-with-fixed-height {

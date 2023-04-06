@@ -11,13 +11,23 @@ repairs_data = []
 def get_repairs():
     return jsonify(repairs_data)
 
+# 改变流程状态
 @repairs_bp.route('/api/repairs/<string:num>/approve', methods=['PUT'])
 def approve_repair(num):
     for repair in repairs_data:
         if repair['Num'] == num:
             repair['State'] = request.json['state']
             return jsonify(repair)
-    return jsonify({'error': 'Repair not found'}), 404
+    return jsonify({'error': 'Approve Repair not found'}), 404
+
+@repairs_bp.route('/api/repairs/<string:num>/reject', methods=['PUT'])
+def reject_repair(num):
+    for repair in repairs_data:
+        if repair['Num'] == num:
+            repair['State'] = request.json['state']
+            return jsonify(repair)
+    return jsonify({'error': 'Reject Repair not found'}), 404
+
 
 # 提交报修表单
 from datetime import datetime
@@ -30,8 +40,11 @@ def submit_repair():
 
     # 自动获取当前时间
     repair_data['Date'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    # 自动生成编号,SBBX-当前报修事件个数-UUID的前8位数
-    repair_data['Num'] = f"SBBX-{len(repairs_data)+1:04}-{uuid4().hex[:8]}"
+    # 自动生成编号,SBBX/SBBX-当前报修事件个数-UUID的前8位数
+    if repair_data['Description'] == '开报告厅，调字幕':
+        repair_data['Num'] = f"SBGT-{len(repairs_data)+1:04}-{uuid4().hex[:8]}"
+    else:
+        repair_data['Num'] = f"SBBX-{len(repairs_data)+1:04}-{uuid4().hex[:8]}"
 
     # 为缺失的可选字段添加默认值
     repair_data.setdefault('Solution', '正在出勤')

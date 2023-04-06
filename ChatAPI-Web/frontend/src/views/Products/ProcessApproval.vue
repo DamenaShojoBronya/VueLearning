@@ -1,5 +1,5 @@
 <template>
-    <el-scrollbar height="480px">
+    <el-scrollbar class="scrollbar" height="480px">
 
         <div v-for="(item, index) in tableData" :key="index">
             <div class="progress-card">
@@ -21,11 +21,15 @@
                 </div>
 
                 <!-- <el-steps :active="activeStep" :space="200" simple finish-status="success"> -->
-                <el-steps :active="getCurrentStep(item.State)" finish-status="success" simple>
-                    <el-step title="审批中" :status="item.State === '审批中'"></el-step>
-                    <el-step title="进行中" :status="item.State === '进行中'"></el-step>
-                    <el-step title="已审批"></el-step>
+                <el-steps :active="getCurrentStep(item.State)" finish-status="finish" simple>
+                    <el-step :title="item.State === '未通过' ? '未通过' : '审批中'"
+                        :status="item.State === '未通过' ? 'error' : (item.State === '审批中' ? 'process' : (getCurrentStep(item.State) > 1 ? 'success' : 'wait'))"></el-step>
+                    <el-step title="进行中"
+                        :status="item.State === '未通过' ? 'wait' : (item.State === '进行中' ? 'process' : (getCurrentStep(item.State) > 2 ? 'success' : 'wait'))"></el-step>
+                    <el-step title="已完成" :status="item.State === '已完成' ? 'success' : 'wait'"></el-step>
                 </el-steps>
+
+
             </div>
 
             <el-descriptions v-if="detailsVisible[index]" title="设备报修详情" direction="horizontal" :column="2">
@@ -131,14 +135,20 @@ export default {
         };
 
 
-
-
         const reject = async (item: Repair) => {
             try {
-                // API call to reject the repair
-                await apiClient.put(`/api/repairs/${item.Num}/reject`);
+                console.log("Approving repair:", item.Num);
+                // API call to approve the repair
+                await apiClient.put(`/api/repairs/${item.Num}/reject`, { state: "未通过" });
                 // Update the state of the repair
-                item.State = "已拒绝";
+                item.State = "未通过";
+                for (let i = 0; i < tableData.value.length; i++) {
+                    if (tableData.value[i].Num === item.Num) {
+                        tableData.value[i].State = "未通过";
+                        break;
+                    }
+                }
+                console.log("Repair rejected:", item.Num);
             } catch (error) {
                 console.error("Failed to reject repair:", error);
             }
@@ -163,6 +173,12 @@ export default {
 </script>
   
 <style scoped>
+.el-scrollbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .icon-state {
     margin-right: 4px;
 }

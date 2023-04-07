@@ -1,5 +1,5 @@
 <template>
-    <el-scrollbar class="scrollbar" height="480px">
+    <el-scrollbar class="scrollbar" height="480px" width="1400px">
 
         <div v-for="(item, index) in tableData" :key="index">
             <div class="progress-card">
@@ -10,13 +10,33 @@
                     </span>
                     <!-- #409eff -->
                     <span>
-                        <el-button color="#337ecc" @click="approve(item)">
-                            <p style="color:white">批准</p>
-                        </el-button>
-                        <el-button @click="reject(item)">
-                            <p style="color:#337ecc">拒绝</p>
-                        </el-button>
-                        <div text class="edit-button" @click="toggleDetail(index)">...</div>
+                        <el-button-group>
+                            <el-button color="#337ecc" @click="approve(item)">
+                                <p style="color:white">批准</p>
+                            </el-button>
+                            <el-button @click="reject(item)">
+                                <p style="color:#337ecc">拒绝</p>
+                            </el-button>
+                        </el-button-group>
+
+                        <!-- <div text class="edit-button" @click="toggleDetail(index)">...</div> -->
+
+                        <span @click="toggleDetail(index)">
+                            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="edit-button">
+                                <path fill="currentColor"
+                                    d="M176 416a112 112 0 1 1 0 224 112 112 0 0 1 0-224zm336 0a112 112 0 1 1 0 224 112 112 0 0 1 0-224zm336 0a112 112 0 1 1 0 224 112 112 0 0 1 0-224z">
+                                </path>
+                            </svg>
+                        </span>
+
+                        <span @click="hideItem(index)">
+                            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="delete-icon">
+                                <path fill="currentColor"
+                                    d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z">
+                                </path>
+                            </svg>
+                        </span>
+                        <!-- <el-button type="success" :icon="Check" circle @click="hideItem(index)"></el-button> -->
                     </span>
                 </div>
 
@@ -60,6 +80,7 @@
 import { ref, onMounted, reactive } from "vue";
 import apiClient from "../apiClient";
 import { ElMessage, ElMessageBox } from 'element-plus';
+import { Delete, Edit, Search, Share, Upload } from '@element-plus/icons-vue'
 
 interface Repair {
     Num?: string;
@@ -92,6 +113,33 @@ export default {
                     return 0;
             }
         };
+
+        const hideItem = (index: number) => {
+            ElMessageBox.confirm(
+                '关闭工作流？',
+                'Warning',
+                {
+                    confirmButtonText: 'OK',
+                    cancelButtonText: 'Cancel',
+                    type: 'warning',
+                }
+            )
+                .then(() => {
+                    tableData.value.splice(index, 1);
+                    ElMessage({
+                        type: 'success',
+                        message: 'Delete completed',
+                    })
+                })
+                .catch(() => {
+                    ElMessage({
+                        type: 'info',
+                        message: 'Delete canceled',
+                    })
+                })
+            // tableData.value.splice(index, 1);
+        };
+
 
         const detailsVisible = reactive<Record<number, boolean>>({});
 
@@ -183,9 +231,9 @@ export default {
                             item.State = "已完成";
                             await apiClient.put(`/api/repairs/${item.Num}/update`, { State: "已完成" });
                             ElMessage({
-                            type: "success",
-                            message: `出勤登记完成: ${label}`,
-                        });
+                                type: "success",
+                                message: `出勤登记完成: ${label}`,
+                            });
                         }
 
                         ElMessage({
@@ -212,6 +260,7 @@ export default {
 
         // ...
         return {
+            hideItem,
             getCurrentStep,
             handleClick,
             tableData,
@@ -239,9 +288,8 @@ export default {
 }
 
 .progress-card {
+    margin: 20px;
     margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 20px;
     border-radius: 10px;
     width: 1150px;
     border: solid 1px #e7e5e5;
@@ -268,9 +316,12 @@ export default {
 }
 
 .edit-button {
-    margin-top: -5px;
-    margin-left: 15px;
+    /* margin-top: -5px; */
+    /* margin-left: 15px; */
+    width: 24px;
+    height: 24px;
     cursor: pointer;
+    filter: invert(45%) sepia(30%) saturate(4401%) hue-rotate(192deg) brightness(88%) contrast(78%);
 }
 
 .card-top span {
@@ -309,6 +360,13 @@ export default {
     padding: 20px 50px 20px 50px;
     /* background-color: rgb(246, 246, 246); */
 
+}
+
+.delete-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    filter: invert(45%) sepia(30%) saturate(4401%) hue-rotate(192deg) brightness(88%) contrast(78%);
 }
 
 /* .custom-label-color {

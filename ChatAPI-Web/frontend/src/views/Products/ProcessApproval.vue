@@ -77,10 +77,11 @@
 </template>
   
 <script lang="ts">
-import { ref, onMounted, reactive } from "vue";
+import { ref, computed, watch, onMounted, reactive } from "vue";
 import apiClient from "../apiClient";
 import { ElMessage, ElMessageBox } from 'element-plus';
 import { Delete, Edit, Search, Share, Upload } from '@element-plus/icons-vue'
+import { useStore } from 'vuex';
 
 interface Repair {
     Num?: string;
@@ -98,6 +99,7 @@ interface Repair {
 export default {
     name: "ProcessApproval",
     components: {},
+
     setup() {
         const getCurrentStep = (state: string): number => {
             switch (state) {
@@ -113,6 +115,14 @@ export default {
                     return 0;
             }
         };
+        const store = useStore();
+
+        const workflowNum = ref(""); // 初始化一个 ref 用于存储工作流编号
+        const workflowVisible = computed(() => workflowNum.value === store.state.workflow.workflowNum); // 计算属性，用于判断工作流是否可见
+
+        watch(() => store.state.workflow.workflowNum, (newValue) => {
+            workflowNum.value = newValue;
+        });
 
         const hideItem = (index: number) => {
             ElMessageBox.confirm(
@@ -260,6 +270,7 @@ export default {
 
         // ...
         return {
+            workflowVisible,
             hideItem,
             getCurrentStep,
             handleClick,

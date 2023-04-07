@@ -1,5 +1,5 @@
 <template>
-  <el-table :data="tableData" style="width: 100%" class="table-with-fixed-height">
+  <el-table :data="tableData" style="width: 100%" class="table-with-fixed-height" @row-click="handleRowClick">
     <el-table-column fixed prop="Num" label="报修编号" />
     <el-table-column prop="Date" label="报修时间" />
     <el-table-column prop="Location" label="报修地点" />
@@ -53,6 +53,9 @@
 import { ref, onMounted } from 'vue';
 import apiClient from "../apiClient";
 import { ElIcon } from 'element-plus';
+import { ElMessageBox } from "element-plus";
+import { useRouter } from "vue-router";
+import { useStore } from 'vuex';
 
 interface Repair {
   Num?: string;
@@ -70,9 +73,34 @@ interface Repair {
 export default {
   name: 'RepairTable',
   setup() {
+    const router = useRouter();
+
     const handleClick = () => {
       console.log('click');
     };
+    const store = useStore();
+
+    const handleRowClick = async (row: Repair) => {
+      try {
+        const res = await ElMessageBox.confirm(
+          "确定要查看此工作流吗？",
+          "查看工作流",
+          {
+            confirmButtonText: "确定",
+            cancelButtonText: "取消",
+            type: "warning",
+          }
+        );
+        if (res === 'confirm') {
+          // 将工作流的唯一标识符存储到 Vuex 中
+          store.commit('workflow/setWorkflowNum', row.Num);
+        }
+
+      } catch (error) {
+        // 用户点击了取消按钮，不做任何操作
+      }
+    };
+
 
     const tableData = ref<Repair[]>([]);
 
@@ -90,18 +118,20 @@ export default {
     return {
       handleClick,
       tableData,
+      handleRowClick,
     };
   },
 };
 </script>
 
 <style scoped>
-.state-span{
+.state-span {
   display: flex;
-  align-items:center;
+  align-items: center;
 }
-.state-span svg{
-  margin-right:3px;
+
+.state-span svg {
+  margin-right: 3px;
 }
 </style>
 

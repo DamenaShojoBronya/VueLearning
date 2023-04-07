@@ -3,6 +3,7 @@ import { createStore } from 'vuex';
 import App from '../App.vue';
 import HeaderComponent from '../components/HeaderComponent.vue';
 import PageFooter from '../components/PageFooter'
+import workflow from './workflow';
 
 export default createStore({
   state: {
@@ -19,6 +20,7 @@ export default createStore({
   modules: {
     App,
     HeaderComponent,
-    PageFooter
+    PageFooter,
+    workflow
   }
 });

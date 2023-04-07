@@ -13,21 +13,17 @@
                             @close="handleClose" @select="handleSelect">
                             <!-- 首页 -->
                             <el-menu-item index="1">
-                                <el-icon>
-                                    <Location />
-                                </el-icon>
+                                <el-icon><Grid /></el-icon>
                                 <template #title>首页</template>
                             </el-menu-item>
                             <!-- 设备报修 -->
                             <el-menu-item index="2">
-                                <el-icon><Icon-menu /></el-icon>
+                                <el-icon><Help /></el-icon>
                                 <template #title>设备报修</template>
                             </el-menu-item>
                             <!-- 报告厅申请 -->
                             <el-menu-item index="3">
-                                <el-icon>
-                                    <Setting />
-                                </el-icon>
+                                <el-icon><DocumentAdd /></el-icon>
                                 <template #title>报告厅申请</template>
                             </el-menu-item>
                             <!-- 流程审批 -->
@@ -36,12 +32,6 @@
                                     <Document />
                                 </el-icon>
                                 <template #title>流程审批</template>
-                            </el-menu-item>
-                            <el-menu-item index="5">
-                                <el-icon>
-                                    <Document />
-                                </el-icon>
-                                <template #title>出勤登记</template>
                             </el-menu-item>
                         </el-menu>
                     </el-aside>
@@ -69,10 +59,6 @@
                             <ProcessApproval :tableData="tableData"></ProcessApproval>
                         </div>
 
-                        <!-- 出勤登记内容 -->
-                        <div class="box-card" v-if="activeIndex === '5'">
-                            <StuffForm :tableData="tableData"></StuffForm>
-                        </div>
                     </el-main>
 
                 </el-container>
@@ -157,8 +143,9 @@ import { ref, onMounted } from 'vue'
 import {
     Document,
     Menu as IconMenu,
-    Location,
-    Setting,
+    Grid,
+    DocumentAdd,
+    Help,
 } from '@element-plus/icons-vue'
 import apiClient from "../apiClient";
 const tableData = ref([]); // 添加 tableData 变量
@@ -199,7 +186,6 @@ import SubmitForm from './SubmitForm.vue';
 import RepairTable from './RepairTable.vue';
 import LecturehallApply from './LecturehallApply.vue';
 import ProcessApproval from './ProcessApproval.vue';
-import StuffForm from './StuffForm.vue';
 
 export default {
     name: 'DeviceAndAttendance',
@@ -208,7 +194,6 @@ export default {
         RepairTable,
         LecturehallApply,
         ProcessApproval,
-        StuffForm
     },
 };
 </script>

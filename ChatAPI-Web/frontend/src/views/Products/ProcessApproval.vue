@@ -173,6 +173,21 @@ export default {
                     // 提交数据到后端
                     try {
                         await apiClient.put(`/api/repairs/${item.Num}/update`, { [field]: value });
+
+                        // 在这里更新状态为已完成
+                        if (
+                            item.Solution !== "正在出勤" &&
+                            item.Stuff !== "正在出勤" &&
+                            item.Consumables !== "暂无"
+                        ) {
+                            item.State = "已完成";
+                            await apiClient.put(`/api/repairs/${item.Num}/update`, { State: "已完成" });
+                            ElMessage({
+                            type: "success",
+                            message: `出勤登记完成: ${label}`,
+                        });
+                        }
+
                         ElMessage({
                             type: "success",
                             message: `修改成功: ${label}`,
@@ -192,6 +207,7 @@ export default {
                     });
                 });
         };
+
 
 
         // ...

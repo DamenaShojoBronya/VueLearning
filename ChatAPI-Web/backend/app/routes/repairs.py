@@ -41,9 +41,10 @@ def update_repair(num):
     for field in update_fields:
         if field in request.json:
             repair[field] = request.json[field]
-
+    if repair['Solution'] != "正在出勤" and repair['Stuff'] != "正在出勤" and repair['Consumables'] != "暂无":
+        repair['State'] = "已完成"
+    
     return jsonify(repair)
-
 
 # 提交报修表单
 from datetime import datetime

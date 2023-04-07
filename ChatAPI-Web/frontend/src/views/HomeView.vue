@@ -514,17 +514,17 @@ export default {
 }
 
 .el-carousel__item:nth-child(3n) {
-  background-color: #d3dce6;
-  background: url('../assets/首页banner2.png');
+  /* background-color: #d3dce6; */
+  background: url('../assets/首页banner2.png') no-repeat center;
 }
 
 .el-carousel__item:nth-child(3n+1) {
-  background-color: #99a9bf;
-  background: url('../assets/profile.png');
+  /* background-color: #99a9bf; */
+  background: url('../assets/profile.png') no-repeat center;
 }
 
 .el-carousel__item:nth-child(3n+2) {
-  background: url('../assets/首页banner.png');
+  background: url('../assets/首页banner.png') no-repeat center;
 }
 
 

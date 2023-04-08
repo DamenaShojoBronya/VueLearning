@@ -242,7 +242,7 @@ export default {
                             await apiClient.put(`/api/repairs/${item.Num}/update`, { State: "已完成" });
                             ElMessage({
                                 type: "success",
-                                message: `出勤登记完成: ${label}`,
+                                message: `出勤登记完成`,
                             });
                         }
 

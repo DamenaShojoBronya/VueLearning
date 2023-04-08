@@ -13,17 +13,23 @@
                             @close="handleClose" @select="handleSelect">
                             <!-- 首页 -->
                             <el-menu-item index="1">
-                                <el-icon><Grid /></el-icon>
+                                <el-icon>
+                                    <Grid />
+                                </el-icon>
                                 <template #title>首页</template>
                             </el-menu-item>
                             <!-- 设备报修 -->
-                            <el-menu-item index="2">
-                                <el-icon><Help /></el-icon>
+                            <el-menu-item index="2" @click="openDialog">
+                                <el-icon>
+                                    <Help />
+                                </el-icon>
                                 <template #title>设备报修</template>
                             </el-menu-item>
                             <!-- 报告厅申请 -->
-                            <el-menu-item index="3">
-                                <el-icon><DocumentAdd /></el-icon>
+                            <el-menu-item index="3" @click="openDialog">
+                                <el-icon>
+                                    <DocumentAdd />
+                                </el-icon>
                                 <template #title>报告厅申请</template>
                             </el-menu-item>
                             <!-- 流程审批 -->
@@ -38,20 +44,34 @@
 
                     <el-main>
                         <!-- 首页内容 -->
-                        <el-card class="box-card" v-if="activeIndex === '1'">
+                        <el-card class="box-card_1" v-if="activeIndex === '1'">
                             <!-- 事件触发时更新 RepairTable -->
                             <Repair-table :tableData="tableData"></Repair-table>
                         </el-card>
 
                         <!-- 设备报修内容 -->
                         <el-card class="box-card" v-if="activeIndex === '2'">
-                            <!-- 监听 SubmitForm 组件的自定义事件 -->
-                            <SubmitForm @form-submitted="fetchRepairsData"></SubmitForm>
+                            <!-- 关闭对话框后的内容写在这里 -->
+                            <el-card align-center>
+                                <SubmitForm @form-submitted="fetchRepairsData"></SubmitForm>
+                            </el-card>
+                            <el-dialog v-model="DialogVisible" title="设备报修申请" width="40%" align-center>
+                                <!-- 监听 SubmitForm 组件的自定义事件 -->
+                                <SubmitForm @form-submitted="fetchRepairsData"></SubmitForm>
+                                <template #footer><span class="dialog-footer"></span></template>
+                            </el-dialog>
                         </el-card>
 
                         <!-- 报告厅申请内容 -->
                         <el-card class="box-card" v-if="activeIndex === '3'">
-                            <LecturehallApply></LecturehallApply>
+                            <!-- 关闭对话框后的内容写在这里 -->
+                            <el-card align-center>
+                                <LecturehallApply></LecturehallApply>
+                            </el-card>
+                            <el-dialog v-model="DialogVisible" title="报告厅申请" width="40%" align-center>
+                                <LecturehallApply></LecturehallApply>
+                                <template #footer><span class="dialog-footer"></span></template>
+                            </el-dialog>
                         </el-card>
 
                         <!-- 流程审批内容 -->
@@ -119,8 +139,19 @@ main.el-main {
 /* el-card布局 */
 .box-card {
     height: 600px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.box-card_1{
+    height: 600px;
+}
+.box-card .el-card{
+    background: rgb(246, 246, 246);
+    margin-left:-150px;
+    width:30vw;
+    height:30vh;
+}
 .table-with-fixed-height {
     height: 450px;
     overflow-y: auto;
@@ -148,6 +179,13 @@ import {
     Help,
 } from '@element-plus/icons-vue'
 import apiClient from "../apiClient";
+
+const DialogVisible = ref(false)
+const openDialog = () => {
+    DialogVisible.value = true;
+}
+
+
 const tableData = ref([]); // 添加 tableData 变量
 const fetchRepairsData = async () => {
     try {
@@ -188,7 +226,7 @@ import LecturehallApply from './LecturehallApply.vue';
 import ProcessApproval from './ProcessApproval.vue';
 
 export default {
-    name: 'DeviceAndAttendance',
+    name: 'ProductsView',
     components: {
         SubmitForm,
         RepairTable,

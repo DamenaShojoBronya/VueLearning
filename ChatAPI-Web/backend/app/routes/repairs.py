@@ -7,44 +7,63 @@ repairs_bp = Blueprint('repairs', __name__)
 repairs_data = []
 
 # 获取报修列表
+from app.routes.database import create_connection
 @repairs_bp.route('/api/repairs', methods=['GET'])
 def get_repairs():
+    conn = create_connection()
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM repairs")
+    rows = cur.fetchall()
+
+    repairs_data = [dict(zip([column[0] for column in cur.description], row)) for row in rows]
+
     return jsonify(repairs_data)
 
 # 改变流程的状态State，分别绑定两个按钮 后续再优化
 @repairs_bp.route('/api/repairs/<string:num>/approve', methods=['PUT'])
 def approve_repair(num):
-    for repair in repairs_data:
-        if repair['Num'] == num:
-            repair['State'] = request.json['state']
-            return jsonify(repair)
-    return jsonify({'error': 'Approve Repair not found'}), 404
+    conn = create_connection()
+    cur = conn.cursor()
+    cur.execute("UPDATE repairs SET State=? WHERE Num=?", (request.json['state'], num))
+    conn.commit()
+
+    if cur.rowcount == 1:
+        return jsonify({"message": "Approve Repair successfully updated"})
+    else:
+        return jsonify({'error': 'Approve Repair not found'}), 404
 
 @repairs_bp.route('/api/repairs/<string:num>/reject', methods=['PUT'])
 def reject_repair(num):
-    for repair in repairs_data:
-        if repair['Num'] == num:
-            repair['State'] = request.json['state']
-            return jsonify(repair)
-    return jsonify({'error': 'Reject Repair not found'}), 404
+    conn = create_connection()
+    cur = conn.cursor()
+    cur.execute("UPDATE repairs SET State=? WHERE Num=?", (request.json['state'], num))
+    conn.commit()
 
-# 更新维修条目信息
+    if cur.rowcount == 1:
+        return jsonify({"message": "Reject Repair successfully updated"})
+    else:
+        return jsonify({'error': 'Reject Repair not found'}), 404
+
+# 更新维修条目信息,判断移到前端去做
 @repairs_bp.route('/api/repairs/<string:num>/update', methods=['PUT'])
 def update_repair(num):
-    # 查找对应的维修条目
-    repair = next((r for r in repairs_data if r['Num'] == num), None)
-    if repair is None:
-        return jsonify({'error': 'Repair not found'}), 404
+    conn = create_connection()
+    cur = conn.cursor()
+    update_fields = ['Solution', 'Stuff', 'Consumables', 'State']
+    data = {field: request.json[field] for field in update_fields if field in request.json}
 
-    # 更新维修条目的相关字段
-    update_fields = ['Solution', 'Stuff', 'Consumables']
-    for field in update_fields:
-        if field in request.json:
-            repair[field] = request.json[field]
-    if repair['Solution'] != "正在出勤" and repair['Stuff'] != "正在出勤" and repair['Consumables'] != "暂无":
-        repair['State'] = "已完成"
-    
-    return jsonify(repair)
+    if not data:
+        return jsonify({'error': 'No valid fields to update'}), 400
+
+    query = "UPDATE repairs SET " + ", ".join(f"{field}=?" for field in data.keys()) + " WHERE Num=?"
+    params = tuple(data[field] for field in data.keys()) + (num,)
+    cur.execute(query, params)
+    conn.commit()
+
+    if cur.rowcount == 1:
+        return jsonify({"message": "Repair successfully updated"})
+    else:
+        return jsonify({'error': 'Repair not found'}), 404
 
 # 提交报修表单
 from datetime import datetime
@@ -78,6 +97,15 @@ def submit_repair():
     print("Received repair_data2:", repair_data)
     # 返回修改的数据
     repairs_data.append(repair_data)
+    # 连接数据库
+    conn = create_connection()
+    cur = conn.cursor()
+    cur.execute("""
+    INSERT INTO repairs (Num, Date, Location, Description, Reporter, Phonenum, Solution, Stuff, Consumables, State)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (repair_data['Num'], repair_data['Date'], repair_data['Location'], repair_data['Description'], repair_data['Reporter'], repair_data['Phonenum'], repair_data['Solution'], repair_data['Stuff'], repair_data['Consumables'], repair_data['State']))
+    conn.commit()
+
     return jsonify(repair_data), 201
 
  

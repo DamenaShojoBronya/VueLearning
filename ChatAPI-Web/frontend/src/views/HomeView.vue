@@ -1,6 +1,6 @@
 <template>
   <div class="view-box">
-    
+
     <div class="header">
       <div class="header-mid">
         <h3>桂电北海网络中心</h3>
@@ -10,23 +10,22 @@
         <div class="header-bottom-bg"></div>
         <div class="header-bottom-content">
           <h3>平台</h3><br>
-          <p>帮助成员提高编程和技术能力，为他们提供一个交流、学习和合作的平台</p>
+          <p>帮助成员提高编程和技术能力，提供一个交流、学习和合作的平台</p>
         </div>
         <div class="divider"></div>
         <div class="header-bottom-content">
           <h3>实践</h3><br>
-          <p>通过组织各种实践项目和比赛，让成员得到实践经验和技能锻炼的机会
-          </p>
+          <p>通过组织比赛项目和日常任务，让成员得到实践经验和技能锻炼的机会</p>
         </div>
         <div class="divider"></div>
         <div class="header-bottom-content">
           <h3>环境</h3><br>
-          <p>学习区域通常会有桌子、椅子等设备，以方便团队成员进行沟通和讨论。</p>
+          <p>拥有独立自习室和办公桌椅，环境舒适 技术大拿共同交流，学习氛围好</p>
         </div>
         <div class="divider"></div>
         <div class="header-bottom-content">
           <h3>服务</h3><br>
-          <p>服务师生可以提高教学质量和效率，同时也可以扩展学生的学习范围和经验</p>
+          <p>负责校内网络维护维修事宜，服务师生 提供勤工俭学岗位，锻炼自己</p>
         </div>
       </div>
     </div>
@@ -247,12 +246,11 @@ export default {
 </script>
 <!-- 分辨率缩放bug -->
 <style scoped>
-
 .view-box {
   width: 100%;
   min-width: 1440px;
   height: auto;
-  margin-top:-60px;
+  margin-top: -60px;
 }
 
 .header {
@@ -313,7 +311,8 @@ export default {
   height: 192px;
   z-index: 100;
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -331,6 +330,7 @@ export default {
   font-size: 16px;
   color: #FFFFFF;
   line-height: 24px;
+  /* text-align: left; */
 }
 
 .divider {
@@ -508,14 +508,16 @@ export default {
   background: #d3dce6;
 }
 
-.content-2-carousel{
+.content-2-carousel {
   background: #475669;
   min-width: 100%;
 }
+
 .el-carousel__item:nth-child(3n) {
   background-color: #d3dce6;
   background: url('../assets/轮播图1.jpg')no-repeat center;
 }
+
 .el-carousel__item:nth-child(3n+1) {
   background-color: #99a9bf;
   background: url('../assets/轮播图2.jpg')no-repeat center;

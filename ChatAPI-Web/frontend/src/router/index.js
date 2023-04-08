@@ -4,7 +4,7 @@ import RewriteForm from '../views/RewriteForm.vue'
 import TranslatorForm from '../views/TranslatorForm.vue'
 import CodeInterpreter from '../views/CodeInterpreter.vue'
 import XiaohongshuGenerator from '../views/XHSgenerator/XiaohongshuGenerator.vue'
-
+import ProcessApproval from '../views/Products/ProcessApproval.vue';
 const routes = [
   // 默认首页index重定向到跳转的首页home
   {
@@ -61,7 +61,12 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Products/ProductsView.vue')
   },
-
+  //流程审批
+  {
+    path: '/workflow/:id',
+    name: 'workflow',
+    component: ProcessApproval,
+  }
 ]
 
 const router = createRouter({

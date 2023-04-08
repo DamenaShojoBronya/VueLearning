@@ -13,29 +13,25 @@
                             @close="handleClose" @select="handleSelect">
                             <!-- 首页 -->
                             <el-menu-item index="1">
-                                <el-icon>
-                                    <Location />
-                                </el-icon>
+                                <el-icon><Grid /></el-icon>
                                 <template #title>首页</template>
                             </el-menu-item>
                             <!-- 设备报修 -->
                             <el-menu-item index="2">
-                                <el-icon><Icon-menu /></el-icon>
+                                <el-icon><Help /></el-icon>
                                 <template #title>设备报修</template>
                             </el-menu-item>
-                            <!-- 维修指派 -->
+                            <!-- 报告厅申请 -->
                             <el-menu-item index="3">
+                                <el-icon><DocumentAdd /></el-icon>
+                                <template #title>报告厅申请</template>
+                            </el-menu-item>
+                            <!-- 流程审批 -->
+                            <el-menu-item index="4">
                                 <el-icon>
                                     <Document />
                                 </el-icon>
-                                <template #title>维修指派</template>
-                            </el-menu-item>
-                            <!-- 报告厅申请 -->
-                            <el-menu-item index="4">
-                                <el-icon>
-                                    <Setting />
-                                </el-icon>
-                                <template #title>报告厅申请</template>
+                                <template #title>流程审批</template>
                             </el-menu-item>
                         </el-menu>
                     </el-aside>
@@ -43,19 +39,26 @@
                     <el-main>
                         <!-- 首页内容 -->
                         <el-card class="box-card" v-if="activeIndex === '1'">
-                            <Repair-table></Repair-table>
+                            <!-- 事件触发时更新 RepairTable -->
+                            <Repair-table :tableData="tableData"></Repair-table>
                         </el-card>
+
                         <!-- 设备报修内容 -->
                         <el-card class="box-card" v-if="activeIndex === '2'">
-                            <SubmitForm></SubmitForm>
+                            <!-- 监听 SubmitForm 组件的自定义事件 -->
+                            <SubmitForm @form-submitted="fetchRepairsData"></SubmitForm>
                         </el-card>
-                        <!-- 维修指派内容 -->
-                        <el-card class="box-card" v-if="activeIndex === '3'">
-                        </el-card>
+
                         <!-- 报告厅申请内容 -->
-                        <el-card class="box-card" v-if="activeIndex === '4'">
+                        <el-card class="box-card" v-if="activeIndex === '3'">
                             <LecturehallApply></LecturehallApply>
                         </el-card>
+
+                        <!-- 流程审批内容 -->
+                        <div class="box-card" v-if="activeIndex === '4'">
+                            <ProcessApproval :tableData="tableData"></ProcessApproval>
+                        </div>
+
                     </el-main>
 
                 </el-container>
@@ -80,6 +83,7 @@ view-box {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 70vh;
 }
 
 .main-box:before {
@@ -87,7 +91,7 @@ view-box {
     z-index: -1;
     content: "";
     width: 100%;
-    height: 60%;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     background: #eef2f7;
@@ -96,7 +100,8 @@ view-box {
 /* 内容区域 */
 aside.el-aside {
     width: 200px;
-    height: 530px;
+    height: 650px;
+    padding-top: 20px;
     background: white;
     border-radius: 12px 0px 0px 12px;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.18);
@@ -104,8 +109,8 @@ aside.el-aside {
 }
 
 main.el-main {
-    width: 1262px;
-    height: 530px;
+    width: 1462px;
+    height: 650px;
     background: rgb(255, 255, 255);
     border-radius: 0px 12px 12px 0px;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.18);
@@ -113,7 +118,7 @@ main.el-main {
 
 /* el-card布局 */
 .box-card {
-    height: 450px;
+    height: 600px;
 }
 
 .table-with-fixed-height {
@@ -134,15 +139,28 @@ main.el-main {
 </style>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import {
     Document,
     Menu as IconMenu,
-    Location,
-    Setting,
+    Grid,
+    DocumentAdd,
+    Help,
 } from '@element-plus/icons-vue'
+import apiClient from "../apiClient";
+const tableData = ref([]); // 添加 tableData 变量
+const fetchRepairsData = async () => {
+    try {
+        const response = await apiClient.get('/api/repairs');
+        tableData.value = response.data;
+    } catch (error) {
+        console.error('Error fetching repairs data:', error);
+    }
+};
+onMounted(fetchRepairsData);
+
 // elementplus组件
-const isCollapse = ref(true)
+const isCollapse = ref(false)
 const handleOpen = (key: string, keyPath: string[]) => {
     console.log(key, keyPath)
 }
@@ -160,25 +178,22 @@ const activeIndex = ref('1') // 添加 activeIndex 变量，默认设置为 '1'
 const handleSelect = (index: string) => {  // 添加 handleSelect 方法
     activeIndex.value = index
 }
+
 </script>
 
 <script lang="ts">
 import SubmitForm from './SubmitForm.vue';
 import RepairTable from './RepairTable.vue';
 import LecturehallApply from './LecturehallApply.vue';
+import ProcessApproval from './ProcessApproval.vue';
+
 export default {
     name: 'DeviceAndAttendance',
     components: {
         SubmitForm,
         RepairTable,
-        LecturehallApply
-    },
-    data() {
-        return {
-        };
-    },
-    methods: {
-
+        LecturehallApply,
+        ProcessApproval,
     },
 };
 </script>

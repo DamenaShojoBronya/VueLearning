@@ -1,24 +1,17 @@
 <template>
-  <el-form
-    ref="ruleFormRef"
-    :model="ruleForm"
-    :rules="rules"
-    label-width="120px"
-    class="demo-ruleForm"
-    :size="formSize"
-    status-icon
-  >
-    <el-form-item label="报修地点" prop="location">
-      <el-input v-model="ruleForm.location" />
+  <el-form ref="ruleFormRef" :model="ruleForm" :rules="rules" label-width="120px" class="demo-ruleForm" :size="formSize"
+    status-icon>
+    <el-form-item label="报修地点" prop="Location">
+      <el-input v-model="ruleForm.Location" />
     </el-form-item>
-    <el-form-item label="问题描述" prop="description">
-      <el-input v-model="ruleForm.description" type="textarea" />
+    <el-form-item label="问题描述" prop="Description">
+      <el-input v-model="ruleForm.Description" type="textarea" />
     </el-form-item>
-    <el-form-item label="报修人员" prop="reporter">
-      <el-input v-model="ruleForm.reporter" />
+    <el-form-item label="报修人员" prop="Reporter">
+      <el-input v-model="ruleForm.Reporter" />
     </el-form-item>
-    <el-form-item label="联系方式" prop="contact">
-      <el-input v-model="ruleForm.contact" />
+    <el-form-item label="联系方式" prop="Phonenum">
+      <el-input v-model="ruleForm.Phonenum" />
     </el-form-item>
     <el-form-item>
       <el-button type="primary" @click="submitForm(ruleFormRef)">
@@ -30,46 +23,74 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive, ref } from 'vue'
-import type { FormInstance, FormRules } from 'element-plus'
+import { ElMessage } from 'element-plus';
+import apiClient from "../apiClient";
+import { reactive, ref, defineEmits } from 'vue';
+import type { FormInstance, FormRules } from 'element-plus';
 
-const formSize = ref('default')
-const ruleFormRef = ref<FormInstance>()
+// Vue3自定义事件，.ts写法。当表单成功提交后，这个事件将被触发，使其他组件能够监听
+interface Emits {
+  (event: 'form-submitted'): void;
+}
+const emit = defineEmits<Emits>();
+
+const formSize = ref('default');
+const ruleFormRef = ref<FormInstance>();
 const ruleForm = reactive({
-  location: '',
-  description: '',
-  reporter: '',
-  contact: '',
-})
+  Location: '',
+  Description: '',
+  Reporter: '',
+  Phonenum: '',
+});
 
 const rules = reactive<FormRules>({
-  location: [
+  Location: [
     { required: true, message: '请输入报修地点', trigger: 'blur' },
   ],
-  description: [
+  Description: [
     { required: true, message: '请输入问题描述', trigger: 'blur' },
   ],
-  reporter: [
+  Reporter: [
     { required: true, message: '请输入报修人员', trigger: 'blur' },
   ],
-  contact: [
+  Phonenum: [
     { required: true, message: '请输入联系方式', trigger: 'blur' },
   ],
-})
+});
 
 const submitForm = async (formEl: FormInstance | undefined) => {
-  if (!formEl) return
-  await formEl.validate((valid, fields) => {
+  if (!formEl) return;
+  await formEl.validate(async (valid, fields) => {
     if (valid) {
-      console.log('submit!')
+      try {
+        const response = await apiClient.post('/api/repairs', ruleForm);
+        console.log('Form submitted successfully:', response);
+        ElMessage({
+          message: '表单提交成功！',
+          type: 'success',
+        });
+        emit('form-submitted');
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        ElMessage({
+          message: '表单提交失败，请稍后重试。',
+          type: 'error',
+        });
+      }
     } else {
-      console.log('error submit!', fields)
+      console.log('error submit!', fields);
+      ElMessage({
+        message: '表单验证失败，请检查输入内容。',
+        type: 'warning',
+      });
     }
-  })
-}
+  });
+};
 
 const resetForm = (formEl: FormInstance | undefined) => {
-  if (!formEl) return
-  formEl.resetFields()
-}
+  if (!formEl) return;
+  formEl.resetFields();
+};
 </script>
+
+

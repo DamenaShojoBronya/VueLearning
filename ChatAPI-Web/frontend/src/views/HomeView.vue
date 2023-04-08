@@ -136,97 +136,97 @@
       </div>
       <ul class="pic-ls">
         <li class="pic-ls1">
-          <img class="pic-ls-bg" src="./assets/泛糖-440x342.png">
+          <img class="pic-ls-bg" src="./assets/应用1.jpg">
           <img src="./assets/应用服务-图标-泛糖.png">
-          <p>泛糖</p>
+          <p>查询课表</p>
           <div class="line4"></div>
-          <div class="pic1-slogan">新型基础设施赋能涉农企业生产经营管理</div>
+          <div class="pic1-slogan">学生和老师可自行查询课表，遍历，一目了然</div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="./assets/电子口岸-200x342.png">
+          <img class="pic-ls-bg" src="./assets/应用2.jpg">
           <img src="./assets/应用服务-图标-电子口岸.png">
-          <p>电子口岸</p>
+          <p>学分信息</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="./assets/装配式建筑-200x342.png">
+          <img class="pic-ls-bg" src="./assets/应用3.jpg">
           <img src="./assets/应用服务-图标-装配式建筑.png">
-          <p>装配式建筑</p>
+          <p>成绩查询</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="./assets/建材采购-200x342.png">
+          <img class="pic-ls-bg" src="./assets/应用4.jpg">
           <img src="./assets/应用服务-图标-建材采购.png">
-          <p>建材采购</p>
+          <p>学分绩查询</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="./assets/金融服务-200x342.png">
+          <img class="pic-ls-bg" src="./assets/应用5.jpg">
           <img src="./assets/应用服务-图标-金融服务.png">
-          <p>金融服务</p>
+          <p>学生评教</p>
           <div class="invisible-bottom"></div>
         </li>
       </ul>
       <ul class="pic-ls" id="pic2-ls">
         <li>
-          <img class="pic-ls-bg" src="./assets/行业咨询-248x342.png">
+          <img class="pic-ls-bg" src="./assets/应用6.jpg">
           <img src="./assets/应用服务-图标-行业咨询.png">
-          <p>行业咨询</p>
+          <p>选课</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="./assets/智联云-248x342.png">
+          <img class="pic-ls-bg" src="./assets/应用7.jpg">
           <img src="./assets/应用服务-图标-智联云.png">
-          <p>智联云</p>
+          <p>课表查询</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="./assets/路信云-248x342.png">
+          <img class="pic-ls-bg" src="./assets/应用8.jpg">
           <img src="./assets/应用服务-图标-路信云.png">
-          <p>路信云</p>
+          <p>已选课程</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="./assets/桂建云-248x342.png">
+          <img class="pic-ls-bg" src="./assets/应用9.jpg">
           <img src="./assets/应用服务-图标-桂建云.png">
-          <p>桂建云</p>
+          <p>退课</p>
           <div class="invisible-bottom"></div>
         </li>
         <li>
-          <img class="pic-ls-bg" src="./assets/明建云-248x342.png">
+          <img class="pic-ls-bg" src="./assets/应用10.jpg">
           <img src="./assets/应用服务-图标-明建云.png">
-          <p>明建云</p>
+          <p>个人中心</p>
           <div class="invisible-bottom"></div>
         </li>
       </ul>
       <div class="content-3-tittle">
         <span>
           <img src="./assets/zx_title_blue_r.png">
-          产业动态
+          细节动态
           <img src="./assets/zx_title_blue_l.png">
         </span>
         <p>INDUSTRY DYNAMICS</p>
       </div>
-      <div class="industry-dynamics-1">
-        <h3>专注打造工业互联网操作系统</h3>
-        <p>以客户为中心，通过市场需求驱动，助力产业链快速反应，布局云端信息化，打造产业操作系统。基于生态全链路对各个环节进行价值重构，将商流</p>
+      <div class="industry-dynamics-1"><br><br><br><br>
+        <h3>专注打造师生互联网操作系统</h3>
+        <p>以师生为中心，其系统主要是为了帮助广大教师提高工作效率，节约资源，提高学籍信息的精确度，实现学生信息管理工作流程的系统化、规范化和自动化。</p>
         <div class="button">
           <p>了解更多</p>
         </div>
       </div>
       <div class="industry-dynamics-wrap">
         <div class="industry-dynamics-2">
-          <img src="./assets/产业动态-图2.png">
+          <img src="./assets/动态-two.jpg">
           <div class="industry-dynamics-text">
-            <h3>装配式一体化解决方案</h3>
-            <p>以软硬件结合、提供装配式建筑材料的质量溯源、协同、其他产业链资源等服务，助力建筑业转型升级 </p>
+            <h3>系统一体化方案</h3>
+            <p>采用一定的方式，对已经制定颁布的规范性文件或者流程进行归类、整理或加工，使其集中起来作有系统的排列，以便于使用的活动 </p>
           </div>
         </div>
         <div class="industry-dynamics-3">
-          <img src="./assets/产业动态-图3.png">
+          <img src="./assets/动态-three.jpg">
           <div class="industry-dynamics-text">
-            <h3>营销一体化解决方案</h3>
-            <p>仓储物流服务集成平台，接入厂仓、第三方仓储物流公司系统，实现企业、贸易商与物流公司和仓库之间的在线撮合与交易，提供便捷、高效的仓储物流服务。</p>
+            <h3>规范一体化方案</h3>
+            <p>改造关系模式，通过分解关系模式来消除其中不合适的数据依赖，以解决插入异常、删除异常、更新异常和数据冗余问题。</p>
           </div>
         </div>
       </div>
@@ -514,16 +514,18 @@ export default {
 }
 .el-carousel__item:nth-child(3n) {
   background-color: #d3dce6;
-  background: url('../assets/首页banner2.png');
+  background: url('../assets/轮播图1.jpg')no-repeat center;
 }
 .el-carousel__item:nth-child(3n+1) {
   background-color: #99a9bf;
-  background: url('../assets/profile.png');
+  background: url('../assets/轮播图2.jpg')no-repeat center;
 }
 
 .el-carousel__item:nth-child(3n+2) {
-  background: url('../assets/首页banner.png');
+  background: url('../assets/轮播图3.jpg')no-repeat center;
 }
+
+
 
 
 .button {
@@ -756,7 +758,7 @@ li.pic-ls1 {
   margin: 0 auto;
   width: 1320px;
   height: 453px;
-  background: url('./assets/产业动态-图1.png');
+  background: url('./assets/动态-one.jpg');
 }
 
 .industry-dynamics-1>h3 {

@@ -55,6 +55,25 @@
 
             <!-- 头像区域 -->
             <div class="header-profile">
+                <!-- 头像 -->
+                <img class="profile-img" src="../assets/profile.png" alt="" @click="openDialog">
+                <el-dialog v-model="centerDialogVisible" title="登录" width="30%" align-center>
+                    <el-form ref="loginForm" :model="loginForm" :rules="rules" label-position="left" label-width="80px">
+                        <el-form-item label="用户名" prop="username">
+                            <el-input v-model="loginForm.username" autocomplete="off"></el-input>
+                        </el-form-item>
+                        <el-form-item label="密码" prop="password">
+                            <el-input type="password" v-model="loginForm.password" autocomplete="off"></el-input>
+                        </el-form-item>
+                    </el-form>
+                    <template #footer>
+                        <span class="dialog-footer">
+                            <el-button @click="centerDialogVisible = false">取消</el-button>
+                            <el-button type="primary" @click="submitForm">登录</el-button>
+                        </span>
+                    </template>
+                </el-dialog>
+
                 <div class="notification">
                     <span class="notification-number">9</span>
                     <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-029747aa="">
@@ -68,7 +87,6 @@
                         d="M764.416 254.72a351.68 351.68 0 0 1 86.336 149.184H960v192.064H850.752a351.68 351.68 0 0 1-86.336 149.312l54.72 94.72-166.272 96-54.592-94.72a352.64 352.64 0 0 1-172.48 0L371.136 936l-166.272-96 54.72-94.72a351.68 351.68 0 0 1-86.336-149.312H64v-192h109.248a351.68 351.68 0 0 1 86.336-149.312L204.8 160l166.208-96h.192l54.656 94.592a352.64 352.64 0 0 1 172.48 0L652.8 64h.128L819.2 160l-54.72 94.72zM704 499.968a192 192 0 1 0-384 0 192 192 0 0 0 384 0z">
                     </path>
                 </svg>
-                <img class="profile-img" src="../assets/profile.png" alt="">
             </div>
         </div>
     </header>
@@ -79,6 +97,8 @@
 //引入icon
 import { ArrowDown } from '@element-plus/icons-vue'
 import { mapGetters } from 'vuex';
+import apiClient from "../views/apiClient";
+import { ref } from 'vue'
 export default {
     name: 'ElementplusIcon',
     components: {
@@ -87,17 +107,58 @@ export default {
 
     data() {
         return {
-            isChangeSearch: false
+            isChangeSearch: false,
+            centerDialogVisible: false,
+            loginForm: {
+                username: '',
+                password: ''
+            },
+            rules: {
+                username: [
+                    { required: true, message: '请输入用户名', trigger: 'blur' }
+                ],
+                password: [
+                    { required: true, message: '请输入密码', trigger: 'blur' }
+                ]
+            }
         }
     },
     methods: {
         toggleBlur() {
             this.$store.commit('SET_BLUR', true);
+        },
+        openDialog() {
+            this.centerDialogVisible = true;
+        },
+        submitForm() {
+            this.$refs.loginForm.validate(async (valid) => {
+                if (valid) {
+                    try {
+                        // const response = await this.$http.post('/login', this.loginForm);
+                        const response = await apiClient.post('/auth/login', this.loginForm);
+                        if (response.data.success) {
+                            this.$message({
+                                message: '登录成功',
+                                type: 'success'
+                            });
+                            this.centerDialogVisible = false;
+                        } else {
+                            this.$message.error('用户名或密码错误');
+                        }
+                    } catch (error) {
+                        this.$message.error('登录失败，请重试');
+                    }
+                } else {
+                    console.log('表单验证失败');
+                    return false;
+                }
+            });
         }
     },
     computed: {
         ...mapGetters(['blur'])
-    }
+    },
+
 }
 
 </script>
@@ -319,6 +380,7 @@ export default {
             top: 50%;
             transform: translateY(-50%);
         }
+
         // 点击输入后边框改变颜色or只是变粗
         input:focus {
             border: 2px solid rgba(255, 255, 255, 0.675);
@@ -369,13 +431,15 @@ export default {
             }
         }
 
+        // 头像
         .profile-img {
             width: 32px;
             height: 32px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid #f9fafb;
-            margin-left: 22px;
+            margin-right: 22px;
+            cursor: pointer;
         }
     }
 
@@ -397,5 +461,18 @@ export default {
 
 .blur-background {
     filter: blur(4px);
+}
+
+.custom-dialog {
+    position: absolute;
+    z-index: 9999;
+}
+
+.higher-z-index {
+    z-index: 9999;
+}
+
+.dialog-footer button:first-child {
+    margin-right: 10px;
 }
 </style>

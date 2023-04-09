@@ -146,7 +146,7 @@ export default {
                             this.$message.error('用户名或密码错误');
                         }
                     } catch (error) {
-                        this.$message.error('登录失败，请重试');
+                        this.$message.error('登录失败，请重试..');
                     }
                 } else {
                     console.log('表单验证失败');

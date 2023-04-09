@@ -75,9 +75,10 @@ def login():
     user = User.query.filter_by(username=username).first()
     if user and check_password_hash(user.password, password):
         session["user"] = {"username": user.username, "role": user.role}  # Store user data in session
-        return jsonify({"message": "Login successful"}), 200
+        return jsonify({"message": "Login successful", "success": True}), 200
     else:
-        return jsonify({"message": "Invalid username or password"}), 401
+        return jsonify({"message": "Invalid username or password", "success": False}), 401
+
 
 @auth_bp.route('/logout')
 def logout():

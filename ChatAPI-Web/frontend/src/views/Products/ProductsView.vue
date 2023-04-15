@@ -139,19 +139,22 @@ main.el-main {
 /* el-card布局 */
 .box-card {
     height: 600px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.box-card_1{
+
+.box-card_1 {
     height: 600px;
 }
-.box-card .el-card{
+
+.box-card .el-card {
     background: rgb(246, 246, 246);
-    margin-left:-150px;
-    width:30vw;
-    height:30vh;
+    margin-left: -150px;
+    width: 30vw;
+    height: 30vh;
 }
+
 .table-with-fixed-height {
     height: 450px;
     overflow-y: auto;

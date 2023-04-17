@@ -23,7 +23,7 @@
       <!-- 配图 -->
       <figure class="headArticle-img">
         <a href="/blog/yc-summer-conference-2023" class="">
-          <img class="w-full rounded-2xl shadow-lg st-current" width="300" src="../assets/summerconf.png">
+          <img width="300" src="../assets/summerconf.png">
           <figcaption class="mt-2"></figcaption>
         </a>
       </figure>
@@ -33,9 +33,8 @@
       <h3>Recent Posts </h3>
       <div class="section-2_main">
         <div class="section-2_main_column">
-          <div class="column-pic"><a href="../assets/BlogTwitter-Image-Template--2-1024_1.png">
-              <img width="300" class="h-48 w-full object-cover" src="../assets/BlogTwitter-Image-Template--2-1024_1.png"
-                alt=""></a>
+          <div class="column-pic">
+            <a href="../assets/BlogTwitter-Image-Template--2-1024_1.png"></a>
           </div>
           <div class="column-main">
             <div class="column-main_text">
@@ -72,9 +71,8 @@
           </div>
         </div>
         <div class="section-2_main_column">
-          <div class="column-pic"><a href="../assets/BlogTwitter-Image-Template--2-1024_1.png">
-              <img width="300" class="h-48 w-full object-cover" src="../assets/BlogTwitter-Image-Template--2-1024_1.png"
-                alt=""></a>
+          <div class="column-pic">
+            <a href="../assets/BlogTwitter-Image-Template--2-1024_1.png"></a>
           </div>
           <div class="column-main">
             <div class="column-main_text">
@@ -111,9 +109,8 @@
           </div>
         </div>
         <div class="section-2_main_column">
-          <div class="column-pic"><a href="../assets/BlogTwitter-Image-Template--2-1024_1.png">
-              <img width="300" class="h-48 w-full object-cover" src="../assets/BlogTwitter-Image-Template--2-1024_1.png"
-                alt=""></a>
+          <div class="column-pic">
+            <a href="../assets/BlogTwitter-Image-Template--2-1024_1.png"></a>
           </div>
           <div class="column-main">
             <div class="column-main_text">
@@ -151,152 +148,128 @@
         </div>
       </div>
     </section>
-xzczxc
+
     <section class="section-3">
       <h3>All Posts</h3>
-      <div class="flex flex-col overflow-hidden rounded-lg">
-        <div class="mb-6 mr-6 flex flex-1 flex-col justify-between">
-          <div class="flex-1"><a href="/blog/changes-at-yc" class="mt-2 block">
-              <p class="text-3xl font-semibold text-gray-900">Changes at YC</p>
-            </a>
-            <p class="text-md py-2 text-gray-500">by <a href="/blog/author/garry"
-                class="text-blue-500 hover:underline"><span class="">Garry Tan</span></a><span
-                class="ml-4 text-sm font-normal">2023/3/14</span></p>
-            <p class="mt-3 text-base text-gray-800">In recent years, we have also done some late stage investing. But
-              late stage investing turned out to be so different from early stage that we found it to be a distraction
-              from our core mission. So we’re going to decrease the amount of late stage investing we do.</p>
-            <div class="mt-4"><a class="inline-flex text-sm font-medium text-blue-500 md:text-base"
-                href="/blog/changes-at-yc">Read More<!-- --> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="mx-1 h-6 w-6"
-                  width="1.25em" height="1.25em">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col overflow-hidden rounded-lg">
-        <div class="mb-6 mr-6 flex flex-1 flex-col justify-between">
-          <div class="flex-1"><a
-              href="/blog/urgent-sign-the-petition-now-thousands-of-startups-and-hundreds-of-thousands-of-startup-jobs-are-at-risk"
-              class="mt-2 block">
-              <p class="text-3xl font-semibold text-gray-900">Urgent: Sign the petition now</p>
-            </a>
-            <p class="text-md py-2 text-gray-500">by <a href="/blog/author/yc" class="text-blue-500 hover:underline"><span
-                  class="">Y Combinator</span></a><span class="ml-4 text-sm font-normal">2023/3/12</span></p>
-            <p class="mt-3 text-base text-gray-800">Nearly 40,000 of all depositors at Silicon Valley Bank were small
-              businesses. If swift action isn’t taken, over 100,000 people could soon lose their jobs.</p>
-            <div class="mt-4"><a class="inline-flex text-sm font-medium text-blue-500 md:text-base"
-                href="/blog/urgent-sign-the-petition-now-thousands-of-startups-and-hundreds-of-thousands-of-startup-jobs-are-at-risk">Read
-                More<!-- --> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="currentColor" aria-hidden="true" class="mx-1 h-6 w-6" width="1.25em" height="1.25em">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col overflow-hidden rounded-lg">
-        <div class="mb-6 mr-6 flex flex-1 flex-col justify-between">
-          <div class="flex-1"><a href="/blog/surbhi-sarnas-new-book-on-entrepreneurship" class="mt-2 block">
-              <p class="text-3xl font-semibold text-gray-900">Surbhi Sarna's new book on entrepreneurship</p>
-            </a>
-            <p class="text-md py-2 text-gray-500">by <a href="/blog/author/jared-friedman"
-                class="text-blue-500 hover:underline"><span class="">Jared Friedman</span></a><span
-                class="ml-4 text-sm font-normal">2023/3/8</span></p>
-            <p class="mt-3 text-base text-gray-800">YC Group Partner Surbhi Sarna has written a book called Without a
-              Doubt, and today it goes on sale.Without a Doubt tells the incredible story of Surbhi Sarna's company,
-              nVisionMedical, which started with a health scare when she was 13 and ended 20 yearslater in a $275M
-              acquisition. It's a must-read for anyone interested inhealthcare.</p>
-            <div class="mt-4"><a class="inline-flex text-sm font-medium text-blue-500 md:text-base"
-                href="/blog/surbhi-sarnas-new-book-on-entrepreneurship">Read More<!-- --> <svg
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="currentColor" aria-hidden="true" class="mx-1 h-6 w-6" width="1.25em" height="1.25em">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col overflow-hidden rounded-lg">
-        <div class="mb-6 mr-6 flex flex-1 flex-col justify-between">
-          <div class="flex-1"><a href="/blog/yc-spring-2022-tech-hiring-event" class="mt-2 block">
-              <p class="text-3xl font-semibold text-gray-900">Announcing Y Combinator's Spring 2022 Tech Hiring Event
-              </p>
-            </a>
-            <p class="text-md py-2 text-gray-500">by <a href="/blog/author/rchoi"
-                class="text-blue-500 hover:underline"><span class="">Ryan Choi</span></a><span
-                class="ml-4 text-sm font-normal">2023/3/1</span></p>
-            <p class="mt-3 text-base text-gray-800">We're excited to host an in-person tech hiring event on Wednesday,
-              March 8th at 5:30 PM at YCombinator's San Francisco office. This will be the first in-person hiring
-              eventwe're hosting at YC in over two years, and we have 9 YC-backed startups who arelooking to hire
-              engineers and technical talent.The event will feature brief founder &amp; company overviews, time to
-              network, andlight food and drinks provided by YC.</p>
-            <div class="mt-4"><a class="inline-flex text-sm font-medium text-blue-500 md:text-base"
-                href="/blog/yc-spring-2022-tech-hiring-event">Read More<!-- --> <svg xmlns="http://www.w3.org/2000/svg"
-                  fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
-                  class="mx-1 h-6 w-6" width="1.25em" height="1.25em">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col overflow-hidden rounded-lg">
-        <div class="mb-6 mr-6 flex flex-1 flex-col justify-between">
-          <div class="flex-1"><a href="/blog/yc-top-companies-feb-2023" class="mt-2 block">
-              <p class="text-3xl font-semibold text-gray-900">Congratulations to the 2023 YC Top Companies!</p>
-            </a>
-            <p class="text-md py-2 text-gray-500">by <a href="/blog/author/yc" class="text-blue-500 hover:underline"><span
-                  class="">Y Combinator</span></a><span class="ml-4 text-sm font-normal">2023/2/28</span></p>
-            <p class="mt-3 text-base text-gray-800">There are now 16 public YC companies, 290 private YC companies and
-              33 exits that are valued at over $150M, and over 80 that are worth more than $1B.</p>
-            <div class="mt-4"><a class="inline-flex text-sm font-medium text-blue-500 md:text-base"
-                href="/blog/yc-top-companies-feb-2023">Read More<!-- --> <svg xmlns="http://www.w3.org/2000/svg"
-                  fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
-                  class="mx-1 h-6 w-6" width="1.25em" height="1.25em">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col overflow-hidden rounded-lg">
-        <div class="mb-6 mr-6 flex flex-1 flex-col justify-between">
-          <div class="flex-1"><a href="/blog/why-would-you-work-at-a-startup-in-an-economic-downturn" class="mt-2 block">
-              <p class="text-3xl font-semibold text-gray-900">Why would you work at a startup in an economic downturn?
-              </p>
-            </a>
-            <p class="text-md py-2 text-gray-500">by <a href="/blog/author/rchoi"
-                class="text-blue-500 hover:underline"><span class="">Ryan Choi</span></a><span
-                class="ml-4 text-sm font-normal">2023/2/24</span></p>
-            <p class="mt-3 text-base text-gray-800">Now is as good a time as any to start a startup – especially if
-              you get into YC. But what about joining a startup in this economy? We’re obviously biased, but we think
-              it’s a great time to join a startup too. Here are three reasons to consider.</p>
-            <div class="mt-4"><a class="inline-flex text-sm font-medium text-blue-500 md:text-base"
-                href="/blog/why-would-you-work-at-a-startup-in-an-economic-downturn">Read More<!-- --> <svg
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="currentColor" aria-hidden="true" class="mx-1 h-6 w-6" width="1.25em" height="1.25em">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg></a></div>
-          </div>
-        </div>
-      </div>
-      <nav class="flex items-center justify-between border-t border-gray-200 py-3" aria-label="Pagination">
-        <div class="hidden sm:block">
-          <p class="text-sm text-gray-700">Showing<!-- --> <span class="font-medium">1</span> <!-- -->to<!-- --> <span
-              class="font-medium">10</span> <!-- -->of <span class="font-medium">2669</span> total posts</p>
-        </div>
-        <div class="flex flex-1 justify-between sm:justify-end"><a
-            class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:cursor-pointer hover:bg-gray-50">Next</a>
-        </div>
-      </nav>
+      <div class="section-3_col">
+        <a href="/blog/changes-at-yc">
+          Changes at YC
+        </a>
 
+        <p class="section-3_col_head">by
+          <a href="/blog/author/garry" class="text-blue-500 hover:underline">
+            <span class="">Garry Tan</span>
+          </a>
+          <span class="col-date">2023/3/14</span>
+        </p>
+
+        <p>In recent years, we have also done some late stage investing. But
+          late stage investing turned out to be so different from early stage that we found it to be a distraction
+          from our core mission. So we’re going to decrease the amount of late stage investing we do.</p>
+
+        <div>
+          <a href="/blog/yc-summer-conference-2023" class="headArticle_button">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+              aria-hidden="true" class="ml-1 inline h-4 w-4 md:h-5 md:w-5" width="1.25em" height="1.25em">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="section-3_col">
+        <a href="/blog/changes-at-yc">
+          Changes at YC
+        </a>
+
+        <p class="section-3_col_head">by
+          <a href="/blog/author/garry" class="text-blue-500 hover:underline">
+            <span class="">Garry Tan</span>
+          </a>
+          <span class="col-date">2023/3/14</span>
+        </p>
+
+        <p>In recent years, we have also done some late stage investing. But
+          late stage investing turned out to be so different from early stage that we found it to be a distraction
+          from our core mission. So we’re going to decrease the amount of late stage investing we do.</p>
+
+        <div>
+          <a href="/blog/yc-summer-conference-2023" class="headArticle_button">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+              aria-hidden="true" class="ml-1 inline h-4 w-4 md:h-5 md:w-5" width="1.25em" height="1.25em">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="section-3_col">
+        <a href="/blog/changes-at-yc">
+          Changes at YC
+        </a>
+
+        <p class="section-3_col_head">by
+          <a href="/blog/author/garry" class="text-blue-500 hover:underline">
+            <span class="">Garry Tan</span>
+          </a>
+          <span class="col-date">2023/3/14</span>
+        </p>
+
+        <p>In recent years, we have also done some late stage investing. But
+          late stage investing turned out to be so different from early stage that we found it to be a distraction
+          from our core mission. So we’re going to decrease the amount of late stage investing we do.</p>
+
+        <div>
+          <a href="/blog/yc-summer-conference-2023" class="headArticle_button">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+              aria-hidden="true" class="ml-1 inline h-4 w-4 md:h-5 md:w-5" width="1.25em" height="1.25em">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="section-3_col">
+        <a href="/blog/changes-at-yc">
+          Changes at YC
+        </a>
+
+        <p class="section-3_col_head">by
+          <a href="/blog/author/garry" class="text-blue-500 hover:underline">
+            <span class="">Garry Tan</span>
+          </a>
+          <span class="col-date">2023/3/14</span>
+        </p>
+
+        <p>In recent years, we have also done some late stage investing. But
+          late stage investing turned out to be so different from early stage that we found it to be a distraction
+          from our core mission. So we’re going to decrease the amount of late stage investing we do.</p>
+
+        <div>
+          <a href="/blog/yc-summer-conference-2023" class="headArticle_button">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+              aria-hidden="true" class="ml-1 inline h-4 w-4 md:h-5 md:w-5" width="1.25em" height="1.25em">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
     </section>
   </view-box>
 </template>
-<style scope>
+<style scoped>
 a {
   color: inherit;
   text-decoration: inherit;
@@ -318,7 +291,7 @@ view-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #f5f5ee;
+  background-color: #f7f7f7;;
 }
 
 section {
@@ -334,6 +307,7 @@ section {
 .headArticle-img,
 .headArticle-img a,
 .headArticle-img a img {
+  border-radius: 16px;
   width: 486px;
   height: 263px;
 }
@@ -373,7 +347,9 @@ section {
   color: #268bd2;
   margin-left: 12px;
 }
-
+.headArticle_button>svg{
+  margin-left: 4px;
+}
 /* section-2 */
 .section-2 {
   height: 733px;
@@ -411,9 +387,13 @@ section {
   flex-shrink: 0;
 }
 
-.column-pic img {
+.column-pic>a {
+  margin: 0 auto;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  background: url('../assets/BlogTwitter-Image-Template--2-1024_1.png') no-repeat center;
+  background-size: cover;
+  display: block;
 }
 
 .column-main {
@@ -508,5 +488,52 @@ section {
 
 .section-3 {
   display: grid;
+}
+
+.section-3_col {
+  height: 208.8px;
+  width: 703px;
+  margin-bottom:24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around
+}
+
+.section-3_col>a{
+  height:40px;
+  color: #111827;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+}
+
+.section-3_col p {
+  /* height: 1.5rem; */
+  text-align: start;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin:0px;
+}
+
+.section-3_col_head {
+  /* height:36px; */
+  color: #6b7280;
+}
+
+.section-3_col_head a span {
+  color: #3b82f6;
+}
+
+.section-3_col_head a span:hover {
+  text-decoration: underline;
+}
+
+.col-date {
+  margin-left: 16px;
+}
+.section-3 .headArticle_button{
+  margin-left:0px;
+  color:#3b82f6;
 }
 </style>

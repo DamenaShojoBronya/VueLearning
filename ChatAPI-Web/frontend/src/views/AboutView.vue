@@ -307,6 +307,7 @@ view-box {
 
 
 .content-3 {
+  width: 100%;
   height: 433px;
   background: #FFFFFF;
 }

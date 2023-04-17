@@ -266,8 +266,9 @@ export default {
 }
 
 .header-mid {
-  position: absolute;
+  position: relative;
   top: 18%;
+  margin-bottom:-100px;
   color: white;
   overflow: hidden;
 }
@@ -298,7 +299,7 @@ export default {
 
 .header-bottom-bg {
   position: absolute;
-  z-index: 20;
+  z-index: 9;
   height: 192px;
   width: 100%;
   min-width: 1440px;
@@ -309,7 +310,7 @@ export default {
 .header-bottom-content {
   width: 278px;
   height: 192px;
-  z-index: 100;
+  z-index: 10;
   display: flex;
   /* align-items: flex-start; */
   align-items: center;
@@ -473,7 +474,7 @@ export default {
   border-radius: 8px;
   margin-top: 368px;
   position: absolute;
-  z-index: 100;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-around;

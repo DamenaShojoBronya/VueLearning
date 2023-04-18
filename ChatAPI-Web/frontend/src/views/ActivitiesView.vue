@@ -4,26 +4,20 @@
       <div class="headArticle">
         <div class="headArticle_top">
           <a href="/blog/yc-summer-conference-2023">
-            <h2>Announcing the YC Summer Conference – for students interested in startups</h2>
+            <h2>北海校区学子在华为ICT大赛2022-2023全国总决赛中再创佳绩</h2>
           </a>
-          <p class="">If you want to learn more about what it takes to start a startup – or how to get a job at one – join
-            us for a one-day event in Mountain View, CA!</p>
+          <p class="">北海校区参赛队认真筹备、一路过关斩将，经过大赛组委会层层选拔、与各大高校精彩角逐。北海校区3位教授指导的学生团队分别荣获全国云赛道特等奖1项、全国计算赛道和网络赛道一等奖2项的好成绩,该三个团队以优异成绩成功晋级全球总决赛。</p>
         </div>
         <p>
-          <a href="/blog/yc-summer-conference-2023" class="headArticle_button">
+          <a href="https://www.guet.edu.cn/gdbh/info/1178/6819.htm" class="headArticle_button" target="blank">
             <span>Read More</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-              aria-hidden="true" class="ml-1 inline h-4 w-4 md:h-5 md:w-5" width="1.25em" height="1.25em">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
           </a>
         </p>
       </div>
       <!-- 配图 -->
       <figure class="headArticle-img">
         <a href="/blog/yc-summer-conference-2023" class="">
-          <img width="300" src="../assets/summerconf.png">
+          <img width="300" src="../assets/ICT.jpg">
           <figcaption class="mt-2"></figcaption>
         </a>
       </figure>
@@ -33,26 +27,24 @@
       <h3>Recent Posts </h3>
       <div class="section-2_main">
         <div class="section-2_main_column">
-          <div class="column-pic">
-            <a href="../assets/BlogTwitter-Image-Template--2-1024_1.png"></a>
+          <div class="column-pic-first">
+            <a href="../assets/图书馆.png"></a>
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../assets/BlogTwitter-Image-Template--2-1024_1.png">
-                <h3>Meet the YC Winter 2023 Batch</h3>
-                <p>Today, we're kicking off our 36th Demo Day — featuring founders
-                  from over 250 startups, building across a variety of verticals including B2B/enterprise, fintech,
-                  healthcare, consumer, climate, and more.</p>
+              <a href="../assets/图书馆.png">
+                <h3>图书馆开展“解忧图书馆”周年庆系列活动</h3>
+                <p>为庆祝“解忧图书馆”成立五周年，4月12日、14日晚在东区图书馆二楼平台“解忧图书馆-秘密花园”里举办了两场主题为“一路相伴，感谢有你”的观影活动。</p>
               </a>
             </div>
 
             <div class="column-label">
               <p>
-                <a href="../assets/BlogTwitter-Image-Template--2-1024_1.png">
-                  <span>YC News</span>
+                <a href="../assets/图书馆.png">
+                  <span>解忧图书馆</span>
                 </a>
                 <a href="/blog/tag/batch-stats">
-                  <span>Batch Stats</span>
+                  <span>周年庆</span>
                 </a>
               </p>
             </div>
@@ -60,37 +52,35 @@
             <div class="column-profile">
               <div class="profile-pic">
                 <a href="/blog/author/michael-seibel">
-                  <img width="40" src="../assets/Michael.jpg" alt="">
+                  <img width="40" src="../assets/图书馆.png" alt="">
                 </a>
               </div>
               <div class="profile-text">
-                <a href="/blog/author/michael-seibel">Michael Seibel</a>
-                <span>2023/4/5</span>
+                <a href="/blog/author/michael-seibel">谢婧</a>
+                <span>2023/4/17</span>
               </div>
             </div>
           </div>
         </div>
         <div class="section-2_main_column">
-          <div class="column-pic">
-            <a href="../assets/BlogTwitter-Image-Template--2-1024_1.png"></a>
+          <div class="column-pic-second">
+            <a href="../assets/设计.jpg"></a>
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../assets/BlogTwitter-Image-Template--2-1024_1.png">
-                <h3>Meet the YC Winter 2023 Batch</h3>
-                <p>Today, we're kicking off our 36th Demo Day — featuring founders
-                  from over 250 startups, building across a variety of verticals including B2B/enterprise, fintech,
-                  healthcare, consumer, climate, and more.</p>
+              <a href="../assets/设计.jpg">
+                <h3>学校被授予“全国高校设计赋能乡村振兴志愿服务先进单位”</h3>
+                <p>4月8日，第58·59届中国高等教育博览会“高校教育赋能乡村振兴发展大会”在重庆召开，北海校区设计与创意学院院长葛俊杰参加活动,桂林电子科技大学被授予“全国高校设计赋能乡村振兴志愿服务先进单位”荣誉称号。。</p>
               </a>
             </div>
 
             <div class="column-label">
               <p>
-                <a href="../assets/BlogTwitter-Image-Template--2-1024_1.png">
-                  <span>YC News</span>
+                <a href="../assets/设计.jpg">
+                  <span>乡村振兴</span>
                 </a>
                 <a href="/blog/tag/batch-stats">
-                  <span>Batch Stats</span>
+                  <span>先进单位</span>
                 </a>
               </p>
             </div>
@@ -98,37 +88,35 @@
             <div class="column-profile">
               <div class="profile-pic">
                 <a href="/blog/author/michael-seibel">
-                  <img width="40" src="../assets/Michael.jpg" alt="">
+                  <img width="40" src="../assets/设计.jpg" alt="">
                 </a>
               </div>
               <div class="profile-text">
-                <a href="/blog/author/michael-seibel">Michael Seibel</a>
-                <span>2023/4/5</span>
+                <a href="/blog/author/michael-seibel">王佳l</a>
+                <span>2023/4/12</span>
               </div>
             </div>
           </div>
         </div>
         <div class="section-2_main_column">
-          <div class="column-pic">
-            <a href="../assets/BlogTwitter-Image-Template--2-1024_1.png"></a>
+          <div class="column-pic-three">
+            <a href="../assets/杨梅.png"></a>
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../assets/BlogTwitter-Image-Template--2-1024_1.png">
-                <h3>Meet the YC Winter 2023 Batch</h3>
-                <p>Today, we're kicking off our 36th Demo Day — featuring founders
-                  from over 250 startups, building across a variety of verticals including B2B/enterprise, fintech,
-                  healthcare, consumer, climate, and more.</p>
+              <a href="../assets/杨梅.png">
+                <h3>北海校区党委书记秦竟芝带队参加合浦西场杨梅旅游文化活动</h3>
+                <p>4月9日上午，北海市合浦西场杨梅旅游文化活动在西场镇老温垌村举行。北海校区党委书记秦竟芝带领校区相关学院及部门负责人到场参加活动。</p>
               </a>
             </div>
 
             <div class="column-label">
               <p>
-                <a href="../assets/BlogTwitter-Image-Template--2-1024_1.png">
-                  <span>YC News</span>
+                <a href="../assets/杨梅.png">
+                  <span>旅游文化</span>
                 </a>
                 <a href="/blog/tag/batch-stats">
-                  <span>Batch Stats</span>
+                  <span>西场杨梅</span>
                 </a>
               </p>
             </div>
@@ -136,12 +124,12 @@
             <div class="column-profile">
               <div class="profile-pic">
                 <a href="/blog/author/michael-seibel">
-                  <img width="40" src="../assets/Michael.jpg" alt="">
+                  <img width="40" src="../assets/杨梅.png" alt="">
                 </a>
               </div>
               <div class="profile-text">
-                <a href="/blog/author/michael-seibel">Michael Seibel</a>
-                <span>2023/4/5</span>
+                <a href="/blog/author/michael-seibel">林佩静</a>
+                <span>2023/4/9</span>
               </div>
             </div>
           </div>
@@ -153,28 +141,21 @@
       <h3>All Posts</h3>
       <div class="section-3_col">
         <a href="/blog/changes-at-yc">
-          Changes at YC
+          北海校区举行第十二届宿舍文化节闭幕式暨颁奖典礼
         </a>
 
         <p class="section-3_col_head">by
           <a href="/blog/author/garry" class="text-blue-500 hover:underline">
-            <span class="">Garry Tan</span>
+            <span class="">方小妹</span>
           </a>
-          <span class="col-date">2023/3/14</span>
+          <span class="col-date">2023/4/11</span>
         </p>
 
-        <p>In recent years, we have also done some late stage investing. But
-          late stage investing turned out to be so different from early stage that we found it to be a distraction
-          from our core mission. So we’re going to decrease the amount of late stage investing we do.</p>
+        <p>4月8日，北海校区第十二届宿舍文化节闭幕式暨颁奖典礼在11教报告厅举行。校区副校长王宪中、相关部门负责人、公寓房管员、获奖学生代表以及各大学生社团组织的学生代表参加了此次活动。据悉，本次宿舍文化节活动经过多轮的角逐、评选，最终评出一等奖4名、二等奖5名、三等奖6名。</p>
 
         <div>
-          <a href="/blog/yc-summer-conference-2023" class="headArticle_button">
+          <a href="https://www.guet.edu.cn/gdbh/info/1178/6812.htm" class="headArticle_button" target="blank">
             <span>Read More</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-              aria-hidden="true" class="ml-1 inline h-4 w-4 md:h-5 md:w-5" width="1.25em" height="1.25em">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
           </a>
         </div>
 
@@ -182,28 +163,23 @@
 
       <div class="section-3_col">
         <a href="/blog/changes-at-yc">
-          Changes at YC
+          北海校区开展清明节系列主题教育活动
         </a>
 
         <p class="section-3_col_head">by
           <a href="/blog/author/garry" class="text-blue-500 hover:underline">
-            <span class="">Garry Tan</span>
+            <span class="">姚磊 </span>
           </a>
-          <span class="col-date">2023/3/14</span>
+          <span class="col-date">2023/4/16</span>
         </p>
 
-        <p>In recent years, we have also done some late stage investing. But
-          late stage investing turned out to be so different from early stage that we found it to be a distraction
-          from our core mission. So we’re going to decrease the amount of late stage investing we do.</p>
+        <p>为进一步用好红色资源，弘扬革命精神。4月5日，北海校区团委以“我们的节日・精神的家园”为主题组织师生开展清明节系列主题教育活动。
+
+活动以线上祭奠、线下祭扫、线上朗诵、线下观影等多种形式在校内外开展，缅怀英烈伟绩，重温红色故事，传承革命精神。本次系列活动，是一次深刻的实践学习和爱国主义教育活动，旨在引导学生铭记历史，增进爱国情感，培养家国情怀。</p>
 
         <div>
-          <a href="/blog/yc-summer-conference-2023" class="headArticle_button">
+          <a href="https://www.guet.edu.cn/gdbh/info/1178/6799.htm" class="headArticle_button" target="_blank">
             <span>Read More</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-              aria-hidden="true" class="ml-1 inline h-4 w-4 md:h-5 md:w-5" width="1.25em" height="1.25em">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
           </a>
         </div>
 
@@ -211,28 +187,21 @@
 
       <div class="section-3_col">
         <a href="/blog/changes-at-yc">
-          Changes at YC
+          北海市委常委、宣传部部长童晓晖到北海校区调研
         </a>
 
         <p class="section-3_col_head">by
           <a href="/blog/author/garry" class="text-blue-500 hover:underline">
-            <span class="">Garry Tan</span>
+            <span class="">林佩静</span>
           </a>
-          <span class="col-date">2023/3/14</span>
+          <span class="col-date">2023/3/28</span>
         </p>
 
-        <p>In recent years, we have also done some late stage investing. But
-          late stage investing turned out to be so different from early stage that we found it to be a distraction
-          from our core mission. So we’re going to decrease the amount of late stage investing we do.</p>
+        <p>3月28日上午，北海市委常委、宣传部部长童晓晖到北海校区调研。北海市教育局党组书记、副局长李祥吉，学校校长助理、北海校区校长陈名松等陪同调研。</p>
 
         <div>
-          <a href="/blog/yc-summer-conference-2023" class="headArticle_button">
+          <a href="https://www.guet.edu.cn/gdbh/info/1178/6759.htm" class="headArticle_button" target="_blank">
             <span>Read More</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-              aria-hidden="true" class="ml-1 inline h-4 w-4 md:h-5 md:w-5" width="1.25em" height="1.25em">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
           </a>
         </div>
 
@@ -240,28 +209,21 @@
 
       <div class="section-3_col">
         <a href="/blog/changes-at-yc">
-          Changes at YC
+          北海校区开展2023年心理健康月主题教育系列活动
         </a>
 
         <p class="section-3_col_head">by
           <a href="/blog/author/garry" class="text-blue-500 hover:underline">
-            <span class="">Garry Tan</span>
+            <span class="">林佩静 何国萍</span>
           </a>
-          <span class="col-date">2023/3/14</span>
+          <span class="col-date">2023/3/31</span>
         </p>
 
-        <p>In recent years, we have also done some late stage investing. But
-          late stage investing turned out to be so different from early stage that we found it to be a distraction
-          from our core mission. So we’re going to decrease the amount of late stage investing we do.</p>
+        <p>大学生心理健康问题一直受到社会的广泛关注，高校承担着引导大学生养成健康心理的重要使命，近年来，北海校区高度重视学生心理健康工作，结合“一站式”学生社区工作，三月期间开展了“阳光心情 温暖同行”2023年心理健康月主题教育系列活动。</p>
 
         <div>
-          <a href="/blog/yc-summer-conference-2023" class="headArticle_button">
+          <a href="https://www.guet.edu.cn/gdbh/info/1178/6771.htm" class="headArticle_button" target="_blank">
             <span>Read More</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-              aria-hidden="true" class="ml-1 inline h-4 w-4 md:h-5 md:w-5" width="1.25em" height="1.25em">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
           </a>
         </div>
 
@@ -382,20 +344,47 @@ section {
   /* --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color); */
 }
 
-.column-pic {
+.column-pic-first {
   height: 192px;
   flex-shrink: 0;
 }
 
-.column-pic>a {
+.column-pic-first>a {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background: url('../assets/BlogTwitter-Image-Template--2-1024_1.png') no-repeat center;
+  background: url('../assets/图书馆.png') no-repeat center;
   background-size: cover;
   display: block;
 }
 
+.column-pic-second {
+  height: 192px;
+  flex-shrink: 0;
+}
+
+.column-pic-second>a {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/设计.jpg') no-repeat center;
+  background-size: cover;
+  display: block;
+}
+
+.column-pic-three {
+  height: 192px;
+  flex-shrink: 0;
+}
+
+.column-pic-three>a {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/杨梅.png') no-repeat center;
+  background-size: cover;
+  display: block;
+}
 .column-main {
   height: 392.4px;
   display: flex;

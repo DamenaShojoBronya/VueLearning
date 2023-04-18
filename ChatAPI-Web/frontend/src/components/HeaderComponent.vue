@@ -11,7 +11,6 @@
                 <router-link active-class="active" to="/about">关于我们</router-link>
                 <router-link active-class="active" to="/activities">活动回顾</router-link>
 
-                <router-link active-class="active" to="/timeline">时间线</router-link>
                 <el-dropdown class="header-menu-dropdown">
 
                     <router-link active-class="active" to="/products">

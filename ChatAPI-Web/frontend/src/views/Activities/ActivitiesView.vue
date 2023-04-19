@@ -3,10 +3,14 @@
     <section class="section-1">
       <div class="headArticle">
         <div class="headArticle_top">
-          <a href="/blog/yc-summer-conference-2023">
-            <h2>北海校区学子在华为ICT大赛2022-2023全国总决赛中再创佳绩</h2>
-          </a>
-          <p class="">北海校区参赛队认真筹备、一路过关斩将，经过大赛组委会层层选拔、与各大高校精彩角逐。北海校区3位教授指导的学生团队分别荣获全国云赛道特等奖1项、全国计算赛道和网络赛道一等奖2项的好成绩,该三个团队以优异成绩成功晋级全球总决赛。</p>
+          <router-link active-class="Active" to="activityPage1">
+            <a>
+              <h2>北海校区学子在华为ICT大赛2022-2023全国总决赛中再创佳绩</h2>
+            </a>
+          </router-link>
+          <p class="">
+            北海校区参赛队认真筹备、一路过关斩将，经过大赛组委会层层选拔、与各大高校精彩角逐。北海校区3位教授指导的学生团队分别荣获全国云赛道特等奖1项、全国计算赛道和网络赛道一等奖2项的好成绩,该三个团队以优异成绩成功晋级全球总决赛。
+          </p>
         </div>
         <p>
           <a href="https://www.guet.edu.cn/gdbh/info/1178/6819.htm" class="headArticle_button" target="blank">
@@ -17,7 +21,7 @@
       <!-- 配图 -->
       <figure class="headArticle-img">
         <a href="/blog/yc-summer-conference-2023" class="">
-          <img width="300" src="../assets/ICT.jpg">
+          <img width="300" src="../../assets/ICT.jpg">
           <figcaption class="mt-2"></figcaption>
         </a>
       </figure>
@@ -28,11 +32,11 @@
       <div class="section-2_main">
         <div class="section-2_main_column">
           <div class="column-pic-first">
-            <a href="../assets/图书馆.png"></a>
+            <a href="../../assets/图书馆.png"></a>
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../assets/图书馆.png">
+              <a href="../../assets/图书馆.png">
                 <h3>图书馆开展“解忧图书馆”周年庆系列活动</h3>
                 <p>为庆祝“解忧图书馆”成立五周年，4月12日、14日晚在东区图书馆二楼平台“解忧图书馆-秘密花园”里举办了两场主题为“一路相伴，感谢有你”的观影活动。</p>
               </a>
@@ -40,7 +44,7 @@
 
             <div class="column-label">
               <p>
-                <a href="../assets/图书馆.png">
+                <a href="../../assets/图书馆.png">
                   <span>解忧图书馆</span>
                 </a>
                 <a href="/blog/tag/batch-stats">
@@ -52,7 +56,7 @@
             <div class="column-profile">
               <div class="profile-pic">
                 <a href="/blog/author/michael-seibel">
-                  <img width="40" src="../assets/图书馆.png" alt="">
+                  <img width="40" src="../../assets/图书馆.png" alt="">
                 </a>
               </div>
               <div class="profile-text">
@@ -64,19 +68,20 @@
         </div>
         <div class="section-2_main_column">
           <div class="column-pic-second">
-            <a href="../assets/设计.jpg"></a>
+            <a href="../../assets/设计.jpg"></a>
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../assets/设计.jpg">
+              <a href="../../assets/设计.jpg">
                 <h3>学校被授予“全国高校设计赋能乡村振兴志愿服务先进单位”</h3>
-                <p>4月8日，第58·59届中国高等教育博览会“高校教育赋能乡村振兴发展大会”在重庆召开，北海校区设计与创意学院院长葛俊杰参加活动,桂林电子科技大学被授予“全国高校设计赋能乡村振兴志愿服务先进单位”荣誉称号。。</p>
+                <p>4月8日，第58·59届中国高等教育博览会“高校教育赋能乡村振兴发展大会”在重庆召开，北海校区设计与创意学院院长葛俊杰参加活动,桂林电子科技大学被授予“全国高校设计赋能乡村振兴志愿服务先进单位”荣誉称号。。
+                </p>
               </a>
             </div>
 
             <div class="column-label">
               <p>
-                <a href="../assets/设计.jpg">
+                <a href="../../assets/设计.jpg">
                   <span>乡村振兴</span>
                 </a>
                 <a href="/blog/tag/batch-stats">
@@ -88,7 +93,7 @@
             <div class="column-profile">
               <div class="profile-pic">
                 <a href="/blog/author/michael-seibel">
-                  <img width="40" src="../assets/设计.jpg" alt="">
+                  <img width="40" src="../../assets/设计.jpg" alt="">
                 </a>
               </div>
               <div class="profile-text">
@@ -100,11 +105,11 @@
         </div>
         <div class="section-2_main_column">
           <div class="column-pic-three">
-            <a href="../assets/杨梅.png"></a>
+            <a href="../../assets/杨梅.png"></a>
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../assets/杨梅.png">
+              <a href="../../assets/杨梅.png">
                 <h3>北海校区党委书记秦竟芝带队参加合浦西场杨梅旅游文化活动</h3>
                 <p>4月9日上午，北海市合浦西场杨梅旅游文化活动在西场镇老温垌村举行。北海校区党委书记秦竟芝带领校区相关学院及部门负责人到场参加活动。</p>
               </a>
@@ -112,7 +117,7 @@
 
             <div class="column-label">
               <p>
-                <a href="../assets/杨梅.png">
+                <a href="../../assets/杨梅.png">
                   <span>旅游文化</span>
                 </a>
                 <a href="/blog/tag/batch-stats">
@@ -124,7 +129,7 @@
             <div class="column-profile">
               <div class="profile-pic">
                 <a href="/blog/author/michael-seibel">
-                  <img width="40" src="../assets/杨梅.png" alt="">
+                  <img width="40" src="../../assets/杨梅.png" alt="">
                 </a>
               </div>
               <div class="profile-text">
@@ -151,7 +156,9 @@
           <span class="col-date">2023/4/11</span>
         </p>
 
-        <p>4月8日，北海校区第十二届宿舍文化节闭幕式暨颁奖典礼在11教报告厅举行。校区副校长王宪中、相关部门负责人、公寓房管员、获奖学生代表以及各大学生社团组织的学生代表参加了此次活动。据悉，本次宿舍文化节活动经过多轮的角逐、评选，最终评出一等奖4名、二等奖5名、三等奖6名。</p>
+        <p>
+          4月8日，北海校区第十二届宿舍文化节闭幕式暨颁奖典礼在11教报告厅举行。校区副校长王宪中、相关部门负责人、公寓房管员、获奖学生代表以及各大学生社团组织的学生代表参加了此次活动。据悉，本次宿舍文化节活动经过多轮的角逐、评选，最终评出一等奖4名、二等奖5名、三等奖6名。
+        </p>
 
         <div>
           <a href="https://www.guet.edu.cn/gdbh/info/1178/6812.htm" class="headArticle_button" target="blank">
@@ -175,7 +182,7 @@
 
         <p>为进一步用好红色资源，弘扬革命精神。4月5日，北海校区团委以“我们的节日・精神的家园”为主题组织师生开展清明节系列主题教育活动。
 
-活动以线上祭奠、线下祭扫、线上朗诵、线下观影等多种形式在校内外开展，缅怀英烈伟绩，重温红色故事，传承革命精神。本次系列活动，是一次深刻的实践学习和爱国主义教育活动，旨在引导学生铭记历史，增进爱国情感，培养家国情怀。</p>
+          活动以线上祭奠、线下祭扫、线上朗诵、线下观影等多种形式在校内外开展，缅怀英烈伟绩，重温红色故事，传承革命精神。本次系列活动，是一次深刻的实践学习和爱国主义教育活动，旨在引导学生铭记历史，增进爱国情感，培养家国情怀。</p>
 
         <div>
           <a href="https://www.guet.edu.cn/gdbh/info/1178/6799.htm" class="headArticle_button" target="_blank">
@@ -219,7 +226,8 @@
           <span class="col-date">2023/3/31</span>
         </p>
 
-        <p>大学生心理健康问题一直受到社会的广泛关注，高校承担着引导大学生养成健康心理的重要使命，近年来，北海校区高度重视学生心理健康工作，结合“一站式”学生社区工作，三月期间开展了“阳光心情 温暖同行”2023年心理健康月主题教育系列活动。</p>
+        <p>大学生心理健康问题一直受到社会的广泛关注，高校承担着引导大学生养成健康心理的重要使命，近年来，北海校区高度重视学生心理健康工作，结合“一站式”学生社区工作，三月期间开展了“阳光心情
+          温暖同行”2023年心理健康月主题教育系列活动。</p>
 
         <div>
           <a href="https://www.guet.edu.cn/gdbh/info/1178/6771.htm" class="headArticle_button" target="_blank">
@@ -253,7 +261,8 @@ view-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #f7f7f7;;
+  background-color: #f7f7f7;
+  ;
 }
 
 section {
@@ -309,12 +318,15 @@ section {
   color: #268bd2;
   margin-left: 12px;
 }
+
 .headArticle_button:hover {
   text-decoration: underline;
 }
-.headArticle_button>svg{
+
+.headArticle_button>svg {
   margin-left: 4px;
 }
+
 /* section-2 */
 .section-2 {
   height: 733px;
@@ -356,7 +368,7 @@ section {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background: url('../assets/图书馆.png') no-repeat center;
+  background: url('../../assets/图书馆.png') no-repeat center;
   background-size: cover;
   display: block;
 }
@@ -370,7 +382,7 @@ section {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background: url('../assets/设计.jpg') no-repeat center;
+  background: url('../../assets/设计.jpg') no-repeat center;
   background-size: cover;
   display: block;
 }
@@ -384,10 +396,11 @@ section {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background: url('../assets/杨梅.png') no-repeat center;
+  background: url('../../assets/杨梅.png') no-repeat center;
   background-size: cover;
   display: block;
 }
+
 .column-main {
   height: 392.4px;
   display: flex;
@@ -485,15 +498,15 @@ section {
 .section-3_col {
   height: 208.8px;
   width: 703px;
-  margin-bottom:24px;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around
 }
 
-.section-3_col>a{
-  height:40px;
+.section-3_col>a {
+  height: 40px;
   color: #111827;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -505,7 +518,7 @@ section {
   text-align: start;
   font-size: 1rem;
   line-height: 1.5rem;
-  margin:0px;
+  margin: 0px;
 }
 
 .section-3_col_head {
@@ -524,8 +537,8 @@ section {
 .col-date {
   margin-left: 16px;
 }
-.section-3 .headArticle_button{
-  margin-left:0px;
-  color:#3b82f6;
-}
-</style>
+
+.section-3 .headArticle_button {
+  margin-left: 0px;
+  color: #3b82f6;
+}</style>

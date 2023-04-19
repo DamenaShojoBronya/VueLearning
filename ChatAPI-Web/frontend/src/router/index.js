@@ -5,7 +5,7 @@ import TranslatorForm from '../views/TranslatorForm.vue'
 import CodeInterpreter from '../views/CodeInterpreter.vue'
 import XiaohongshuGenerator from '../views/XHSgenerator/XiaohongshuGenerator.vue'
 import ProcessApproval from '../views/Products/ProcessApproval.vue';
-import ActivitiesView from '../views/ActivitiesView.vue';
+import ActivitiesView from '../views/Activities/ActivitiesView.vue';
 
 const routes = [
   // 默认首页index重定向到跳转的首页home
@@ -61,7 +61,13 @@ const routes = [
     path: '/activities',
     name: 'activities',
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/ActivitiesView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Activities/ActivitiesView.vue')
+  },
+  {
+    path: '/activityPage1',
+    name: 'activityPage1',
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Activities/ActivityPage1.vue')
   },
   //产品
   {

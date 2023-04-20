@@ -2,21 +2,19 @@
     <view-box>
         <div class="article-container">
             <div class="article-header">
-                <h1 class="article-title">Announcing the YC Summer Conference – for students interested in startups</h1>
+                <h1 class="article-title">北海校区学子在华为ICT大赛2022-2023全国总决赛中再创佳绩</h1>
                 <p class="article-meta">by <a href="/blog/author/yc" class="author-link">Y Combinator</a><span
                         class="article-date">2023/4/13</span></p>
             </div>
             <div class="article-image">
             </div>
             <div class="article-content">
-                <p>On Saturday, June 17, 2023, we’re running our first <a
-                        href="https://www.ycombinator.com/events/summerconf2023"><strong>YC Summer Conference</strong></a>,
-                    a one-day event in<strong> </strong>Mountain View, CA for undergraduate and graduate students interested
-                    in startups. If you've thought about starting a startup someday, this event is for you.</p>
-                <div class="button-container">
+                <p>4月13日，华为ICT大赛2022—2023全国总决赛颁奖典礼在海南三亚举行，大赛吸引了全国1200余所院校70000余名学生报名参赛。其中，北海校区3位教授指导的学生团队分别荣获全国云赛道特等奖1项、全国计算赛道和网络赛道一等奖2项的好成绩。
+                    <!-- <a href="https://www.ycombinator.com/events/summerconf2023"><strong>YC Summer Conference</strong></a> --></p>
+                <!-- <div class="button-container">
                     <a class="ycdc-retro-btn ycdc-retro-btn-gold" href="https://www.ycombinator.com/events/summerconf2023"
                         title="Apply to YC Summer Conference 2023" target="_blank">Join the YC Summer Conference</a>
-                </div>
+                </div> -->
                 <p>Garry Tan, President &amp; CEO of Y Combinator and successful startup founder, will start with a keynote
                     talk. We'll have several YC founders who started companies during college and built billion dollar
                     companies talk about how they did it. You'll learn how they got started, what went wrong, what surprised

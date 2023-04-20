@@ -9,22 +9,21 @@
             <div class="article-image">
             </div>
             <div class="article-content">
-                <p>4月13日，华为ICT大赛2022—2023全国总决赛颁奖典礼在海南三亚举行，大赛吸引了全国1200余所院校70000余名学生报名参赛。其中，北海校区3位教授指导的学生团队分别荣获全国云赛道特等奖1项、全国计算赛道和网络赛道一等奖2项的好成绩。
+                <p>4月13日，华为ICT大赛2022—2023全国总决赛颁奖典礼在海南三亚举行，大赛吸引了全国1200余所院校70000余名学生报名参赛。
+                    其中，北海校区3位教授指导的学生团队分别荣获全国云赛道特等奖1项、全国计算赛道和网络赛道一等奖2项的好成绩。
                     <!-- <a href="https://www.ycombinator.com/events/summerconf2023"><strong>YC Summer Conference</strong></a> --></p>
                 <!-- <div class="button-container">
                     <a class="ycdc-retro-btn ycdc-retro-btn-gold" href="https://www.ycombinator.com/events/summerconf2023"
                         title="Apply to YC Summer Conference 2023" target="_blank">Join the YC Summer Conference</a>
                 </div> -->
-                <p>Garry Tan, President &amp; CEO of Y Combinator and successful startup founder, will start with a keynote
-                    talk. We'll have several YC founders who started companies during college and built billion dollar
-                    companies talk about how they did it. You'll learn how they got started, what went wrong, what surprised
-                    them, and what happened as their companies grew.</p>
-                <p>Then we'll split up into small groups with talks from recent YC founders who graduated just a couple of
-                    years ago and are already running successful startups. You'll get to meet them in small groups and form
-                    a genuine connection.</p>
-                <p>This is also a great opportunity to meet like-minded students, maybe even your future co-founder.</p>
-                <p>Because we have more interest than we have room to accommodate, we're asking people to apply to attend.
-                </p>
+                <p>本届赛事自启动以来，北海校区参赛队认真筹备、一路过关斩将，经过大赛组委会层层选拔、与各大高校精彩角逐，
+                    陈名松教授指导的学生团队杨思宇、凌其伍、张日俊荣获总决赛云赛道特等奖，黄廷辉教授指导的学生团队徐扬来、蔡卓鸿、刘子良荣获总决赛计算赛道一等奖，
+                    谭印教授指导的学生团队陈正学、周上超、磨安诚荣获总决赛网络赛道一等奖。这是校区学子在2018年获得华为ICT大赛全球总决赛云赛道二等奖、
+                    2019年获得华为ICT大赛全球总决赛云赛道一等奖、2021年获得华为ICT大赛全国总决赛云赛道和网络赛道二等奖后第四次获得全国总决赛大奖，该三个团队以优异成绩成功晋级全球总决赛。</p>
+                <p>据悉，华为ICT大赛是华为公司面向全球大学生打造的ICT人才竞技交流赛事，旨在为华为ICT学院和有意愿成为ICT学院高校的学生提供国际化的学习平台，
+                    提升学生的ICT知识水平，加强学生的实践动手能力以及运用新技术、新平台的创新创造能力。2021年3月，华为ICT大赛首次纳入2020全国普通高校大学生竞赛排行榜内竞赛项目名单，
+                    这代表华为ICT大赛成为中国高等教育学会认可的含金量高、参赛价值大的竞赛项目之一。</p>
+
                 <div class="button-container">
                     <a class="ycdc-retro-btn ycdc-retro-btn-gold" href="https://www.ycombinator.com/events/summerconf2023"
                         title="Apply to YC Summer Conference 2023" target="_blank">Apply Now</a>

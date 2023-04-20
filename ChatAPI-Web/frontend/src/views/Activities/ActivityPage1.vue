@@ -59,6 +59,7 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    line-height: 34px;
 }
 
 view-box {
@@ -90,7 +91,7 @@ view-box {
 .article-title {
     font-size: 2em;
     font-weight: 600;
-    line-height: 2.25rem;
+    line-height: 3.25rem;
     color: #333;
 }
 
@@ -116,9 +117,10 @@ view-box {
 }
 
 .article-image {
-    width: 750px;
-    height: 322px;
+    width: 740px;
+    height: 340px;
     background: url("../../assets/ICT.jpg") no-repeat center;
+    background-size: cover
 }
 
 .article-content {

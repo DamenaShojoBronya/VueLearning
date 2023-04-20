@@ -19,12 +19,7 @@
         </p>
       </div>
       <!-- 配图 -->
-      <figure class="headArticle-img">
-        <a href="/blog/yc-summer-conference-2023" class="">
-          <img width="300" src="../../assets/ICT.jpg">
-          <figcaption class="mt-2"></figcaption>
-        </a>
-      </figure>
+      <a href="/blog/yc-summer-conference-2023" class="headArticle-img"></a>
     </section>
 
     <section class="section-2">
@@ -275,16 +270,13 @@ section {
   margin-top: 70px;
 }
 
-.headArticle-img,
-.headArticle-img a,
-.headArticle-img a img {
-  border-radius: 16px;
+.headArticle-img {
   width: 486px;
   height: 263px;
-}
-
-.headArticle-img {
   margin-left: 80px;
+  border-radius: 16px;
+  background: url("../../assets/ICT.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .headArticle {
@@ -292,13 +284,12 @@ section {
   height: 263px;
   /* letter-spacing: normal; */
   display: grid;
-
 }
 
 .headArticle_top a {
   font-size: 18px;
   text-align: start;
-  line-height: 28px;
+  line-height: 38px;
   margin-top: 36px;
 }
 
@@ -495,22 +486,27 @@ section {
   display: grid;
 }
 
+.section-3 h3 {
+  margin-bottom: 40px;
+}
+
 .section-3_col {
-  height: 208.8px;
+  height: auto;
   width: 703px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around
+  justify-content: flex-start
 }
 
 .section-3_col>a {
-  height: 40px;
+  height: auto;
   color: #111827;
-  font-size: 1.875rem;
+  font-size: 1.6rem;
   line-height: 2.25rem;
   font-weight: 600;
+  margin-bottom: 14px;
 }
 
 .section-3_col p {
@@ -519,6 +515,7 @@ section {
   font-size: 1rem;
   line-height: 1.5rem;
   margin: 0px;
+  margin-bottom: 14px;
 }
 
 .section-3_col_head {
@@ -541,4 +538,70 @@ section {
 .section-3 .headArticle_button {
   margin-left: 0px;
   color: #3b82f6;
+}
+
+/* 适配手机 */
+@media screen and (max-width: 767px) {
+  section {
+    max-width: 350px;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-1 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    height: auto;
+  }
+
+  .headArticle {
+    height: auto;
+  }
+
+  .headArticle-img {
+    width: 100%;
+    max-width: 324px;
+    max-height: 175.3334px;
+    margin-left: 0;
+    border-radius: 12px;
+  }
+
+  .headArticle {
+    width: 100%;
+  }
+
+  .section-2 {
+    justify-content: center;
+    height: auto;
+  }
+
+  .section-2_main {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .section-2_main_column {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .section-3 {
+    justify-content: center;
+    height: auto;
+  }
+
+  .section-3_col {
+    width: 100%;
+  }
+
+  .section-3_col>a {
+    font-size: 1.25rem;
+    text-align: start;
+  }
 }</style>
+

@@ -4,22 +4,20 @@
       <div class="headArticle">
         <div class="headArticle_top">
           <router-link active-class="Active" to="activityPage1">
-            <a>
-              <h2>北海校区学子在华为ICT大赛2022-2023全国总决赛中再创佳绩</h2>
-            </a>
+            <h2>北海校区学子在华为ICT大赛2022-2023全国总决赛中再创佳绩</h2>
           </router-link>
           <p class="">
             北海校区参赛队认真筹备、一路过关斩将，经过大赛组委会层层选拔、与各大高校精彩角逐。北海校区3位教授指导的学生团队分别荣获全国云赛道特等奖1项、全国计算赛道和网络赛道一等奖2项的好成绩,该三个团队以优异成绩成功晋级全球总决赛。
           </p>
         </div>
         <p>
-          <a href="https://www.guet.edu.cn/gdbh/info/1178/6819.htm" class="headArticle_button" target="blank">
+          <router-link active-class="Active" to="activityPage1" class="headArticle_button">
             <span>Read More</span>
-          </a>
+          </router-link>
         </p>
       </div>
       <!-- 配图 -->
-      <a href="/blog/yc-summer-conference-2023" class="headArticle-img"></a>
+      <router-link active-class="Active" to="activityPage1" class="headArticle-img" />
     </section>
 
     <section class="section-2">
@@ -27,36 +25,40 @@
       <div class="section-2_main">
         <div class="section-2_main_column">
           <div class="column-pic-first">
-            <a href="../../assets/图书馆.png"></a>
+            <router-link active-class="Active" to="activityPage2"> </router-link>
+            <!-- <a href="../../assets/图书馆.png"></a> -->
           </div>
           <div class="column-main">
             <div class="column-main_text">
               <a href="../../assets/图书馆.png">
-                <h3>图书馆开展“解忧图书馆”周年庆系列活动</h3>
-                <p>为庆祝“解忧图书馆”成立五周年，4月12日、14日晚在东区图书馆二楼平台“解忧图书馆-秘密花园”里举办了两场主题为“一路相伴，感谢有你”的观影活动。</p>
+                <h3>北海校区领导带队赴华为技术服务（广西）有限公司参观交流</h3>
+                <p>为进一步加强校企合作，探索校区与华为公司在人才培养、教学科研等方面的沟通合作，3月13日，学校校长助理、北海校区校长陈名松带队赴华为技术服务（广西）有限公司参观交流。
+                  华为广西政企商业业务部总监何东岷热情接待。</p>
               </a>
             </div>
 
-            <div class="column-label">
-              <p>
-                <a href="../../assets/图书馆.png">
-                  <span>解忧图书馆</span>
-                </a>
-                <a href="/blog/tag/batch-stats">
-                  <span>周年庆</span>
-                </a>
-              </p>
-            </div>
-
-            <div class="column-profile">
-              <div class="profile-pic">
-                <a href="/blog/author/michael-seibel">
-                  <img width="40" src="../../assets/图书馆.png" alt="">
-                </a>
+            <div class="column-bottom">
+              <div class="column-label">
+                <p>
+                  <a href="../../assets/杨梅.png">
+                    <span>校企合作</span>
+                  </a>
+                  <a href="/blog/tag/batch-stats">
+                    <span>华为公司</span>
+                  </a>
+                </p>
               </div>
-              <div class="profile-text">
-                <a href="/blog/author/michael-seibel">谢婧</a>
-                <span>2023/4/17</span>
+
+              <div class="column-profile">
+                <div class="profile-pic">
+                  <a href="/blog/author/michael-seibel">
+                    <img width="40" src="../../assets/杨梅.png" alt="">
+                  </a>
+                </div>
+                <div class="profile-text">
+                  <a href="/blog/author/michael-seibel">林佩静</a>
+                  <span>2023/4/9</span>
+                </div>
               </div>
             </div>
           </div>
@@ -74,26 +76,28 @@
               </a>
             </div>
 
-            <div class="column-label">
-              <p>
-                <a href="../../assets/设计.jpg">
-                  <span>乡村振兴</span>
-                </a>
-                <a href="/blog/tag/batch-stats">
-                  <span>先进单位</span>
-                </a>
-              </p>
-            </div>
-
-            <div class="column-profile">
-              <div class="profile-pic">
-                <a href="/blog/author/michael-seibel">
-                  <img width="40" src="../../assets/设计.jpg" alt="">
-                </a>
+            <div class="column-bottom">
+              <div class="column-label">
+                <p>
+                  <a href="../../assets/杨梅.png">
+                    <span>旅游文化</span>
+                  </a>
+                  <a href="/blog/tag/batch-stats">
+                    <span>西场杨梅</span>
+                  </a>
+                </p>
               </div>
-              <div class="profile-text">
-                <a href="/blog/author/michael-seibel">王佳l</a>
-                <span>2023/4/12</span>
+
+              <div class="column-profile">
+                <div class="profile-pic">
+                  <a href="/blog/author/michael-seibel">
+                    <img width="40" src="../../assets/杨梅.png" alt="">
+                  </a>
+                </div>
+                <div class="profile-text">
+                  <a href="/blog/author/michael-seibel">林佩静</a>
+                  <span>2023/4/9</span>
+                </div>
               </div>
             </div>
           </div>
@@ -110,28 +114,31 @@
               </a>
             </div>
 
-            <div class="column-label">
-              <p>
-                <a href="../../assets/杨梅.png">
-                  <span>旅游文化</span>
-                </a>
-                <a href="/blog/tag/batch-stats">
-                  <span>西场杨梅</span>
-                </a>
-              </p>
+            <div class="column-bottom">
+              <div class="column-label">
+                <p>
+                  <a href="../../assets/杨梅.png">
+                    <span>旅游文化</span>
+                  </a>
+                  <a href="/blog/tag/batch-stats">
+                    <span>西场杨梅</span>
+                  </a>
+                </p>
+              </div>
+
+              <div class="column-profile">
+                <div class="profile-pic">
+                  <a href="/blog/author/michael-seibel">
+                    <img width="40" src="../../assets/杨梅.png" alt="">
+                  </a>
+                </div>
+                <div class="profile-text">
+                  <a href="/blog/author/michael-seibel">林佩静</a>
+                  <span>2023/4/9</span>
+                </div>
+              </div>
             </div>
 
-            <div class="column-profile">
-              <div class="profile-pic">
-                <a href="/blog/author/michael-seibel">
-                  <img width="40" src="../../assets/杨梅.png" alt="">
-                </a>
-              </div>
-              <div class="profile-text">
-                <a href="/blog/author/michael-seibel">林佩静</a>
-                <span>2023/4/9</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -146,7 +153,7 @@
 
         <p class="section-3_col_head">by
           <a href="/blog/author/garry" class="text-blue-500 hover:underline">
-            <span class="">方小妹</span>
+            <span class="">林佩静</span>
           </a>
           <span class="col-date">2023/4/11</span>
         </p>
@@ -402,8 +409,16 @@ section {
 }
 
 .column-main_text {
+  min-height: 255.33px;
+  max-height: 300px;
   margin-top: 0.5rem;
   text-align: left;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
 }
 
 .column-main_text h3 {
@@ -420,10 +435,15 @@ section {
   line-height: 1.5rem;
 }
 
+.column-bottom {
+  height: 130px;
+}
+
 .column-label {
   display: flex;
   width: 100%;
   margin-top: 0.5rem;
+  align-items: flex-end
 }
 
 .column-label p {
@@ -603,5 +623,6 @@ section {
     font-size: 1.25rem;
     text-align: start;
   }
-}</style>
+}
+</style>
 

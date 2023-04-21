@@ -56,6 +56,13 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
+  //产品
+  {
+    path: '/products',
+    name: 'products',
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Products/ProductsView.vue')
+  },
   //活动
   {
     path: '/activities',
@@ -69,19 +76,13 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Activities/ActivityPage1.vue')
   },
-  //产品
   {
-    path: '/products',
-    name: 'products',
+    path: '/activityPage2',
+    name: 'activityPage2',
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Products/ProductsView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Activities/ActivityPage2.vue')
   },
-  // //流程审批
-  // {
-  //   path: '/workflow/:id',
-  //   name: 'workflow',
-  //   component: ProcessApproval,
-  // }
+
 ]
 
 const router = createRouter({

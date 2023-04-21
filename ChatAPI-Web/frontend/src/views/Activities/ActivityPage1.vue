@@ -28,17 +28,7 @@
                     <a class="ycdc-retro-btn ycdc-retro-btn-gold" href="https://www.ycombinator.com/events/summerconf2023"
                         title="Apply to YC Summer Conference 2023" target="_blank">Apply Now</a>
                 </div>
-                <p><em>About Y Combinator: </em>Y Combinator is a startup accelerator based in the Bay Area that provides
-                    funding, advice, and a powerful, tight-knit community for early-stage startups. YC has funded over 4,000
-                    startups, including Airbnb, Dropbox, Twitch, Reddit, DoorDash, and Coinbase.</p>
-                <p>Join us at the <a href="https://www.ycombinator.com/events/summerconf2023">YC Summer Conference</a> to
-                    learn more!</p>
-                <figure class="kg-card kg-image-card">
-                    <img src="/blog/content/images/2023/04/2022-YC-BBQ-Day-1-Registration_062.jpeg" class="kg-image" alt=""
-                        loading="lazy" width="1600" height="1068"
-                        srcset="/blog/content/images/size/w600/2023/04/2022-YC-BBQ-Day-1-Registration_062.jpeg 600w, /blog/content/images/size/w1000/2023/04/2022-YC-BBQ-Day-1-Registration_062.jpeg 1000w, /blog/content/images/2023/04/2022-YC-BBQ-Day-1-Registration_062.jpeg 1600w"
-                        sizes="(min-width: 720px) 720px">
-                </figure>
+
 
             </div>
         </div>

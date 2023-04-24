@@ -30,7 +30,7 @@
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../../assets/图书馆.png">
+              <a href="../../assets/ICT.jpg">
                 <h3>北海校区领导带队赴华为技术服务（广西）有限公司参观交流</h3>
                 <p>为进一步加强校企合作，探索校区与华为公司在人才培养、教学科研等方面的沟通合作，3月13日，学校校长助理、北海校区校长陈名松带队赴华为技术服务（广西）有限公司参观交流。
                   华为广西政企商业业务部总监何东岷热情接待。</p>
@@ -40,10 +40,10 @@
             <div class="column-bottom">
               <div class="column-label">
                 <p>
-                  <a href="../../assets/杨梅.png">
+                  <a href="">
                     <span>校企合作</span>
                   </a>
-                  <a href="/blog/tag/batch-stats">
+                  <a href="">
                     <span>华为公司</span>
                   </a>
                 </p>
@@ -366,7 +366,7 @@ section {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background: url('../../assets/图书馆.png') no-repeat center;
+  background: url('../../assets/ICT.jpg') no-repeat center;
   background-size: cover;
   display: block;
 }

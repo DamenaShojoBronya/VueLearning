@@ -3,7 +3,7 @@
         <div class="header">
             <!-- 左侧logo -->
             <div class="logo">
-                <a href="index.htm" title="桂电logo"> <img src="../assets/GUETlogo.png" alt=""></a>
+                <a href="index.htm" title="桂电北海"> <img src="../assets/GUETlogo.png" alt=""></a>
             </div>
             <!-- 主菜单 -->
             <div class="header-menu" :class="{ 'header-menu-change-search': isChangeSearch }">
@@ -11,7 +11,6 @@
                 <router-link active-class="active" to="/about">关于我们</router-link>
                 <router-link active-class="active" to="/activities">活动回顾</router-link>
 
-                <router-link active-class="active" to="/timeline">时间线</router-link>
                 <el-dropdown class="header-menu-dropdown">
 
                     <router-link active-class="active" to="/products">
@@ -255,7 +254,8 @@ export default {
     .logo {
         width: auto;
         height: 30px;
-        margin-right: 110px;
+        margin-left: -80px;
+        margin-right: 80px;
         flex-shrink: 0;
         display: flex;
         flex-direction: row;

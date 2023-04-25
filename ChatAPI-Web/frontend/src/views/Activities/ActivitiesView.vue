@@ -309,9 +309,6 @@ section {
   color: #268bd2;
   margin-left: 12px;
 }
-.headArticle_button:hover {
-  text-decoration: underline;
-}
 .headArticle_button>svg{
   margin-left: 4px;
 }

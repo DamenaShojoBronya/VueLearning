@@ -5,7 +5,7 @@ import TranslatorForm from '../views/TranslatorForm.vue'
 import CodeInterpreter from '../views/CodeInterpreter.vue'
 import XiaohongshuGenerator from '../views/XHSgenerator/XiaohongshuGenerator.vue'
 import ProcessApproval from '../views/Products/ProcessApproval.vue';
-import ActivitiesView from '../views/ActivitiesView.vue';
+import ActivitiesView from '../views/Activities/ActivitiesView.vue';
 
 const routes = [
   // 默认首页index重定向到跳转的首页home
@@ -56,13 +56,6 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
-  //活动
-  {
-    path: '/activities',
-    name: 'activities',
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/ActivitiesView.vue')
-  },
   //产品
   {
     path: '/products',
@@ -70,12 +63,26 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Products/ProductsView.vue')
   },
-  // //流程审批
-  // {
-  //   path: '/workflow/:id',
-  //   name: 'workflow',
-  //   component: ProcessApproval,
-  // }
+  //活动
+  {
+    path: '/activities',
+    name: 'activities',
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Activities/ActivitiesView.vue')
+  },
+  {
+    path: '/activityPage1',
+    name: 'activityPage1',
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Activities/ActivityPage1.vue')
+  },
+  {
+    path: '/activityPage2',
+    name: 'activityPage2',
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Activities/ActivityPage2.vue')
+  },
+
 ]
 
 const router = createRouter({

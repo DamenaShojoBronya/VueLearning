@@ -237,7 +237,7 @@ export default {
 
 .header {
     // background-color: skyblue;
-    display: flex;
+    display:inline-flex;
     align-items: center;
     flex-shrink: 0;
     height: 67px;
@@ -261,9 +261,9 @@ export default {
         flex-direction: row;
         align-items: center;
 
-        @media screen and (max-width: 945px) {
-            display: none;
-        }
+        // @media screen and (max-width: 945px) {
+        //     display: none;
+        // }
 
         h2 {
             background-image: linear-gradient(#dc81f1, #db6ff3);
@@ -301,11 +301,11 @@ export default {
             transition: 0.3s;
             height: 23px;
 
-            @media screen and (max-width: 610px) {
-                &:not(.main-header-link) {
-                    display: none;
-                }
-            }
+            // @media screen and (max-width: 610px) {
+            //     &:not(.main-header-link) {
+            //         display: none;
+            //     }
+            // }
 
         }
 
@@ -317,24 +317,8 @@ export default {
 
     }
 
-    .notify {
-        position: relative;
 
-        &:before {
-            content: "";
-            position: absolute;
-            background-color: #3a6df0;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            right: 20px;
-            top: 16px;
-        }
 
-        @media screen and (max-width: 1055px) {
-            display: none;
-        }
-    }
 
     .search-bar {
         // opacity: 0.4;
@@ -474,5 +458,16 @@ export default {
 
 .dialog-footer button:first-child {
     margin-right: 10px;
+}
+
+@media screen and (max-width: 945px) {
+
+    .header-menu,
+    .header-menu-dropdown,
+    .search-bar,
+    .input-container {
+        display: none;
+
+    }
 }
 </style>

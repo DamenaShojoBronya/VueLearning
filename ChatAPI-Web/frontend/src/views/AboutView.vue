@@ -18,7 +18,7 @@
             </div>
             <div class="banner-text-wrap">
               <h3>桂电北海计算机学院</h3>
-              <p>学习优秀，本领过硬。下辖专业：大数据管理与应用、网络工程、网络工程NIIT</p>
+              <p>学习优秀，本领过硬。下辖专业：大数据管理与应用、网络工程、NIIT、软件工程</p>
               <a href="https://www.guet.edu.cn/gdbh/" target="blank"  class="clickable-link" ></a>
 
             </div>
@@ -89,13 +89,13 @@
         <div class="content-1-mainbox" id="content-3-mainbox">
           <div class="banner3">
             <img src="../assets/图标-使用流程-试用申请.png">
-            <h3>试用申请</h3>
-            <p>提交申请，业务人员沟通业务需求，开通企业试用账号</p>
+            <h3>申请使用</h3>
+            <p>提前提交申请，等待工作人员给予反馈，流程简易</p>
           </div>
           <div class="banner3">
             <img src="../assets/图标-使用流程-登录试用.png">
-            <h3>登录试用</h3>
-            <p>登录内容安全监测平台，即刻登录接入试用</p>
+            <h3>登录使用</h3>
+            <p>登录查看了解其内容，可及时接收反馈，和了解到新通知</p>
           </div>
           <div class="banner3">
             <img src="../assets/图标-使用流程-购买服务.png">

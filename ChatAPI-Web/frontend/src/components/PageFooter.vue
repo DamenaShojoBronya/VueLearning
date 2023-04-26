@@ -228,7 +228,7 @@ a {
   bottom: 0;
   right: 0;
   height: 100%;
-  background: rgb(63, 110, 155);
+  background:  rgb(63, 110, 155);
 }
 
 .g-foot .wp {

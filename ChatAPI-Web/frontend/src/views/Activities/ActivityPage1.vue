@@ -99,7 +99,7 @@ view-box {
 .article-image {
     width: 740px;
     height: 340px;
-    background: url("../assets/ICT.jpg") no-repeat center;
+    background: url("../../assets/ICT.jpg") no-repeat center;
     background-size: cover
 }
 

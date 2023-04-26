@@ -30,7 +30,7 @@
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../../assets/ICT.jpg">
+              <a href="../../assets/北海校区领导带队赴华为技术服务（广西）有限公司参观交流.png">
                 <h3>北海校区领导带队赴华为技术服务（广西）有限公司参观交流</h3>
                 <p>为进一步加强校企合作，探索校区与华为公司在人才培养、教学科研等方面的沟通合作，3月13日，学校校长助理、北海校区校长陈名松带队赴华为技术服务（广西）有限公司参观交流。
                   华为广西政企商业业务部总监何东岷热情接待。</p>
@@ -52,7 +52,7 @@
               <div class="column-profile">
                 <div class="profile-pic">
                   <a href="/blog/author/michael-seibel">
-                    <img width="40" src="../../assets/杨梅.png" alt="">
+                    <img width="40" src="../../assets/北海校区领导带队赴华为技术服务（广西）有限公司参观交流.png" alt="">
                   </a>
                 </div>
                 <div class="profile-text">
@@ -65,13 +65,13 @@
         </div>
         <div class="section-2_main_column">
           <div class="column-pic-second">
-            <a href="../../assets/设计.jpg"></a>
+            <a href="../../assets/卡片2.jpg"></a>
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../../assets/设计.jpg">
-                <h3>学校被授予“全国高校设计赋能乡村振兴志愿服务先进单位”</h3>
-                <p>4月8日，第58·59届中国高等教育博览会“高校教育赋能乡村振兴发展大会”在重庆召开，北海校区设计与创意学院院长葛俊杰参加活动,桂林电子科技大学被授予“全国高校设计赋能乡村振兴志愿服务先进单位”荣誉称号。。
+              <a href="../../assets/卡片2.jpg">
+                <h3>北海校区领导一行赴南宁开展校企合作交流和访企拓岗</h3>
+                <p>3月4-5日，学校校长助理、北海校区校长陈名松，校区常务副校长王鑫，副校长孙永厚及电子信息学院、计算机工程学院相关负责人一行到华为技术服务（广西）有限公司、广西昊华科技股份有限公司等开展校企合作交流和访企拓岗。
                 </p>
               </a>
             </div>
@@ -79,11 +79,11 @@
             <div class="column-bottom">
               <div class="column-label">
                 <p>
-                  <a href="../../assets/杨梅.png">
-                    <span>旅游文化</span>
+                  <a href="../../assets/卡片2.jpg">
+                    <span>校企合作</span>
                   </a>
                   <a href="/blog/tag/batch-stats">
-                    <span>西场杨梅</span>
+                    <span>访企拓岗</span>
                   </a>
                 </p>
               </div>
@@ -91,12 +91,12 @@
               <div class="column-profile">
                 <div class="profile-pic">
                   <a href="/blog/author/michael-seibel">
-                    <img width="40" src="../../assets/杨梅.png" alt="">
+                    <img width="40" src="../../assets/卡片2.jpg" alt="">
                   </a>
                 </div>
                 <div class="profile-text">
-                  <a href="/blog/author/michael-seibel">林佩静</a>
-                  <span>2023/4/9</span>
+                  <a href="/blog/author/michael-seibel">李翔宇</a>
+                  <span>2023/3/7</span>
                 </div>
               </div>
             </div>
@@ -104,24 +104,24 @@
         </div>
         <div class="section-2_main_column">
           <div class="column-pic-three">
-            <a href="../../assets/杨梅.png"></a>
+            <a href="../../assets/卡片3.jpg"></a>
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../../assets/杨梅.png">
-                <h3>北海校区党委书记秦竟芝带队参加合浦西场杨梅旅游文化活动</h3>
-                <p>4月9日上午，北海市合浦西场杨梅旅游文化活动在西场镇老温垌村举行。北海校区党委书记秦竟芝带领校区相关学院及部门负责人到场参加活动。</p>
+              <a href="../../assets/卡片3.jpg">
+                <h3>北海校区校长陈名松一行赴杭州开展信息化建设专题调研</h3>
+                <p>11月5日，学校校长助理、北海校区校长陈名松，校区常务副校长王鑫及校区网络中心负责人一行赴浙江农林大学就信息化建设工作开展调研。浙江农林大学信息与教育技术中心主任莫路锋热情接待并陪同调研。</p>
               </a>
             </div>
 
             <div class="column-bottom">
               <div class="column-label">
                 <p>
-                  <a href="../../assets/杨梅.png">
-                    <span>旅游文化</span>
+                  <a href="../../assets/卡片3.jpg">
+                    <span>信息化</span>
                   </a>
                   <a href="/blog/tag/batch-stats">
-                    <span>西场杨梅</span>
+                    <span>专题调研</span>
                   </a>
                 </p>
               </div>
@@ -129,12 +129,12 @@
               <div class="column-profile">
                 <div class="profile-pic">
                   <a href="/blog/author/michael-seibel">
-                    <img width="40" src="../../assets/杨梅.png" alt="">
+                    <img width="40" src="../../assets/卡片3.jpg" alt="">
                   </a>
                 </div>
                 <div class="profile-text">
-                  <a href="/blog/author/michael-seibel">林佩静</a>
-                  <span>2023/4/9</span>
+                  <a href="/blog/author/michael-seibel">谭印</a>
+                  <span>2022/11/9</span>
                 </div>
               </div>
             </div>
@@ -148,22 +148,22 @@
       <h3>All Posts</h3>
       <div class="section-3_col">
         <a href="/blog/changes-at-yc">
-          北海校区举行第十二届宿舍文化节闭幕式暨颁奖典礼
+          【访企拓岗促就业】北海校区领导一行赴南宁开展校企合作交流和访企拓岗
         </a>
 
         <p class="section-3_col_head">by
           <a href="/blog/author/garry" class="text-blue-500 hover:underline">
-            <span class="">林佩静</span>
+            <span class="">李翔宇</span>
           </a>
-          <span class="col-date">2023/4/11</span>
+          <span class="col-date">2023/3/7</span>
         </p>
 
         <p>
-          4月8日，北海校区第十二届宿舍文化节闭幕式暨颁奖典礼在11教报告厅举行。校区副校长王宪中、相关部门负责人、公寓房管员、获奖学生代表以及各大学生社团组织的学生代表参加了此次活动。据悉，本次宿舍文化节活动经过多轮的角逐、评选，最终评出一等奖4名、二等奖5名、三等奖6名。
+          3月4-5日，学校校长助理、北海校区校长陈名松，校区常务副校长王鑫，副校长孙永厚及电子信息学院、计算机工程学院相关负责人一行到华为技术服务（广西）有限公司、广西昊华科技股份有限公司等开展校企合作交流和访企拓岗。
         </p>
 
         <div>
-          <a href="https://www.guet.edu.cn/gdbh/info/1178/6812.htm" class="headArticle_button" target="blank">
+          <a href="https://www.guet.edu.cn/gdbh/info/1178/6662.htm" class="headArticle_button" target="blank">
             <span>Read More</span>
           </a>
         </div>
@@ -172,22 +172,20 @@
 
       <div class="section-3_col">
         <a href="/blog/changes-at-yc">
-          北海校区开展清明节系列主题教育活动
+          北海校区校长陈名松率队参加华为人才生态高峰论坛暨华为ICT学院十周年年会
         </a>
 
         <p class="section-3_col_head">by
           <a href="/blog/author/garry" class="text-blue-500 hover:underline">
-            <span class="">姚磊 </span>
+            <span class="">林佩静 陶建华 </span>
           </a>
-          <span class="col-date">2023/4/16</span>
+          <span class="col-date">2022/11/10</span>
         </p>
 
-        <p>为进一步用好红色资源，弘扬革命精神。4月5日，北海校区团委以“我们的节日・精神的家园”为主题组织师生开展清明节系列主题教育活动。
-
-          活动以线上祭奠、线下祭扫、线上朗诵、线下观影等多种形式在校内外开展，缅怀英烈伟绩，重温红色故事，传承革命精神。本次系列活动，是一次深刻的实践学习和爱国主义教育活动，旨在引导学生铭记历史，增进爱国情感，培养家国情怀。</p>
+        <p>近日，华为人才生态高峰论坛暨华为ICT学院十周年年会在杭州西子湖畔举办，学校校长助理、北海校区校长陈名松，校区常务副校长王鑫，校区电子信息学院院长向荣，校区网络中心主任谭印一行四人参会。</p>
 
         <div>
-          <a href="https://www.guet.edu.cn/gdbh/info/1178/6799.htm" class="headArticle_button" target="_blank">
+          <a href="https://www.guet.edu.cn/gdbh/info/1178/6352.htm" class="headArticle_button" target="_blank">
             <span>Read More</span>
           </a>
         </div>
@@ -196,20 +194,20 @@
 
       <div class="section-3_col">
         <a href="/blog/changes-at-yc">
-          北海市委常委、宣传部部长童晓晖到北海校区调研
+          北海校区校长陈名松一行赴杭州开展信息化建设专题调研
         </a>
 
         <p class="section-3_col_head">by
           <a href="/blog/author/garry" class="text-blue-500 hover:underline">
-            <span class="">林佩静</span>
+            <span class="">谭印</span>
           </a>
-          <span class="col-date">2023/3/28</span>
+          <span class="col-date">2022/11/9</span>
         </p>
 
-        <p>3月28日上午，北海市委常委、宣传部部长童晓晖到北海校区调研。北海市教育局党组书记、副局长李祥吉，学校校长助理、北海校区校长陈名松等陪同调研。</p>
+        <p>11月5日，学校校长助理、北海校区校长陈名松，校区常务副校长王鑫及校区网络中心负责人一行赴浙江农林大学就信息化建设工作开展调研。浙江农林大学信息与教育技术中心主任莫路锋热情接待并陪同调研。</p>
 
         <div>
-          <a href="https://www.guet.edu.cn/gdbh/info/1178/6759.htm" class="headArticle_button" target="_blank">
+          <a href="https://www.guet.edu.cn/gdbh/info/1178/6360.htm" class="headArticle_button" target="_blank">
             <span>Read More</span>
           </a>
         </div>
@@ -218,21 +216,20 @@
 
       <div class="section-3_col">
         <a href="/blog/changes-at-yc">
-          北海校区开展2023年心理健康月主题教育系列活动
+          华为技术服务（广西）有限公司来学院开展校企合作交流
         </a>
 
         <p class="section-3_col_head">by
           <a href="/blog/author/garry" class="text-blue-500 hover:underline">
-            <span class="">林佩静 何国萍</span>
+            <span class="">陶建华</span>
           </a>
-          <span class="col-date">2023/3/31</span>
+          <span class="col-date">2022/9/23</span>
         </p>
 
-        <p>大学生心理健康问题一直受到社会的广泛关注，高校承担着引导大学生养成健康心理的重要使命，近年来，北海校区高度重视学生心理健康工作，结合“一站式”学生社区工作，三月期间开展了“阳光心情
-          温暖同行”2023年心理健康月主题教育系列活动。</p>
+        <p>9月21日下午，华为技术服务（广西）有限公司政企业务部副部长毛东阳、华为政企业务部北部湾总经理周旋一行到访校区相关学院，就推进ICT学院建设及其他合作事项进行深入交流。电子信息学院院长向荣、副院长万剑锋，计算机工程学院院长黄廷辉、副院长刘利民，相关教师参加座谈会，座谈会由向荣主持。</p>
 
         <div>
-          <a href="https://www.guet.edu.cn/gdbh/info/1178/6771.htm" class="headArticle_button" target="_blank">
+          <a href="https://www.guet.edu.cn/gdbh/info/1179/6157.htm" class="headArticle_button" target="_blank">
             <span>Read More</span>
           </a>
         </div>
@@ -366,7 +363,7 @@ section {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background: url('../../assets/ICT.jpg') no-repeat center;
+  background: url('../../assets/北海校区领导带队赴华为技术服务（广西）有限公司参观交流.png') no-repeat center;
   background-size: cover;
   display: block;
 }
@@ -380,7 +377,7 @@ section {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background: url('../../assets/设计.jpg') no-repeat center;
+  background: url('../../assets/卡片2.jpg') no-repeat center;
   background-size: cover;
   display: block;
 }
@@ -394,7 +391,7 @@ section {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background: url('../../assets/杨梅.png') no-repeat center;
+  background: url('../../assets/卡片3.jpg') no-repeat center;
   background-size: cover;
   display: block;
 }
@@ -512,7 +509,7 @@ section {
 
 .section-3_col {
   height: auto;
-  width: 703px;
+  width: 700px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;

@@ -217,7 +217,7 @@ a {
   bottom: 0;
   right: 0;
   height: 170px;
-  background: #93b8f3;
+  background: rgb(112, 148, 203);
 }
 
 .g-foot:after {
@@ -228,7 +228,7 @@ a {
   bottom: 0;
   right: 0;
   height: 100%;
-  background: #4c4c7b;
+  background:  rgb(63, 110, 155);
 }
 
 .g-foot .wp {

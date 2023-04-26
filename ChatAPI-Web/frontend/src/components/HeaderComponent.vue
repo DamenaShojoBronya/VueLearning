@@ -3,7 +3,9 @@
         <div class="header">
             <!-- 左侧logo -->
             <div class="logo">
-                <a href="index.htm" title="桂电北海"> <img src="../assets/GUETlogo.png" alt=""></a>
+                <a href="index.htm" title="桂电北海">
+                    <img src="../assets/GUETlogo.png" alt="">
+                </a>
             </div>
             <!-- 主菜单 -->
             <div class="header-menu" :class="{ 'header-menu-change-search': isChangeSearch }">
@@ -86,6 +88,13 @@
                         d="M764.416 254.72a351.68 351.68 0 0 1 86.336 149.184H960v192.064H850.752a351.68 351.68 0 0 1-86.336 149.312l54.72 94.72-166.272 96-54.592-94.72a352.64 352.64 0 0 1-172.48 0L371.136 936l-166.272-96 54.72-94.72a351.68 351.68 0 0 1-86.336-149.312H64v-192h109.248a351.68 351.68 0 0 1 86.336-149.312L204.8 160l166.208-96h.192l54.656 94.592a352.64 352.64 0 0 1 172.48 0L652.8 64h.128L819.2 160l-54.72 94.72zM704 499.968a192 192 0 1 0-384 0 192 192 0 0 0 384 0z">
                     </path>
                 </svg>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <!-- 左侧logo -->
+            <div class="logo">
+            </div>
+            <div class="menu">
             </div>
         </div>
     </header>
@@ -237,7 +246,7 @@ export default {
 
 .header {
     // background-color: skyblue;
-    display:inline-flex;
+    display: inline-flex;
     align-items: center;
     flex-shrink: 0;
     height: 67px;
@@ -265,17 +274,7 @@ export default {
         //     display: none;
         // }
 
-        h2 {
-            background-image: linear-gradient(#dc81f1, #db6ff3);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-        }
 
-        svg {
-            //fill:currentColor;
-            fill: #db6ff3;
-        }
 
     }
 
@@ -422,6 +421,7 @@ export default {
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid #f9fafb;
+            margin-left: 22px;
             margin-right: 22px;
             cursor: pointer;
         }
@@ -460,14 +460,64 @@ export default {
     margin-right: 10px;
 }
 
-@media screen and (max-width: 945px) {
+.header-mobile {
+    display: none;
+}
 
-    .header-menu,
-    .header-menu-dropdown,
-    .search-bar,
-    .input-container {
+@media screen and (max-width: 1400px) {
+    .header {
         display: none;
+        width: 0;
+    }
 
+    .header-mobile {
+        position: fixed;
+        left: 0;
+        top: 0.71vh;
+        z-index: 50;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+        height: 7.37vh;
+        border-bottom: 0.14vh solid RGBA(113 119 144 / 25%);
+    }
+
+    .header-mobile:before {
+        content: '';
+        position: absolute;
+        top: -0.61vh;
+        left: 0;
+        right: 0;
+        height: 8.07vh;
+        background: url(../assets/bgq1.png) repeat-x;
+        z-index: -1;
+    }
+
+    .logo {
+        flex-grow: 1;
+        max-width: 60vw; // 修改宽度百分比以调整 logo 大小
+        height: 4.86vh;
+        max-height: 4.86vh; // 限制 logo 的最大高度
+        margin-left: 1%;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        background: url("../assets/GUETlogo.png") no-repeat center;
+        background-size:contain; // 修改为 contain 以保持 logo 完整且在其容器内
+    }
+
+    .menu {
+        flex-grow: 0;
+        width: 5%;
+        height: 4.29vh;
+        margin-right: 1%;
+        background: url(../assets/iconq2.png) center center no-repeat;
+        background-size: cover;
     }
 }
+
+
+
 </style>

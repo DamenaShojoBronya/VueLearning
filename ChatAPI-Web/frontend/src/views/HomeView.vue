@@ -93,7 +93,7 @@
     </div>
 
     <div class="content-2">
-      <el-carousel class="content-2-carousel" :interval="4000" type="card" height="300px">
+      <el-carousel class="content-2-carousel" :interval="4000" type="card" height="400px">
         <el-carousel-item v-for="item in 6" :key="item">
           <!-- {{ item }} -->
         </el-carousel-item>
@@ -257,7 +257,7 @@ export default {
   margin: 0 auto;
   width: 100%;
   height: 36.45833vw;
-  background: url('../assets/首页banner2.png') no-repeat center;
+  background: url('../assets/头图.jpg') no-repeat center;
   background-size: cover;
   display: flex;
   align-items: center;

@@ -18,7 +18,7 @@
             </div>
             <div class="banner-text-wrap">
               <h3>桂电北海计算机学院</h3>
-              <p>学习优秀，本领过硬。下辖专业：大数据管理与应用、网络工程、NIIT、软件工程</p>
+              <p>学习优秀，本领过硬。下辖专业：大数据管理与应用、网络工程、网络工程NIIT</p>
               <a href="https://www.guet.edu.cn/gdbh/" target="blank"  class="clickable-link" ></a>
 
             </div>
@@ -99,13 +99,13 @@
           </div>
           <div class="banner3">
             <img src="../assets/图标-使用流程-购买服务.png">
-            <h3>购买服务</h3>
-            <p>可根据业务需求自主选择监测服务，下单购买</p>
+            <h3>设备报修</h3>
+            <p>有设备故障问题，及时报修，方便简洁，上门服务</p>
           </div>
           <div class="banner3">
             <img src="../assets/图标-使用流程-开启监测.png">
-            <h3>开启监测</h3>
-            <p>极速接入，立即体验东信网安一站式内容安全服务</p>
+            <h3>审批流程</h3>
+            <p>极速接入，可随时查询申请的进度，及时反馈了解情况</p>
           </div>
         </div>
       </div>

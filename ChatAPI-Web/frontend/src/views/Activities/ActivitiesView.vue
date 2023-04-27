@@ -148,7 +148,7 @@
       <h3>All Posts</h3>
       <div class="section-3_col">
         <a href="/blog/changes-at-yc">
-          【访企拓岗促就业】北海校区领导一行赴南宁开展校企合作交流和访企拓岗
+          北海校区领导一行赴南宁开展校企合作交流和访企拓岗
         </a>
 
         <p class="section-3_col_head">by
@@ -520,10 +520,11 @@ section {
 .section-3_col>a {
   height: auto;
   color: #111827;
-  font-size: 1.6rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 2.45rem;
   font-weight: 600;
   margin-bottom: 14px;
+  text-align: start;
 }
 
 .section-3_col p {

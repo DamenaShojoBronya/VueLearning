@@ -70,15 +70,15 @@
         </div>
         <div class="section-2_main_column">
           <div class="column-pic-second">
-            <a href="../../assets/卡片2.jpg"></a>
+            <router-link active-class="Active" to="activityPage3" />
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../../assets/卡片2.jpg">
+              <router-link active-class="Active" to="activityPage3">
                 <h3>北海校区领导一行赴南宁开展校企合作交流和访企拓岗</h3>
                 <p>3月4-5日，学校校长助理、北海校区校长陈名松，校区常务副校长王鑫，副校长孙永厚及电子信息学院、计算机工程学院相关负责人一行到华为技术服务（广西）有限公司、广西昊华科技股份有限公司等开展校企合作交流和访企拓岗。
                 </p>
-              </a>
+              </router-link>
             </div>
 
             <div class="column-bottom">
@@ -109,14 +109,14 @@
         </div>
         <div class="section-2_main_column">
           <div class="column-pic-three">
-            <a href="../../assets/卡片3.jpg"></a>
+            <router-link active-class="Active" to="activityPage4" />
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../../assets/卡片3.jpg">
+              <router-link active-class="Active" to="activityPage4">
                 <h3>北海校区校长陈名松一行赴杭州开展信息化建设专题调研</h3>
                 <p>11月5日，学校校长助理、北海校区校长陈名松，校区常务副校长王鑫及校区网络中心负责人一行赴浙江农林大学就信息化建设工作开展调研。浙江农林大学信息与教育技术中心主任莫路锋热情接待并陪同调研。</p>
-              </a>
+              </router-link>
             </div>
 
             <div class="column-bottom">

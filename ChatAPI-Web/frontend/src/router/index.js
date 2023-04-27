@@ -82,6 +82,18 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Activities/ActivityPage2.vue')
   },
+  {
+    path: '/activityPage3',
+    name: 'activityPage3',
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Activities/ActivityPage3.vue')
+  },
+  {
+    path: '/activityPage4',
+    name: 'activityPage4',
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Activities/ActivityPage4.vue')
+  },
 
 ]
 

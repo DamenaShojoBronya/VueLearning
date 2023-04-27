@@ -25,16 +25,21 @@
       <div class="section-2_main">
         <div class="section-2_main_column">
           <div class="column-pic-first">
-            <router-link active-class="Active" to="activityPage2"> </router-link>
+            <router-link active-class="Active" to="activityPage2" />
             <!-- <a href="../../assets/图书馆.png"></a> -->
           </div>
           <div class="column-main">
             <div class="column-main_text">
-              <a href="../../assets/北海校区领导带队赴华为技术服务（广西）有限公司参观交流.png">
+              <router-link active-class="Active" to="activityPage2">
                 <h3>北海校区领导带队赴华为技术服务（广西）有限公司参观交流</h3>
                 <p>为进一步加强校企合作，探索校区与华为公司在人才培养、教学科研等方面的沟通合作，3月13日，学校校长助理、北海校区校长陈名松带队赴华为技术服务（广西）有限公司参观交流。
                   华为广西政企商业业务部总监何东岷热情接待。</p>
-              </a>
+              </router-link>
+              <!-- <a href="../../assets/北海校区领导带队赴华为技术服务（广西）有限公司参观交流.png">
+                <h3>北海校区领导带队赴华为技术服务（广西）有限公司参观交流</h3>
+                <p>为进一步加强校企合作，探索校区与华为公司在人才培养、教学科研等方面的沟通合作，3月13日，学校校长助理、北海校区校长陈名松带队赴华为技术服务（广西）有限公司参观交流。
+                  华为广西政企商业业务部总监何东岷热情接待。</p>
+              </a> -->
             </div>
 
             <div class="column-bottom">
@@ -409,7 +414,8 @@ section {
   min-height: 255.33px;
   max-height: 300px;
   margin-top: 0.5rem;
-  text-align: left;
+  text-align:start;
+  /* display:flex; */
 
   overflow: hidden;
   text-overflow: ellipsis;

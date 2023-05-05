@@ -36,7 +36,6 @@
                             <el-dropdown-item>
                                 <router-link class="link" to="/xiaohongshuGenerator">小红书生成器</router-link>
                             </el-dropdown-item>
-                            <el-dropdown-item divided>翻译</el-dropdown-item>
                         </el-dropdown-menu>
                     </template>
                 </el-dropdown>
@@ -94,8 +93,80 @@
             <!-- 左侧logo -->
             <div class="logo">
             </div>
-            <div class="menu">
-            </div>
+            <div class="menu" @click="toggleMenu" :class="{ 'menu-open': menuOpen }"></div>
+        </div>
+        <div class="panel" :class="{ 'panel-active': menuOpen }">
+            <el-col :span="24">
+                <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
+                    <el-menu-item index="1">
+                        <router-link active-class="active" to="/home">
+                            <template v-slot="{ navigate }">
+                                <span @click="menuOpen = !menuOpen; navigate()">首页</span>
+                            </template>
+                        </router-link>
+                    </el-menu-item>
+                    <el-menu-item index="2">
+                        <router-link active-class="active" to="/about">
+                            <template v-slot=" { navigate } ">
+                                <span @click=" menuOpen = !menuOpen; navigate() ">关于我们</span>
+                            </template>
+                        </router-link>
+                    </el-menu-item>
+                    <el-menu-item index="3">
+                        <router-link active-class="active" to="/activities">
+                            <template v-slot=" { navigate } ">
+                                <span @click=" menuOpen = !menuOpen; navigate() ">活动回顾</span>
+                            </template>
+                        </router-link>
+                    </el-menu-item>
+                    <el-sub-menu index="4">
+                        <template #title>
+                            <span>产品</span>
+                        </template>
+                        <el-menu-item-group title="主要功能">
+                            <el-menu-item index="1-1">
+                                <router-link active-class="active" to="/products">
+                                    <template v-slot=" { navigate } ">
+                                        <span @click=" menuOpen = !menuOpen; navigate() ">设备报修与出勤</span>
+                                    </template>
+
+                                </router-link>
+
+                            </el-menu-item>
+                        </el-menu-item-group>
+                        <el-menu-item-group title="其他产品">
+                            <el-menu-item index="1-2">
+                                <router-link class="link" to="/translate">
+                                    <template v-slot=" { navigate } ">
+                                        <span @click=" menuOpen = !menuOpen; navigate() ">中文翻译</span>
+                                    </template>
+                                </router-link>
+                            </el-menu-item>
+                            <el-menu-item index="1-3">
+                                <router-link class="link" to="/rewrite">
+                                    <template v-slot=" { navigate } ">
+                                        <span @click=" menuOpen = !menuOpen; navigate() ">文风转换</span>
+                                    </template>
+                                </router-link>
+                            </el-menu-item>
+                            <el-menu-item index="1-4">
+                                <router-link class="link" to="/code2txt">
+                                    <template v-slot=" { navigate } ">
+                                        <span @click=" menuOpen = !menuOpen; navigate() ">代码翻译</span>
+                                    </template>
+                                </router-link>
+                            </el-menu-item>
+                            <el-menu-item index="1-5">
+                                <router-link class="link" to="/xiaohongshuGenerator">
+                                    <template v-slot=" { navigate } ">
+                                        <span @click=" menuOpen = !menuOpen; navigate() ">小红书生成器</span>
+                                    </template>
+                                </router-link>
+                            </el-menu-item>
+                        </el-menu-item-group>
+                    </el-sub-menu>
+                </el-menu>
+            </el-col>
         </div>
     </header>
 </template>
@@ -107,6 +178,7 @@ import { ArrowDown } from '@element-plus/icons-vue'
 import { mapGetters } from 'vuex';
 import apiClient from "../views/apiClient";
 import { ref } from 'vue'
+
 export default {
     name: 'ElementplusIcon',
     components: {
@@ -115,6 +187,7 @@ export default {
 
     data() {
         return {
+            menuOpen: false,
             isChangeSearch: false,
             centerDialogVisible: false,
             loginForm: {
@@ -132,6 +205,9 @@ export default {
         }
     },
     methods: {
+        toggleMenu() {
+            this.menuOpen = !this.menuOpen;
+        },
         toggleBlur() {
             this.$store.commit('SET_BLUR', true);
         },
@@ -464,6 +540,10 @@ export default {
     display: none;
 }
 
+.panel {
+    display: none;
+}
+
 @media screen and (max-width: 1400px) {
     .header {
         display: none;
@@ -487,6 +567,7 @@ export default {
     .header-mobile:before {
         content: '';
         position: absolute;
+        display: flex;
         top: -0.61vh;
         left: 0;
         right: 0;
@@ -496,28 +577,60 @@ export default {
     }
 
     .logo {
+        justify-content: flex-start;
         flex-grow: 1;
         max-width: 60vw; // 修改宽度百分比以调整 logo 大小
         height: 4.86vh;
         max-height: 4.86vh; // 限制 logo 的最大高度
         margin-left: 1%;
         flex-shrink: 0;
-        display: flex;
         align-items: center;
-        background: url("../assets/GUETlogo.png") no-repeat center;
-        background-size:contain; // 修改为 contain 以保持 logo 完整且在其容器内
+        background: url("../assets/GUETlogo.png") no-repeat left;
+        background-size: contain; // 修改为 contain 以保持 logo 完整且在其容器内
     }
 
     .menu {
         flex-grow: 0;
         width: 5%;
-        height: 4.29vh;
+        max-width: 50px;
+        min-width: 35px;
+        aspect-ratio: 1 / 1;
+        /* 宽高比不随缩放改变 */
         margin-right: 1%;
         background: url(../assets/iconq2.png) center center no-repeat;
         background-size: cover;
     }
+
+    .menu-open {
+        background: url(../assets/iconq3.png) center center no-repeat;
+        background-size: cover;
+        max-width: 45px;
+        min-width: 30px;
+    }
+
+    .panel {
+        display: block;
+        margin-top: 8.07vh;
+        padding: 10px;
+        background: #fafafa;
+        overflow-y: auto;
+        position: fixed;
+        z-index: 49;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        // 过渡效果
+        opacity: 0;
+        transform: translateY(-100%) translateX(100%);
+        transition: opacity 0.7s, transform 0.3s;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .panel-active {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
 }
-
-
-
 </style>

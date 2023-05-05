@@ -259,18 +259,23 @@ export default {
   height: 36.45833vw;
   background: url('../assets/头图.jpg') no-repeat center;
   background-size: cover;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
 .header-mid {
-  position: relative;
-  top: 18%;
-  margin-bottom:-100px;
+  /* position: relative; */
+  max-height:118.5px;
+  max-width:632px;
+  margin-top:160px;
+  margin-bottom:-160px;
+  /* top: 18%; */
+  /* margin-bottom:-200px; */
   color: white;
-  overflow: hidden;
+  /* overflow: hidden; */
+  z-index:999988;
 }
 
 .header-mid h3 {

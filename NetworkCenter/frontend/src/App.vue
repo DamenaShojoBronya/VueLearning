@@ -1,6 +1,7 @@
 <template>
   <HeaderComponent :class="headerClasses" />
   <router-view />
+  <el-backtop :right="100" :bottom="100" />
   <PageFooter :class="{ 'blur-background': blur }" />
 </template>
 

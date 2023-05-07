@@ -1,6 +1,5 @@
 <template>
   <div class="view-box">
-
     <div class="header">
       <div class="header-mid">
         <h3>桂电北海网络中心</h3>

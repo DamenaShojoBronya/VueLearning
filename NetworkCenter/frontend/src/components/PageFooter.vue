@@ -3,16 +3,6 @@
     <div class="footer">
       <div class="wp">
         <div class="foot-link">
-          <!-- <div class="title">常用链接</div>
-          <div class="list">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div> -->
           <div class="ewm">
             <div class="pic"><img src="../assets/页尾-one.jpg" alt=""></div>
             <p>欢迎关注计算机工程学院公众号</p>
@@ -27,19 +17,19 @@
           <div class="list">
             <ul>
               <li>
-                <div style="float: left;">
-                  <img src="../assets/电话.png" alt="" width="15" height="15">
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;010-62786244</p>
+                <div class="ico-wrap">
+                  <img class="ico" src="../assets/电话.png" alt="">
+                  <p>&nbsp;&nbsp;&nbsp;010-62786244</p>
                 </div>
               </li>
               <li>
-                <div style="float: left;"><img src="../assets/邮箱.png" alt="" width="15" height="15">
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;twinfo@guet.edu.cn</p>
+                <div class="ico-wrap"><img class="ico" src="../assets/邮箱.png" alt="">
+                  <p>&nbsp;&nbsp;&nbsp;twinfo@guet.edu.cn</p>
                 </div>
               </li>
               <li>
-                <div style="float: left;"><img src="../assets/位置.png" alt="" width="15" height="15">
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;北海市桂林电子科技大学北海校区</p>
+                <div class="ico-wrap"><img class="ico" src="../assets/位置.png" alt="">
+                  <p>&nbsp;&nbsp;&nbsp;北海市桂林电子科技大学北海校区</p>
                 </div>
               </li>
             </ul>
@@ -48,8 +38,8 @@
             <div>
               
               <p>版权所有 &copy; 桂林电子科技大学北海校区网络中心</p>
-              <p>地址:北海市银海区银滩镇南珠大道9号桂林电子科技大学北海校区</p><br>
-              <p style="float: right;">邮编:536000</p><br><br><br>
+              <p>地址:北海市银海区银滩镇南珠大道9号桂林电子科技大学北海校区</p>
+              <p>邮编:536000</p>
             </div>
           </div>
         </div>
@@ -101,8 +91,10 @@ footer p {
 
 .wp {
   width: auto;
-  max-width: none;
-  padding: 0 10px
+  max-width: 1500px;
+  /* max-width: none; */
+  padding: 0 10px;
+  margin:0 auto;
 }
 
 a {
@@ -115,6 +107,9 @@ a {
   transition: .3s
 }
 
+ul{
+  list-style: none;
+}
 
 .foot-link .title {
   font-size: 30px
@@ -122,7 +117,7 @@ a {
 
 .foot-link .list a {
   font-size: 14px;
-  line-height: 40px
+  line-height: 40px;
 }
 
 .foot-link {
@@ -145,9 +140,18 @@ a {
 .foot-link .list li {
   float: left;
   width: 33.333%;
-  padding: px 65px 0 0
+  padding: px 65px 0 0;
 }
-
+.ico-wrap{
+  display: flex;
+  justify-content: center;
+  float: left
+}
+li .ico{
+  width:15px;
+  height:15px;
+  filter: brightness(100);
+}
 .foot-link .list a {
   display: block;
   border-bottom: 1px solid #ddd;
@@ -267,18 +271,28 @@ a {
   vertical-align: middle
 }
 
-/* .g-foot .info div {
-  width: auto;
-  padding-top: 17px
-} */
+.g-foot .info{
+  margin-top:60px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    border-top: 1px solid rgba(255,255,255,.27);
+}
 
 .g-foot .info div {
-  padding-top: 50px;
-  width: 1300px;
+  /* width: 1300px; */
   margin: 0 auto;
   text-align:left
 }
-
+.info p{
+  display: inline-block;
+  margin-left:20px;
+  opacity: .36;
+    line-height: 45px;
+}
 .g-foot .info {
   position: absolute;
   z-index: 1;

@@ -36,7 +36,7 @@
           </div>
           <div class="info">
             <div>
-              
+
               <p>版权所有 &copy; 桂林电子科技大学北海校区网络中心</p>
               <p>地址:北海市银海区银滩镇南珠大道9号桂林电子科技大学北海校区</p>
               <p>邮编:536000</p>
@@ -86,7 +86,7 @@ footer p {
 <style>
 .footer {
   border-top: 1px solid #dedede;
-  overflow: hidden
+  /* overflow: hidden; */
 }
 
 .wp {
@@ -94,7 +94,7 @@ footer p {
   max-width: 1500px;
   /* max-width: none; */
   padding: 0 10px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 a {
@@ -107,7 +107,7 @@ a {
   transition: .3s
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -142,16 +142,19 @@ ul{
   width: 33.333%;
   padding: px 65px 0 0;
 }
-.ico-wrap{
+
+.ico-wrap {
   display: flex;
   justify-content: center;
   float: left
 }
-li .ico{
-  width:15px;
-  height:15px;
+
+li .ico {
+  width: 15px;
+  height: 15px;
   filter: brightness(100);
 }
+
 .foot-link .list a {
   display: block;
   border-bottom: 1px solid #ddd;
@@ -195,18 +198,11 @@ li .ico{
   overflow: hidden
 }
 
-.g-foot:before {
-  left: 20px
-}
-
-.g-foot:after {
-  left: 40px
-}
 
 .g-foot {
   position: relative;
   color: #fff;
-  font-size: 12px
+  font-size: 12px;
 }
 
 .g-foot a {
@@ -232,7 +228,7 @@ li .ico{
   bottom: 0;
   right: 0;
   height: 100%;
-  background:  rgb(63, 110, 155);
+  background: rgb(63, 110, 155);
 }
 
 .g-foot .wp {
@@ -263,6 +259,7 @@ li .ico{
 
 .g-foot .list li {
   height: 24px;
+  width: 220px;
   padding-right: 20px
 }
 
@@ -271,28 +268,30 @@ li .ico{
   vertical-align: middle
 }
 
-.g-foot .info{
-  margin-top:60px;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    top: auto;
-    bottom: 0;
-    border-top: 1px solid rgba(255,255,255,.27);
+.g-foot .info {
+  margin-top: 60px;
+  /* position: absolute; */
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: auto;
+  bottom: 0;
+  border-top: 1px solid rgba(255, 255, 255, .27);
 }
 
 .g-foot .info div {
   /* width: 1300px; */
   margin: 0 auto;
-  text-align:left
+  text-align: left
 }
-.info p{
+
+.info p {
   display: inline-block;
-  margin-left:20px;
+  margin-left: 20px;
   opacity: .36;
-    line-height: 45px;
+  line-height: 45px;
 }
+
 .g-foot .info {
   position: absolute;
   z-index: 1;
@@ -313,5 +312,84 @@ li .ico{
   float: right;
   height: 45px;
   line-height: 45px
+}
+
+@media only screen and (max-width: 1199px) {
+  .g-foot .wp {
+    min-height: 362px;
+    padding: 140px 0 0;
+    margin: 0 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .g-foot:before{
+    height:450px;
+    left: 2.5%;
+  }
+  .logo {}
+
+  .g-foot .list {
+    position: static;
+    width: 100%;
+    padding: 32px 0 26px;
+    text-align: center;
+    /* left: 0px; */
+    /* margin-left:200px; */
+  }
+
+  .g-foot .list li {
+    padding-right: 0;
+    height: 31px;
+    justify-content: center;
+    margin-left: 335px;
+  }
+
+  .g-foot .list li:nth-of-type(1) {
+    margin-left: 390px;
+  }
+
+  .g-foot .list li:nth-of-type(2) {
+    margin-left: 375px;
+  }
+
+  .g-foot .info {
+    position: relative;
+    margin-top: -80px;
+  }
+
+  .g-foot .info div {
+    display: block;
+    padding-top: 26px;
+    width: 370px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .g-foot .wp {
+    min-height: 342px;
+    padding: 110px 0 0;
+  }
+  .g-foot .wp {
+    margin-left: -220px;
+  }
+  .g-foot:before{
+    height:420px;
+    left: 0;
+  }
+  .logo {
+    max-width: 400px;
+  }
+
+  .logo img {
+    max-width: 340px;
+    margin-left: 70px;
+  }
+  .g-foot .info {
+    margin-top: -100px;
+  }
 }
 </style>

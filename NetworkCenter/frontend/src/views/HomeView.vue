@@ -2,8 +2,8 @@
   <div class="view-box">
     <div class="header">
       <div class="header-mid">
-        <h3>桂电北海网络中心</h3>
-        <p>GUET Beihai Network Center</p>
+        <h3>计算机学院网络中心</h3>
+        <p>computer College Network Center</p>
       </div>
       <div class="header-bottom">
         <div class="header-bottom-bg"></div>
@@ -97,22 +97,23 @@
     <div class="content-3">
       <div class="content-3-tittle">
         <span>
-          <img src="./assets/zx_title_blue_r.png">
+          <img src="../assets/zx_title_blue_r.png">
           案例介绍
-          <img src="./assets/zx_title_blue_l.png">
+          <img src="../assets/zx_title_blue_l.png">
         </span>
         <p>CASE INTRODUCED</p>
       </div>
       <div class="content-3-main">
         <div class="content-3-left"> </div>
         <div class="content-3-middle">
-          <p>
-            "桂北汇APP"是由桂林电子科技大学北海校区(网络信息中心)进行开发的一款校内综合服务应用。<br>
-            教务系统管理平台充分利用互联网络B/S管理系统模式，以网络为平台，为各个学校教务系统的管理提供一个平台，帮助学校管理教务系统，用一个帐号解决学校教务教学管理，并且学校可以自由选择学校需要的教务管理系统，灵活地定制符合学校自己实际情况的教务系统
-          </p>
+          <p>设备报修管理系统网页端是由计算机学院网络中心开发的一款校园综合服务应用，主要实现设备损坏上报、出勤人员派遣、维修进度跟踪和流程记录展示等功能。
+            不同于传统的纸质工单进行记录和汇总存在的报修进度无法实时进行跟踪和管理，维修结果也无法做到及时反馈，最终汇总报修工单与核算时难度比较大等问题，
+            后勤设备报修应用模板通过平台实现从设备损坏上报到维修归档全流程可视化管理，实现跟踪监控、工单留痕等效果，实现了后勤设备报修的信息化管理。</p>
           <div class="button-wrap">
             <div class="button2">
-              <p>查看案例</p>
+              <router-link active-class="active" to="/products">
+                <p>查看案例</p>
+              </router-link>
             </div>
           </div>
         </div>
@@ -123,11 +124,11 @@
 
       <div class="content-3-tittle">
         <span>
-          <img src="./assets/zx_title_blue_r.png">
-          细节动态
-          <img src="./assets/zx_title_blue_l.png">
+          <img src="../assets/zx_title_blue_r.png">
+          服务理念
+          <img src="../assets/zx_title_blue_l.png">
         </span>
-        <p>INDUSTRY DYNAMICS</p>
+        <p>SERVICE PHILOSOPHY</p>
       </div>
       <div class="industry-dynamics-1"><br><br><br><br>
         <h3>专注打造师生服务平台</h3>
@@ -138,14 +139,14 @@
       </div>
       <div class="industry-dynamics-wrap">
         <div class="industry-dynamics-2">
-          <img src="./assets/动态-two.jpg">
+          <img src="../assets/动态-two.jpg">
           <div class="industry-dynamics-text">
             <h3>系统一体化方案</h3>
             <p>采用一定的方式，对已经制定颁布的规范性文件或者流程进行归类、整理或加工，使其集中起来作有系统的排列，以便于使用的活动 </p>
           </div>
         </div>
         <div class="industry-dynamics-3">
-          <img src="./assets/动态-three.jpg">
+          <img src="../assets/动态-three.jpg">
           <div class="industry-dynamics-text">
             <h3>规范一体化方案</h3>
             <p>改造关系模式，通过分解关系模式来消除其中不合适的数据依赖，以解决插入异常、删除异常、更新异常和数据冗余问题。</p>
@@ -189,8 +190,8 @@ export default {
 }
 
 .header-mid {
-  margin-top:150px;
-  margin-bottom:-233px;
+  margin-top: 150px;
+  margin-bottom: -233px;
   color: white;
   /* z-index:999988; */
 }
@@ -209,6 +210,7 @@ export default {
   font-family: Bold, 微软雅黑;
   text-transform: uppercase;
 }
+
 .header-bottom {
   margin-top: 353px;
   height: 192px;
@@ -281,7 +283,7 @@ export default {
 .content-1-left {
   width: 580px;
   height: 447px;
-  background: url('assets/介绍-底图.png');
+  background: url('../assets/介绍-底图.png');
   display: inline-block;
 }
 
@@ -531,7 +533,7 @@ export default {
 .content-3-left {
   width: 634px;
   height: 419px;
-  background: url('./assets/占位图.png');
+  background: url('../assets/占位图.png');
 }
 
 .content-3-middle {
@@ -551,7 +553,7 @@ export default {
   width: 583px;
   height: 174px;
   font-family: 'SourceHanSansCN-Regular';
-  font-size: 18px;
+  font-size: 16px;
   color: #7A7C84;
   text-align: justify;
   line-height: 26px;

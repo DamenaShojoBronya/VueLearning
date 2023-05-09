@@ -1,45 +1,37 @@
 <template>
   <footer :class="{ 'blur-background': blur }">
     <div class="footer">
-      <div class="wp">
-        <div class="foot-link">
-          <div class="ewm">
-            <div class="pic"><img src="../assets/页尾-one.jpg" alt=""></div>
-            <p>欢迎关注计算机工程学院公众号</p>
-          </div>
-        </div>
-      </div>
       <div class="g-foot">
         <div class="wp">
           <div class="logo">
-            <img src="../assets/GUETlogo.png">
+            <img src="../assets/网络中心logo-紫.png" alt="">
+            <h3>计算机学院网络中心</h3>
           </div>
           <div class="list">
             <ul>
               <li>
                 <div class="ico-wrap">
                   <img class="ico" src="../assets/电话.png" alt="">
-                  <p>&nbsp;&nbsp;&nbsp;010-62786244</p>
+                  <p>&nbsp;&nbsp;&nbsp;010-6277994</p>
                 </div>
               </li>
               <li>
                 <div class="ico-wrap"><img class="ico" src="../assets/邮箱.png" alt="">
-                  <p>&nbsp;&nbsp;&nbsp;twinfo@guet.edu.cn</p>
+                  <p>&nbsp;&nbsp;&nbsp;twinfo@jld.edu.cn</p>
                 </div>
               </li>
               <li>
                 <div class="ico-wrap"><img class="ico" src="../assets/位置.png" alt="">
-                  <p>&nbsp;&nbsp;&nbsp;北海市桂林电子科技大学北海校区</p>
+                  <p>&nbsp;&nbsp;&nbsp;计算机学院网络中心</p>
                 </div>
               </li>
             </ul>
           </div>
           <div class="info">
             <div>
-
-              <p>版权所有 &copy; 桂林电子科技大学北海校区网络中心</p>
-              <p>地址:北海市银海区银滩镇南珠大道9号桂林电子科技大学北海校区</p>
-              <p>邮编:536000</p>
+              <p>版权所有 &copy; 计算机学院网络中心</p>
+              <p>地址:京海市南珠区科技大道9号</p>
+              <p>邮编:586000</p>
             </div>
           </div>
         </div>
@@ -237,14 +229,26 @@ li .ico {
   z-index: 2
 }
 
-.g-foot .logo {
+.g-foot .wp .logo {
   position: absolute;
   z-index: 1;
-  left: 200px;
+  left: 250px;
   right: auto;
   top: 46px;
   bottom: auto;
-  width: 180px
+  width: 430px;
+  display: flex;
+  align-items: center
+}
+
+.g-foot .wp .logo img {
+  max-width: 25%;
+  height: auto;
+}
+
+.g-foot .wp .logo h3 {
+  margin-left: 20px;
+  font-size: 30px;
 }
 
 .g-foot .list {
@@ -324,10 +328,19 @@ li .ico {
     flex-direction: column;
     align-items: flex-start;
   }
-  .g-foot:before{
-    height:450px;
+
+  .g-foot .wp .logo {
+    left: 220px;
+  }
+  .g-foot .wp .logo img{
+    max-width:20%
+  }
+
+  .g-foot:before {
+    height: 450px;
     left: 2.5%;
   }
+
   .logo {}
 
   .g-foot .list {
@@ -343,15 +356,15 @@ li .ico {
     padding-right: 0;
     height: 31px;
     justify-content: center;
-    margin-left: 335px;
+    margin-left: 375px;
   }
 
   .g-foot .list li:nth-of-type(1) {
-    margin-left: 390px;
+    margin-left: 395px;
   }
 
   .g-foot .list li:nth-of-type(2) {
-    margin-left: 375px;
+    margin-left: 385px;
   }
 
   .g-foot .info {
@@ -370,15 +383,27 @@ li .ico {
 
 @media only screen and (max-width: 650px) {
   .g-foot .wp {
-    min-height: 342px;
-    padding: 110px 0 0;
+    min-height: 313px;
+    padding: 85px 0 0;
   }
+
   .g-foot .wp {
     margin-left: -220px;
   }
-  .g-foot:before{
-    height:420px;
+
+  .g-foot:before {
+    height: 350px;
     left: 0;
+  }
+  .g-foot .wp .logo {
+    left: 200px;
+    /* margin-top:-20px; */
+  }
+  .g-foot .wp .logo img{
+    max-width:15%
+  }
+  .g-foot .wp .logo h3 {
+    font-size:22px;
   }
   .logo {
     max-width: 400px;
@@ -388,8 +413,17 @@ li .ico {
     max-width: 340px;
     margin-left: 70px;
   }
+  .g-foot .list li:nth-of-type(1) {
+    margin-left: 355px;
+  }
+
+  .g-foot .list li:nth-of-type(2) {
+    margin-left: 355px;
+  }
+  .g-foot .list li:nth-of-type(3) {
+    margin-left: 355px;
+  }
   .g-foot .info {
     margin-top: -100px;
   }
-}
-</style>
+}</style>

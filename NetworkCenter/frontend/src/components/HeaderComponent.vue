@@ -3,8 +3,9 @@
         <div class="header">
             <!-- 左侧logo -->
             <div class="logo">
-                <a href="index.htm" title="桂电北海">
-                    <img src="../assets/GUETlogo.png" alt="">
+                <a href="index.htm" title="网络中心">
+                    <img src="../assets/网络中心logo.png" alt="">
+                    <h3>网络中心</h3>
                 </a>
             </div>
             <!-- 主菜单 -->
@@ -92,6 +93,10 @@
         <div class="header-mobile">
             <!-- 左侧logo -->
             <div class="logo">
+                <a href="index.htm" title="网络中心">
+                    <img src="../assets/网络中心logo.png" alt="">
+                    <h3>网络中心</h3>
+                </a>
             </div>
             <div class="menu" @click="toggleMenu" :class="{ 'menu-open': menuOpen }"></div>
         </div>
@@ -345,20 +350,25 @@ export default {
         display: flex;
         flex-direction: row;
         align-items: center;
-
-        // @media screen and (max-width: 945px) {
-        //     display: none;
-        // }
-
-
-
+        text-align:center;
     }
-
+    .logo a{
+        display:flex;
+        justify-content: center;
+        align-items: center
+    }
     .logo img {
-        max-width: 70%;
+        max-width: 20%;
         /* 根据需要调整百分比 */
         height: auto;
         /* 保持高度自动，以保持纵横比 */
+        // display: inline;
+    }
+    .logo h3{
+        margin-left:10px;
+        color: #fafafa;
+        height:40px;
+        font-size:25px;
     }
 
     /* .head-menu */
@@ -577,18 +587,34 @@ export default {
     }
 
     .logo {
-        justify-content: flex-start;
-        flex-grow: 1;
-        max-width: 60vw; // 修改宽度百分比以调整 logo 大小
-        height: 4.86vh;
-        max-height: 4.86vh; // 限制 logo 的最大高度
-        margin-left: 1%;
+        width: auto;
+        height: 30px;
+        margin-left: -100px;
+        margin-right: 100px;
         flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        background: url("../assets/GUETlogo.png") no-repeat left;
-        background-size: contain; // 修改为 contain 以保持 logo 完整且在其容器内
+        text-align:center;
     }
-
+    .logo a{
+        display:flex;
+        justify-content: center;
+        align-items: center
+    }
+    .logo img {
+        max-width: 20%;
+        /* 根据需要调整百分比 */
+        height: auto;
+        /* 保持高度自动，以保持纵横比 */
+        // display: inline;
+    }
+    .logo h3{
+        margin-left:10px;
+        color: #fafafa;
+        height:40px;
+        font-size:25px;
+    }
     .menu {
         flex-grow: 0;
         width: 5%;
@@ -597,6 +623,111 @@ export default {
         aspect-ratio: 1 / 1;
         /* 宽高比不随缩放改变 */
         margin-right: 1%;
+        background: url(../assets/iconq2.png) center center no-repeat;
+        background-size: cover;
+    }
+
+    .menu-open {
+        background: url(../assets/iconq3.png) center center no-repeat;
+        background-size: cover;
+        max-width: 45px;
+        min-width: 30px;
+    }
+
+    .panel {
+        display: block;
+        margin-top: 8.07vh;
+        padding: 10px;
+        background: #fafafa;
+        overflow-y: auto;
+        position: fixed;
+        z-index: 49;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        // 过渡效果
+        opacity: 0;
+        transform: translateY(-100%) translateX(100%);
+        transition: opacity 0.7s, transform 0.3s;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .panel-active {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+}
+@media screen and (max-width: 450px) {
+    .header {
+        display: none;
+        width: 0;
+    }
+
+    .header-mobile {
+        position: fixed;
+        left: 0;
+        top: 0.71vh;
+        z-index: 50;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+        height: 7.37vh;
+        border-bottom: 0.14vh solid RGBA(113 119 144 / 25%);
+    }
+
+    .header-mobile:before {
+        content: '';
+        position: absolute;
+        display: flex;
+        top: -0.61vh;
+        left: 0;
+        right: 0;
+        height: 8.07vh;
+        background: url(../assets/bgq1.png) repeat-x;
+        z-index: -1;
+    }
+
+    .logo {
+        width: auto;
+        height: 30px;
+        margin-left: -130px;
+        margin-right: 100px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align:center;
+    }
+    .logo a{
+        display:flex;
+        justify-content: center;
+        align-items: center
+    }
+    .logo img {
+        max-width: 15%;
+        /* 根据需要调整百分比 */
+        height: auto;
+        /* 保持高度自动，以保持纵横比 */
+        // display: inline;
+    }
+    .logo h3{
+        margin-left:10px;
+        color: #fafafa;
+        height:40px;
+        font-size:25px;
+    }
+    .menu {
+        flex-grow: 0;
+        width: 5%;
+        max-width: 50px;
+        min-width: 35px;
+        aspect-ratio: 1 / 1;
+        /* 宽高比不随缩放改变 */
+        margin-left: -15px;
         background: url(../assets/iconq2.png) center center no-repeat;
         background-size: cover;
     }

@@ -1,6 +1,6 @@
 <template>
   <view-box>
-    <!-- 找到我们  图标需要更换 -->
+
     <div class="content-1">
       <div class="content-1-home">
         <div class="content-1-tittle-wrap">
@@ -17,10 +17,9 @@
               <img src="../assets/icon-computer.png">
             </div>
             <div class="banner-text-wrap">
-              <h3>桂电北海计算机学院</h3>
-              <p>学习优秀，本领过硬。下辖专业：大数据管理与应用、网络工程、网络工程NIIT</p>
-              <a href="https://www.guet.edu.cn/gdbh/" target="blank"  class="clickable-link" ></a>
-
+              <h3>计算机学院</h3>
+              <p>学习优秀，本领过硬。下辖专业：大数据技术、网络工程、计算机科学与技术</p>
+              <a href="https://www.baidu.com" target="blank"  class="clickable-link" ></a>
             </div>
           </div>
           <div class="banner">
@@ -28,7 +27,7 @@
               <img src="../assets/icon-server.png">
             </div>
             <div class="banner-text-wrap">
-              <h3>桂电北海网络中心</h3>
+              <h3>学院网络中心</h3>
               <p>牛人的聚集地，为全校师生提供优质网络技术服务</p>
               <a href="https://www.baidu.com" target="blank"  class="clickable-link"></a>
             </div>
@@ -38,7 +37,7 @@
               <img src="../assets/icon-book_black.png">
             </div>
             <div class="banner-text-wrap">
-              <h3>科协优阅网</h3>
+              <h3>学院科协网</h3>
               <p>计算机学院科协官网，学院竞赛信息一网打尽</p>
               <a href="https://www.youyue.info" target="blank" class="clickable-link"></a>
             </div>
@@ -76,11 +75,11 @@
         </div>
       </div>
     </div>
-    <!-- 使用流程 -->
+
     <div class="content-3">
       <div class="content-1-home">
         <div class="content-1-tittle-wrap">
-          <h3>SERVICE PROVISIONING</h3>
+          <h3>PROCESS</h3>
           <div class="content-1-tittle">
             <p>使用流程</p>
             <img src="../assets/标题装饰-1.png">
@@ -169,7 +168,7 @@ view-box {
   width: 100%;
   height: 564px;
   background: #eef2f7;
-  min-width: 1400px;
+  /* min-width: 1400px; */
 }
 
 .content-1-home {
@@ -210,7 +209,7 @@ view-box {
   z-index: 3;
   opacity: 0.38;
   font-family: 'AlibabaSans-BoldItalic';
-  /* 字体倾斜，你考虑一下 */
+  /* 字体倾斜 */
   font-style:italic;
   font-size: 100px;
   height: inherit;

@@ -104,6 +104,7 @@ view-box {
     align-items: center;
     justify-content: center;
     height: 70vh;
+    margin-bottom:95px
 }
 
 .main-box:before {

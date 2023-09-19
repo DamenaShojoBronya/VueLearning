@@ -104,9 +104,14 @@ view-box {
     align-items: center;
     justify-content: center;
     height: 70vh;
-    margin-bottom:95px
 }
-
+.fullwid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background: red;
+}
 .main-box:before {
     position: absolute;
     z-index: -1;

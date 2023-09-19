@@ -76,7 +76,8 @@
             <div class="column-main_text">
               <a href="../../assets/卡片2.jpg">
                 <h3>北海校区领导一行赴南宁开展校企合作交流和访企拓岗</h3>
-                <p>3月4-5日，学校校长助理、北海校区校长陈名松，校区常务副校长王鑫，副校长孙永厚及电子信息学院、计算机工程学院相关负责人一行到华为技术服务（广西）有限公司、广西昊华科技股份有限公司等开展校企合作交流和访企拓岗。
+                <p>
+                  3月4-5日，学校校长助理、北海校区校长陈名松，校区常务副校长王鑫，副校长孙永厚及电子信息学院、计算机工程学院相关负责人一行到华为技术服务（广西）有限公司、广西昊华科技股份有限公司等开展校企合作交流和访企拓岗。
                 </p>
               </a>
             </div>
@@ -231,7 +232,9 @@
           <span class="col-date">2022/9/23</span>
         </p>
 
-        <p>9月21日下午，华为技术服务（广西）有限公司政企业务部副部长毛东阳、华为政企业务部北部湾总经理周旋一行到访校区相关学院，就推进ICT学院建设及其他合作事项进行深入交流。电子信息学院院长向荣、副院长万剑锋，计算机工程学院院长黄廷辉、副院长刘利民，相关教师参加座谈会，座谈会由向荣主持。</p>
+        <p>
+          9月21日下午，华为技术服务（广西）有限公司政企业务部副部长毛东阳、华为政企业务部北部湾总经理周旋一行到访校区相关学院，就推进ICT学院建设及其他合作事项进行深入交流。电子信息学院院长向荣、副院长万剑锋，计算机工程学院院长黄廷辉、副院长刘利民，相关教师参加座谈会，座谈会由向荣主持。
+        </p>
 
         <div>
           <a href="https://www.guet.edu.cn/gdbh/info/1179/6157.htm" class="headArticle_button" target="_blank">
@@ -263,10 +266,10 @@ view-box {
   margin-top: 70px;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
   background-color: #f7f7f7;
-  ;
 }
 
 section {
@@ -414,7 +417,7 @@ section {
   min-height: 255.33px;
   max-height: 300px;
   margin-top: 0.5rem;
-  text-align:start;
+  text-align: start;
   /* display:flex; */
 
   overflow: hidden;
